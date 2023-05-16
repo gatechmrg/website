@@ -1,6 +1,7 @@
 import { Button, Switch } from '@mui/material'
 import Head from 'next/head'
 import Header from '../components/nav/Header'
+import Main from '../components/home/Main'
 
 export default function Home() {
 	return (
@@ -10,11 +11,7 @@ export default function Home() {
 			</Head>
 			<div>
 				<Header />
-				hello world
-				<Switch />
-				<Button color="primary">
-					hello
-				</Button>
+				<Main />
 			</div>
 		</>
 	)
