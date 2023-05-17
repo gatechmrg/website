@@ -15,10 +15,12 @@ export default function Header() {
             <Box mx={3} py={1}>
                 <Grid container alignItems="center">
                     <Grid item>
-                        <Box>
-                            <img src="/mrg_logo.png" alt="MRG Logo"
-                                height={60} />
-                        </Box>
+                        <Link href="/">
+                            <Box>
+                                <img src="/mrg_logo.png" alt="MRG Logo"
+                                    height={60} />
+                            </Box>
+                        </Link>
                     </Grid>
                     <Grid item flex={1} />
                     {pages.map(page => (
