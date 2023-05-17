@@ -104,7 +104,7 @@ export default function Exploration() {
                                     </Typography>
                                 </Box>
                                 <Box>
-                                    <StandardLine width={190} height={5} borderRadius={3}
+                                    <StandardLine width={160} height={5} borderRadius={3}
                                         centered={small} />
                                 </Box>
                                 <Box mt={3}>
