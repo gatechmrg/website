@@ -17,7 +17,8 @@ export default function Exploration() {
                 <Box textAlign="center" mt={3}>
                     <Typography variant="h5">
                         The furthest reaches of human exploration are pioneered by robots. 
-                        At the Marine Robotics Group, students likewise partake in the development of 
+                        At the Marine Robotics Group at Georgia Tech, 
+                        students likewise partake in the development of 
                         autonomous maritime robots.
                     </Typography>
                 </Box>
