@@ -73,9 +73,9 @@ export default function Exploration() {
                                 </Box>
                                 <Box mt={3}>
                                     <Typography variant="h5" textAlign={{xs: 'center', md: 'left'}}>
-                                        MRG has the goal of iterating on and creating new vehicles 
-                                        such as Autonomous Underwater Vehicles (AUVs)
-                                        and Autonomous Surfaces Vehicles (ASVs).
+                                        MRG has the goal of iterating on and creating new  
+                                        Autonomous Underwater Vehicles (AUVs)
+                                        and Autonomous Surfaces Vehicle (ASVs).
                                     </Typography>
                                 </Box>
                             </Box>
