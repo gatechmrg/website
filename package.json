@@ -16,7 +16,9 @@
     "@mui/material": "^5.13.0",
     "next": "13.4.2",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-scrollama": "^2.3.2",
+    "stickybits": "^3.7.11"
   },
   "devDependencies": {
     "@types/node": "20.1.6",
