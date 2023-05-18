@@ -88,7 +88,7 @@ export default function Exploration() {
                         </Grid>
                     </Grid>
                 </Box>
-                <Box mb={12}>
+                <Box>
                     <Grid container>
                         <Grid item md={6} order={1}>
                             <Box>
