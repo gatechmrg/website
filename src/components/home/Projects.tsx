@@ -15,16 +15,16 @@ export default function Projects() {
 
     return (
         <>
-        <Box>
+        <Box position="relative">
             <Box id="sticky-root" sx={{
                     backgroundImage: 'linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0)), url(/home/blue-sky.png)',
                     backgroundSize: 'cover',
-                    height: 'calc(100vh + 120px)',
+                    height: 'calc(50vh + 120px)',
                     top: -120,
                     position: 'sticky'
                 }}>
-                <Box position="absolute" bottom={0}
-                    height="50%" width="100%" 
+                <Box position="absolute" bottom="-50vh"
+                    height="50vh" width="100%" 
                     sx={{backgroundImage: 'url(/home/ocean.png)', backgroundSize: 'cover'}} />
                 <Box pt={12} />
                 <Box>
@@ -119,7 +119,7 @@ export default function Projects() {
                 </Scrollama>
             </Box>
         </Box>
-        <Box height="200vh" />
+        <Box height="200vh" position="relative" top="0vh">hello world</Box>
         </>
     )
 }
