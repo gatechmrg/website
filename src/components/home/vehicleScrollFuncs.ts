@@ -20,7 +20,7 @@ export function calcMicrotransatOffset(scroll:number, screenSize:number) {
 }
 
 const roboBoatFactors = [
-    [0, 1],
+    [.05, .9],
     [.2, .7],
     [0, .7],
     [.4, .6],
