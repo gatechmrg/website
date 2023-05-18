@@ -64,3 +64,23 @@ export function calcWamvOffset(scroll:number, screenSize:number) {
     }
     return slow + (wamvFactors[screenSize][1] * ((scroll - (2.5*size)) / size) * 100)
 }
+
+const roboSubFactors = [
+    [1.3],
+    [1.5],
+    [1.8],
+    [2.2],
+    [2.2]
+]
+
+export function calcRobSubOffset(scroll:number, screenSize:number) {
+    if (screenSize === -1) {
+        return 0
+    }
+    const size = screenSize >= 3 ? .75 : .8
+    const prop = screenSize >= 3 ? .25 : .2
+    if (scroll < size) {
+        return 0
+    }
+    return roboSubFactors[screenSize][0] * ((scroll - size)/prop) * 100
+}

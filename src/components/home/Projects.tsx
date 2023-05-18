@@ -5,7 +5,7 @@ import { GreenPrimaryButton } from "../misc/buttons";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useTheme } from '@mui/material/styles'
-import { calcMicrotransatOffset, calcRoboBoatOffset, calcWamvOffset } from "./vehicleScrollFuncs";
+import { calcMicrotransatOffset, calcRobSubOffset, calcRoboBoatOffset, calcWamvOffset } from "./vehicleScrollFuncs";
 
 export default function Projects() {
 
@@ -14,6 +14,7 @@ export default function Projects() {
     const [microOffset, setMicroOffset] = useState(0)
     const [roboBoatOffset, setRoboBoatOffset] = useState(0)
     const [wamvOffset, setWamvOffset] = useState(0)
+    const [roboSubOffset, setRoboSubOffset] = useState(0)
 
     const theme = useTheme()
 
@@ -33,6 +34,7 @@ export default function Projects() {
         setMicroOffset(calcMicrotransatOffset(scroll, breakpoint.indexOf(true)))
         setRoboBoatOffset(calcRoboBoatOffset(scroll, breakpoint.indexOf(true)))
         setWamvOffset(calcWamvOffset(scroll, breakpoint.indexOf(true))) 
+        setRoboSubOffset(calcRobSubOffset(scroll, breakpoint.indexOf(true)))
 
         if (e.data === 2 && e.progress > .7) {
             setWaterOffset((e.progress - .7) * 100)
@@ -42,8 +44,7 @@ export default function Projects() {
             setWaterOffset(0)
         } 
     }
-    // console.log(waterOffset)
-    console.log('microOffset', microOffset)
+    console.log('subOffset', roboSubOffset)
 
     return (
         <>
@@ -81,6 +82,11 @@ export default function Projects() {
                         height={400} width={800} left={`${wamvOffset}vw`}
                         sx={{backgroundImage: 'url(/home/wamv.png)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
+                    <Box position="absolute" bottom={`${roboSubOffset - 50}vh`} zIndex={3}
+                        height={400} width={200} 
+                        left={breakpoint.indexOf(true) >= 3 ? "min(25vw, calc(100vw - 1050px))" : "50vw"}
+                        sx={{backgroundImage: 'url(/home/robosub.png)', backgroundSize: '100% 100%',
+                            transform: 'translate(-50%, 100%)'}} />
                 </Box>
                 <Box pt={12} />
                 <Box>
