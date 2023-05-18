@@ -5,7 +5,7 @@ import { GreenPrimaryButton } from "../misc/buttons";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useTheme } from '@mui/material/styles'
-import { calcMicrotransatOffset, calcRoboBoatOffset } from "./vehicleScrollFuncs";
+import { calcMicrotransatOffset, calcRoboBoatOffset, calcWamvOffset } from "./vehicleScrollFuncs";
 
 export default function Projects() {
 
@@ -13,6 +13,7 @@ export default function Projects() {
 
     const [microOffset, setMicroOffset] = useState(0)
     const [roboBoatOffset, setRoboBoatOffset] = useState(0)
+    const [wamvOffset, setWamvOffset] = useState(0)
 
     const theme = useTheme()
 
@@ -31,7 +32,7 @@ export default function Projects() {
 
         setMicroOffset(calcMicrotransatOffset(scroll, breakpoint.indexOf(true)))
         setRoboBoatOffset(calcRoboBoatOffset(scroll, breakpoint.indexOf(true)))
-        
+        setWamvOffset(calcWamvOffset(scroll, breakpoint.indexOf(true))) 
 
         if (e.data === 2 && e.progress > .7) {
             setWaterOffset((e.progress - .7) * 100)
@@ -75,6 +76,10 @@ export default function Projects() {
                     <Box position="absolute" bottom={`calc(40% + ${waterOffset}vh)`} zIndex={3}
                         height={200} width={400} left={`${roboBoatOffset}vw`}
                         sx={{backgroundImage: 'url(/home/roboboat2.png)', backgroundSize: '100% 100%',
+                            transform: 'translateX(-100%)'}} />
+                    <Box position="absolute" bottom={`calc(40% + ${waterOffset}vh)`} zIndex={3}
+                        height={400} width={800} left={`${wamvOffset}vw`}
+                        sx={{backgroundImage: 'url(/home/wamv.png)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
                 </Box>
                 <Box pt={12} />

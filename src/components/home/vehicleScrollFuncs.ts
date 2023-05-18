@@ -41,3 +41,26 @@ export function calcRoboBoatOffset(scroll:number, screenSize:number) {
     }
     return slow + (roboBoatFactors[screenSize][1] * ((scroll - (1.5*size)) / size) * 100)
 }
+
+const wamvFactors = [
+    [.05, .9],
+    [.2, .7],
+    [0, .7],
+    [.4, .6],
+    [.6, .2]
+]
+
+export function calcWamvOffset(scroll:number, screenSize:number) {
+    if (screenSize === -1) {
+        return 0
+    }
+    if (scroll < .5) {
+        return 0
+    }
+    const size = screenSize >= 3 ? .25 : .2
+    const slow = (wamvFactors[screenSize][0] * ((scroll-(2*size))/size) * 100)
+    if (scroll < 2.5 * size) {
+        return slow
+    }
+    return slow + (wamvFactors[screenSize][1] * ((scroll - (2.5*size)) / size) * 100)
+}
