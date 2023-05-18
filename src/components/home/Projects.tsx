@@ -5,44 +5,7 @@ import { GreenPrimaryButton } from "../misc/buttons";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useTheme } from '@mui/material/styles'
-
-const fastFactor:any = {
-    0: {
-        xl: 2.5,
-        lg: 4
-    },
-    1: {
-        xl: 3,
-        lg: 4
-    },
-    2: {
-        xl: 3,
-        lg: 4
-    },
-    3: {
-        xl: 3,
-        lg: 4
-    }
-}
-
-const normalFactor:any = {
-    0: {
-        xl: .4,
-        lg: .4
-    },
-    1: {
-        xl: .4,
-        lg: .2
-    },
-    2: {
-        xl: .4,
-        lg: .2
-    },
-    3: {
-        xl: .4,
-        lg: .2
-    }
-}
+import { calcMicrotransatOffset, calcRoboBoatOffset } from "./vehicleScrollFuncs";
 
 export default function Projects() {
 
@@ -52,36 +15,23 @@ export default function Projects() {
     const [roboBoatOffset, setRoboBoatOffset] = useState(0)
 
     const theme = useTheme()
-    const isXl = useMediaQuery(theme.breakpoints.up('xl'))
+
+    const breakpoint = ['xs', 'sm', 'md', 'lg', 'xl'].map((name) =>(
+        useMediaQuery(theme.breakpoints.only(name as any))
+    ))
+
+    console.log(breakpoint)
 
     const onProgress = (e:any) => {
         console.log(e)
 
-        let offset = 0
-        if (e.progress < 0.67) {
-            if (isXl) {
-                offset = normalFactor[e.data]['xl'] * e.progress * 100
-            } else {
-                offset = normalFactor[e.data]['lg'] * e.progress * 100
-            }
-        } else {
-            const fast = e.progress - 0.67
-            if (isXl) {
-                offset = (normalFactor[e.data]['xl'] * .67 * 100) + (fastFactor[e.data]['xl'] * fast * 100)
-            } else {
-                offset = (normalFactor[e.data]['lg'] * .67 * 100) + (fastFactor[e.data]['lg'] * fast * 100)
-            }
-        }
+        const scroll = (e.data + e.progress) / 4
 
-        switch (e.data) {
-            case 0:
-                setMicroOffset(offset)
-                setRoboBoatOffset(offset -100 > 0 ? 0 : offset - 100)
-                break
-            case 1:
-                setRoboBoatOffset(offset)
-                break
-        }
+        console.log('scroll', scroll)
+
+        setMicroOffset(calcMicrotransatOffset(scroll, breakpoint.indexOf(true)))
+        setRoboBoatOffset(calcRoboBoatOffset(scroll, breakpoint.indexOf(true)))
+        
 
         if (e.data === 2 && e.progress > .7) {
             setWaterOffset((e.progress - .7) * 100)
@@ -91,7 +41,8 @@ export default function Projects() {
             setWaterOffset(0)
         } 
     }
-    console.log(waterOffset)
+    // console.log(waterOffset)
+    console.log('microOffset', microOffset)
 
     return (
         <>
@@ -120,11 +71,11 @@ export default function Projects() {
                     <Box position="absolute" bottom="40%" zIndex={3}
                         height={300} width={200} left={`${microOffset}vw`}
                         sx={{backgroundImage: 'url(/home/microtransat.png)', backgroundSize: '100% 100%',
-                            transform: 'translateX(-50%)'}} />
+                            transform: 'translateX(-100%)'}} />
                     <Box position="absolute" bottom="40%" zIndex={3}
                         height={200} width={400} left={`${roboBoatOffset}vw`}
                         sx={{backgroundImage: 'url(/home/roboboat2.png)', backgroundSize: '100% 100%',
-                            transform: 'translateX(-50%)'}} />
+                            transform: 'translateX(-100%)'}} />
                 </Box>
                 <Box pt={12} />
                 <Box>
@@ -217,7 +168,7 @@ export default function Projects() {
                         </Box>
                     </Step>
                     <Step data={2}>
-                        <Box position="relative" height="100vh" mx={3}>
+                        <Box position="relative" height={breakpoint[2] ? '200vh' : '100vh'} mx={3}>
                             <Grid container justifyContent="center">
                                 <Grid item flex={{lg: 1, md: 0}} />
                                 <Grid item xl={6}>
