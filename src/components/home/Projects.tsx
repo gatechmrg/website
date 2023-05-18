@@ -72,7 +72,7 @@ export default function Projects() {
                         height={300} width={200} left={`${microOffset}vw`}
                         sx={{backgroundImage: 'url(/home/microtransat.png)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
-                    <Box position="absolute" bottom="40%" zIndex={3}
+                    <Box position="absolute" bottom={`calc(40% + ${waterOffset}vh)`} zIndex={3}
                         height={200} width={400} left={`${roboBoatOffset}vw`}
                         sx={{backgroundImage: 'url(/home/roboboat2.png)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
@@ -168,7 +168,8 @@ export default function Projects() {
                         </Box>
                     </Step>
                     <Step data={2}>
-                        <Box position="relative" height={breakpoint[2] ? '200vh' : '100vh'} mx={3}>
+                        <Box position="relative" height={breakpoint[2] || breakpoint[1]
+                            || breakpoint[0] ? '200vh' : '100vh'} mx={3}>
                             <Grid container justifyContent="center">
                                 <Grid item flex={{lg: 1, md: 0}} />
                                 <Grid item xl={6}>
