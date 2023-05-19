@@ -36,7 +36,7 @@ const FooterGrid = styled('div')(({theme}) => ({
 export default function Footer() {
 
     return (
-        <>
+        <div>
             <svg width="0px" height="0px" viewBox="0 0 2048 1352" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <clipPath id="footer-clip-path">
@@ -172,6 +172,6 @@ export default function Footer() {
                     </Grid>
                 </Box>
             </Box>
-        </>
+        </div>
     )
 }
