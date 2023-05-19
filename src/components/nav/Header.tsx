@@ -57,7 +57,7 @@ export default function Header() {
                     <Box>
                         <List>
                             {pages.map(page => (
-                                <Link href={page.link}>
+                                <Link href={page.link} key={page.name}>
                                     <ListItem sx={{width: 200, cursor: 'pointer', mb: 2}}>
                                         <Typography variant="body1" sx={{fontSize: '1.2rem'}}>
                                             {page.name}
