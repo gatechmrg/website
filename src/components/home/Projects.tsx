@@ -3,7 +3,7 @@ import { StandardLine } from "../misc/line";
 import { Scrollama, Step} from 'react-scrollama'
 import { GreenPrimaryButton } from "../misc/buttons";
 import Link from "next/link";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useTheme } from '@mui/material/styles'
 import { calcMicrotransatOffset, calcRobSubOffset, calcRoboBoatOffset, calcWamvOffset } from "./vehicleScrollFuncs";
 
@@ -18,18 +18,17 @@ export default function Projects() {
 
     const theme = useTheme()
 
-    const breakpoint = ['xs', 'sm', 'md', 'lg', 'xl'].map((name) =>(
-        useMediaQuery(theme.breakpoints.only(name as any))
-    ))
+    const xs = useMediaQuery(theme.breakpoints.only('xs'))
+    const sm = useMediaQuery(theme.breakpoints.only('sm'))
+    const md = useMediaQuery(theme.breakpoints.only('md'))
+    const lg = useMediaQuery(theme.breakpoints.only('lg'))
+    const xl = useMediaQuery(theme.breakpoints.only('xl'))
 
-    console.log(breakpoint)
+    const breakpoint = [xs, sm, md, lg, xl]
 
     const onProgress = (e:any) => {
-        console.log(e)
 
         const scroll = (e.data + e.progress) / 4
-
-        console.log('scroll', scroll)
 
         setMicroOffset(calcMicrotransatOffset(scroll, breakpoint.indexOf(true)))
         setRoboBoatOffset(calcRoboBoatOffset(scroll, breakpoint.indexOf(true)))
@@ -44,7 +43,6 @@ export default function Projects() {
             setWaterOffset(0)
         } 
     }
-    console.log('subOffset', roboSubOffset)
 
     return (
         <Box position="relative">
