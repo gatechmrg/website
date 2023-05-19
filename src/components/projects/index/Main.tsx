@@ -1,12 +1,13 @@
 import { Box, Container, Grid, Paper, Typography, useMediaQuery } from "@mui/material";
 import { styled, useTheme } from '@mui/material/styles'
 import Link from "next/link";
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, MouseEvent, useRef } from "react";
 import { StandardLine } from "../../misc/line";
 
 const ProjectGrid = styled('div')(({theme}) => ({
     display: 'grid',
     marginBottom: theme.spacing(3),
+    position: 'relative',
     [theme.breakpoints.up('md')]: {
         gridTemplate: `
             "p1 p2" auto
@@ -30,6 +31,9 @@ const hoverAnimation = {
 export default function Main() {
 
     const [screenWidth, setScreenWidth] = useState(0)
+    const [rotation, setRotation] = useState(0)
+
+    const compassRef = useRef<HTMLDivElement>(null)
 
     const theme = useTheme()
     const lgScreen = useMediaQuery(theme.breakpoints.up('md'))
@@ -48,10 +52,19 @@ export default function Main() {
         }
     }, [screenWidth])
 
-    console.log(bottomMargin)
+    const handleMouseMove = (e:MouseEvent) => {
+        const cX = (compassRef.current?.getBoundingClientRect().left || 0) + (290/2)
+        const cY = (compassRef.current?.getBoundingClientRect().top || 0) + (290/2)
+
+        const mX = e.clientX
+        const mY = e.clientY
+
+        const theta = Math.atan2(mY - cY, mX - cX)
+        setRotation(theta + (Math.PI / 2))
+    }
 
     return (
-        <Container maxWidth="lg">
+        <Container maxWidth="lg" onMouseMove={handleMouseMove}>
             <Box mt={3} textAlign="center">
                 <Typography variant="h2">
                     Ongoing Projects
@@ -60,6 +73,20 @@ export default function Main() {
             </Box>
             <Box mt={5} minHeight="calc(100vh - 83px)" display="grid" alignItems="center">
                 <ProjectGrid>
+                    {lgScreen && <Box position="absolute" top="50%" left="50%"
+                        zIndex={-1}
+                        width={290} height={290} ref={compassRef}
+                        sx={{transform: 'translate(-50%, -50%)', 
+                        backgroundImage: 'url(/projects/compass.png)', backgroundSize: '100% 100%'}}> 
+                            <Box width="100%" height="100%" sx={{
+                                backgroundImage: 'url(/projects/compass_arrow.svg)',
+                                backgroundPosition: 'center',
+                                backgroundSize: '180px 180px',
+                                backgroundRepeat: 'no-repeat',
+                                transform: `rotate(${rotation}rad)`
+                            }} />
+                        </Box>
+                    }
                     <Box gridArea="p1">
                         <Box maxWidth={400} mx="auto" mb={bottomMargin}>
                             <Link href="/projects/microtransat">
