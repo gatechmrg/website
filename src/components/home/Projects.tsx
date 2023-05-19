@@ -47,7 +47,6 @@ export default function Projects() {
     console.log('subOffset', roboSubOffset)
 
     return (
-        <>
         <Box position="relative">
             <Box id="sticky-root" sx={{
                     backgroundImage: 'linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0)), url(/home/blue-sky.png)',
@@ -258,7 +257,5 @@ export default function Projects() {
                 </Scrollama>
             </Box>
         </Box>
-        <Box height="200vh" position="relative" top="0vh" bgcolor="red">hello world</Box>
-        </>
     )
 }
