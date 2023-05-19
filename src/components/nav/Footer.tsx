@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import { styled } from '@mui/material/styles'
 import { PrimaryLink, SecondaryLink } from "../misc/links";
 import { StandardLine } from "../misc/line";
@@ -7,10 +7,28 @@ import { useTheme } from '@mui/material/styles'
 const FooterGrid = styled('div')(({theme}) => ({
     display: 'grid',
     marginBottom: theme.spacing(3),
-    [theme.breakpoints.up('lg')]: {
+    [theme.breakpoints.up('md')]: {
         gridTemplate: `
             "h1 h2 h3" auto
             "c1 c2 c3" auto / 300px 300px 300px
+        `
+    },
+    [theme.breakpoints.down('md')]: {
+        gridTemplate: `
+            "h1 h2" auto
+            "c1 c2" auto
+            "h3 ." auto
+            "c3 ." auto / 300px 300px
+        `
+    },
+    [theme.breakpoints.down('sm')]: {
+        gridTemplate: `
+            "h1"
+            "c1"
+            "h2"
+            "c2"
+            "h3"
+            "c3" 
         `
     }
 }))
@@ -19,14 +37,14 @@ export default function Footer() {
 
     return (
         <>
-            <svg width="0px" height="0px" viewBox="0 0 2048 799" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="0px" height="0px" viewBox="0 0 2048 1352" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <clipPath id="footer-clip-path">
-                        <path d="M0.503418 84.5096C0.503418 84.5096 57 22.9958 216.5 3.49702C382.078 -16.7448 441.374 71.5 669 84.5092C922.5 98.9971 2047.5 84.5092 2047.5 84.5092V798.504H0.503418V84.5096Z" fill="#AD9191"/>
+                        <path d="M0.503418 84.5096C0.503418 84.5096 57 22.9958 216.5 3.49702C382.078 -16.7448 441.374 71.5 669 84.5092C922.5 98.9971 2047.5 84.5092 2047.5 84.5092V1351.5H0.503418V84.5096Z" fill="#AD9191"/>
                     </clipPath>
                 </defs>
             </svg>
-            <Box zIndex={10} bgcolor="hsl(166, 100%, 94%)" pt={5} px={13}
+            <Box overflow="hidden" zIndex={10} bgcolor="hsl(166, 100%, 94%)" pt={5} px={13}
                 sx={{
                     clipPath: 'url(#footer-clip-path)'
                 }}>
@@ -76,7 +94,7 @@ export default function Footer() {
                                 Youtube
                             </SecondaryLink>
                         </Box>
-                        <Box mb={2}>
+                        <Box mb={5}>
                             <SecondaryLink href="https://www.instagram.com/gatechmrg/"
                                 fontSize="1.25rem" openInNewTab>
                                 Instagram
@@ -102,7 +120,7 @@ export default function Footer() {
                                 RobotX
                             </SecondaryLink>
                         </Box>
-                        <Box mb={2}>
+                        <Box mb={5}>
                             <SecondaryLink href="https://robonation.org/programs/robosub/"
                                 fontSize="1.25rem" openInNewTab>
                                 RoboSub
@@ -128,7 +146,7 @@ export default function Footer() {
                                 Notion
                             </SecondaryLink>
                         </Box>
-                        <Box mb={2}>
+                        <Box mb={5}>
                             <SecondaryLink href="https://mrg-operations.vercel.app/"
                                 fontSize="1.25rem" openInNewTab>
                                 Inventory
@@ -136,6 +154,23 @@ export default function Footer() {
                         </Box>
                     </Box>
                 </FooterGrid>
+                <Box mb={3}>
+                    <Grid container>
+                        <Grid item>
+                            <Typography variant="body1">
+                                &#169; 2023 MRG
+                            </Typography>
+                        </Grid>
+                        <Grid item>
+                            <Box ml={1}>
+                                <PrimaryLink href="https://github.com/gatechmrg/website/issues"
+                                    openInNewTab>
+                                    Report an Issue
+                                </PrimaryLink>
+                            </Box>
+                        </Grid>
+                    </Grid>
+                </Box>
             </Box>
         </>
     )
