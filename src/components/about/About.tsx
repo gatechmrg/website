@@ -1,6 +1,10 @@
-import { Box, Container } from "@mui/material";
+import { Box, Container, useMediaQuery } from "@mui/material";
+import { useTheme } from '@mui/material/styles'
 
 export default function About() {
+
+    const theme = useTheme()
+    const small = useMediaQuery(theme.breakpoints.down('md'))
 
     return (
         <Box>
@@ -21,16 +25,19 @@ export default function About() {
             }}>
                 <Box position="absolute" top={0} left={0} width="calc(50vw - 600px)" height={200}
                     bgcolor="background.default" />
-                <Container maxWidth="lg" sx={{position: 'relative'}}>
+                <Box maxWidth="lg" mx="auto" sx={{position: 'relative'}}>
                     <Box position="absolute" top={0} left={0} bgcolor="background.default"
                         width="100%" height={200}
                         sx={{clipPath: 'url(#about-clip-path2)'}} />
-                    <Box position="absolute" top={-200} left="20px" width={700} height={500}
-                        zIndex={10}>
-                        <img src="/about/sean-carrying.jpg" width="100%" height="100%"
-                        style={{borderRadius: 10}} />
+                    <Box mx={small ? 0 : 5} position="absolute" top={0} left={0} width="100%">
+                        <Box position="absolute" top={small ? 0 : -200} left={small ? '24px' : 0}
+                            width={small ? 'min(80%,400px)' : 700} height={small ? 300 : 500}
+                            zIndex={10}>
+                            <img src="/about/sean-carrying.jpg" width="100%" height="100%"
+                            style={{borderRadius: 10}} />
+                        </Box>
                     </Box>
-                </Container>
+                </Box>
             </Box>
         </Box>
     )
