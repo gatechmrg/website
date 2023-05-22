@@ -1,6 +1,7 @@
-import { Box, Container, Paper, Typography, useMediaQuery } from "@mui/material";
+import { Box, Container, Grid, Paper, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from '@mui/material/styles'
 import { StandardLine } from "../misc/line";
+import Profile from "./Profile";
 
 export default function About() {
 
@@ -47,11 +48,11 @@ export default function About() {
                         </Box>
                     </Box>
                     <Box height={350} />
-                    <Box maxWidth="md" pb={0} mx={small ? 3 : 5}>
+                    <Box maxWidth="md" pb={5} mx={small ? 3 : 5}>
                         <Paper elevation={3}>
                             <Box p={3}>
                                 <Box mb={3}>
-                                    <StandardLine width={100} height={5} borderRadius={5} />
+                                    <StandardLine width={200} height={5} borderRadius={5} />
                                 </Box>
                                 <Box>
                                     <Typography variant="body1" fontSize="1.25rem">
@@ -80,6 +81,51 @@ export default function About() {
                                 </Box>
                             </Box>
                         </Paper>
+                    </Box>
+                </Box>
+            </Box>
+            <Box mt={10} maxWidth="lg" mx="auto">
+                <Box mx={small ? 6 : 8}>
+                    <Box>
+                        <Typography variant="h2">
+                            Executive Leadership
+                        </Typography>
+                    </Box>
+                    <Box>
+                        <StandardLine width={200} height={5} borderRadius={5} />
+                    </Box>
+                    <Box mt={8} overflow="hidden">
+                        <Grid container>
+                            <Grid item xs={12} lg={6}>
+                                <Box m={3}>
+                                    <Profile width={500} imgWidth={250} imgSrc="/about/aaron.jpg"
+                                        name="Aaron Wu" title="President & Electrical Lead" 
+                                        study="Electrical Engineering" />
+                                </Box>
+                            </Grid>
+                            <Grid item xs={12} lg={6}>
+                                <Box m={3}>
+                                    <Profile width={500} imgWidth={250} imgSrc="/about/manuel.jpg"
+                                        name="Manuel Roglan" title="Operations Officer & Software Lead"
+                                        study="Computer Science" />
+                                </Box>
+                            </Grid>
+                        </Grid>
+                        <Grid container>
+                            <Grid item xs={12} lg={6}>
+                                <Box m={3}>
+                                    <Profile width={500} imgWidth={250} imgSrc="/about/ryan.jpg"
+                                        name="Ryan Otsuka" title="Treasurer" study="Computer Science" />
+                                </Box>
+                            </Grid>
+                            <Grid item xs={12} lg={6}>
+                                <Box m={3}>
+                                    <Profile width={500} imgWidth={250} imgSrc="/about/nico.png"
+                                        name="Nicolas Marsilio" title="Mechanical Lead"
+                                        study="Mechanical Engineering" />
+                                </Box>
+                            </Grid>
+                        </Grid>
                     </Box>
                 </Box>
             </Box>
