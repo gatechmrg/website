@@ -1,5 +1,6 @@
-import { Box, Container, useMediaQuery } from "@mui/material";
+import { Box, Container, Paper, Typography, useMediaQuery } from "@mui/material";
 import { useTheme } from '@mui/material/styles'
+import { StandardLine } from "../misc/line";
 
 export default function About() {
 
@@ -15,9 +16,15 @@ export default function About() {
                     </clipPath>
                 </defs>
             </svg>
-            <Box height={500} sx={{
+            <svg display="block" width="0px" height="0px" viewBox="0 0 2000 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <clipPath id="about-clip-path3">
+                        <path d="M2000 2.57927C2000 2.57927 1622.4 -14.6444 1379.47 39.9247C1222.73 75.132 1251.15 39.9247 966.086 85.0024C703.446 126.535 594.896 93.1871 384.968 142.254C178.735 190.458 2.34842e-05 200 2.34842e-05 200H2000V2.57927Z" fill="#D9D9D9"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            <Box sx={{
                 backgroundColor: 'hsl(166, 98%, 94%)',
-                height: 600,
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
@@ -25,6 +32,8 @@ export default function About() {
             }}>
                 <Box position="absolute" top={0} left={0} width="calc(50vw - 600px)" height={200}
                     bgcolor="background.default" />
+                <Box position="absolute" top="calc(100% - 200px)" left={0} width="100%" height={200}
+                    bgcolor="background.default" sx={{clipPath: 'url(#about-clip-path3)'}} />
                 <Box maxWidth="lg" mx="auto" sx={{position: 'relative'}}>
                     <Box position="absolute" top={0} left={0} bgcolor="background.default"
                         width="100%" height={200}
@@ -36,6 +45,41 @@ export default function About() {
                             <img src="/about/sean-carrying.jpg" width="100%" height="100%"
                             style={{borderRadius: 10}} />
                         </Box>
+                    </Box>
+                    <Box height={350} />
+                    <Box maxWidth="md" pb={0} mx={small ? 3 : 5}>
+                        <Paper elevation={3}>
+                            <Box p={3}>
+                                <Box mb={3}>
+                                    <StandardLine width={100} height={5} borderRadius={5} />
+                                </Box>
+                                <Box>
+                                    <Typography variant="body1" fontSize="1.25rem">
+                                        The Marine Robotics Group (MRG) at Georgia Tech is a student-led
+                                        organization dedicated to the exploration and advancement of
+                                        maritime technologies. This may include long range autonomy, 
+                                        multi-robot collaboration, sensor development, and other areas 
+                                        of research. Maritime technology is important for understanding
+                                        our own planet and eventually others.
+                                    </Typography>
+                                </Box>
+                                <Box mt={3}>
+                                    <Typography variant="body1" fontSize="1.25rem">
+                                        We&#39;ve also been known as Georgia Tech Marine Robotics
+                                        or Why Yes Team. Our organization is based out of the 
+                                        Adaptive Design Prototyping and Testing (ADePT) Lab in the
+                                        Aerospace Systems Design Laboratory (ASDL).
+                                    </Typography>
+                                </Box>
+                                <Box mt={3}>
+                                    <Typography variant="body1" fontSize="1.25rem">
+                                        Our activities include development of vehicles for a number of
+                                        competitions and challenges. These include RoboBoat, RoboSub, 
+                                        RobotX, and Microtransat.
+                                    </Typography>
+                                </Box>
+                            </Box>
+                        </Paper>
                     </Box>
                 </Box>
             </Box>
