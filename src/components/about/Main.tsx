@@ -8,6 +8,7 @@ export default function Main() {
         <Box>
             <FirstBanner />
             <About />
+            {/* <Box mt={-20} /> */}
         </Box>
     )
 }
