@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import FirstBanner from "./FirstBanner";
 import Competition from "./Competition";
+import USV from "./USV";
 
 export default function Main() {
 
@@ -8,6 +9,7 @@ export default function Main() {
         <Box>
             <FirstBanner />
             <Competition />
+            <USV />
         </Box>
     )
 }
