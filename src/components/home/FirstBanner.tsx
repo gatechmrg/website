@@ -11,7 +11,7 @@ export default function FirstBanner() {
     return (
         <Box sx={{
             backgroundImage: small ? 'url(/home/landing_banner_small.jpg)' : 'url(/home/landing_banner_4x.jpg)',
-            height: 800,
+            height: 'min(800px, calc(100vh - 83px))',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
