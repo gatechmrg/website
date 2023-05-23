@@ -35,7 +35,7 @@ export default function UAV() {
                                     <Typography variant="body1" textAlign={{xs: 'center', md: 'left'}}
                                         lineHeight={1.7} fontSize="1.2rem">
                                         RobotX 2024 will likely still have a drone component, so we plan
-                                        on improving the drone's autonomy, especially in regard to 
+                                        on improving the drone&#39;s autonomy, especially in regard to 
                                         collaborating with the USV.
                                     </Typography>
                                 </Box>
