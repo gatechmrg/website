@@ -5,6 +5,7 @@ import USV from "./USV";
 import UAV from "./UAV";
 import Mechanical from "./Mechanical";
 import Electrical from "./Electrical";
+import Software from "./Software";
 
 export default function Main() {
 
@@ -16,6 +17,7 @@ export default function Main() {
             <UAV />
             <Mechanical />
             <Electrical />
+            <Software />
         </Box>
     )
 }
