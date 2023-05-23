@@ -3,6 +3,7 @@ import FirstBanner from "./FirstBanner";
 import Competition from "./Competition";
 import USV from "./USV";
 import UAV from "./UAV";
+import Mechanical from "./Mechanical";
 
 export default function Main() {
 
@@ -12,6 +13,7 @@ export default function Main() {
             <Competition />
             <USV />
             <UAV />
+            <Mechanical />
         </Box>
     )
 }
