@@ -9,7 +9,7 @@ export default function FirstBanner() {
     return (
         <Box sx={{
             backgroundImage: 'url(/projects/roboboat/at-comp2.png)',
-            height: 800,
+            height: 'min(800px, calc(100vh - 83px))',
             backgroundPosition: 'bottom',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
