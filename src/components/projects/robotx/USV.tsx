@@ -27,7 +27,7 @@ export default function USV() {
                                         lineHeight={1.7} fontSize="1.2rem">
                                         The WAMBlin Reck is our autonomous surface vehicle used at RobotX 
                                         since 2016. Its name is inspired by the name of the chassis, the 
-                                        WAM-V, and the name of Georgia Tech's mascot, the Ramblin&#39;
+                                        WAM-V, and the name of Georgia Tech&#39;s mascot, the Ramblin&#39;
                                         Reck. We typically test the boat at Sweetwater Creek State Park, and 
                                         we are also planning on testing at Lake Lanier in the future.
                                     </Typography>
