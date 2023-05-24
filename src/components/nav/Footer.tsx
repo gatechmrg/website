@@ -1,24 +1,31 @@
 import { Box, Grid, Typography } from "@mui/material";
 import { styled } from '@mui/material/styles'
-import { PrimaryLink, SecondaryLink } from "../misc/links";
+import { PrimaryLink, SecondaryLink, TextWithIconLink } from "../misc/links";
 import { StandardLine } from "../misc/line";
-import { useTheme } from '@mui/material/styles'
+import PlaceIcon from '@mui/icons-material/Place';
+import EmailIcon from '@mui/icons-material/Email';
 
 const FooterGrid = styled('div')(({theme}) => ({
     display: 'grid',
     marginBottom: theme.spacing(3),
-    [theme.breakpoints.up('md')]: {
+    [theme.breakpoints.up('lg')]: {
         gridTemplate: `
-            "h1 h2 h3" auto
-            "c1 c2 c3" auto / 300px 300px 300px
+            "h1 h2 h3 . et" auto
+            "c1 c2 c3 . ec" auto / 300px 300px 300px 1fr auto
         `
     },
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('xl')]: {
+        gridTemplate: `
+            "h1 h2 h3 . et" auto
+            "c1 c2 c3 . ec" auto / 250px 250px 250px 1fr auto
+        `
+    },
+    [theme.breakpoints.down('lg')]: {
         gridTemplate: `
             "h1 h2" auto
             "c1 c2" auto
-            "h3 ." auto
-            "c3 ." auto / 300px 300px
+            "h3 et" auto
+            "c3 ec" auto / 300px 300px
         `
     },
     [theme.breakpoints.down('sm')]: {
@@ -29,6 +36,8 @@ const FooterGrid = styled('div')(({theme}) => ({
             "c2"
             "h3"
             "c3" 
+            "et"
+            "ec"
         `
     }
 }))
@@ -82,6 +91,14 @@ export default function Footer() {
                     <Box gridArea="h3">
                         <Typography variant="h6">
                             Operations
+                        </Typography>
+                        <Box mt={-1}>
+                            <StandardLine width={80} height={3} borderRadius={0} />
+                        </Box>
+                    </Box>
+                    <Box gridArea="et">
+                        <Typography variant="h6">
+                            Get In Touch
                         </Typography>
                         <Box mt={-1}>
                             <StandardLine width={80} height={3} borderRadius={0} />
@@ -151,6 +168,22 @@ export default function Footer() {
                                 fontSize="1.25rem" openInNewTab>
                                 Inventory
                             </SecondaryLink>
+                        </Box>
+                    </Box>
+                    <Box gridArea="ec">
+                        <Box mb={2}>
+                            <TextWithIconLink icon={<PlaceIcon fontSize="large" />}
+                                href="https://goo.gl/maps/eTw7mVBfbWXGP9GE9?coh=178572&entry=tt"
+                                fontSize="1.25rem" openInNewTab>
+                                Weber 112
+                            </TextWithIconLink>
+                        </Box>
+                        <Box mb={5}>
+                            <TextWithIconLink icon={<EmailIcon fontSize="large" />}
+                                href="mailto:marinerobotics@groups.gatech.edu"
+                                fontSize="1.25rem">
+                                Email Us
+                            </TextWithIconLink>
                         </Box>
                     </Box>
                 </FooterGrid>
