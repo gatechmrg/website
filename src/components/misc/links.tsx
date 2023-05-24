@@ -1,4 +1,4 @@
-import { Typography, typographyClasses } from "@mui/material";
+import { Box, Grid, Typography, typographyClasses } from "@mui/material";
 import Link from "next/link";
 import { ReactNode } from "react";
 
@@ -39,6 +39,39 @@ export function SecondaryLink({children, href, as, openInNewTab, ...typographyPr
             }} display="inline" {...typographyProps}>
                 {children}
             </Typography>
+        </Link>
+    )
+}
+
+interface TextWithIconLinkProps extends LinkProps {
+    icon: ReactNode;
+}
+
+export function TextWithIconLink({children, href, as, openInNewTab, icon, 
+    ...typographyProps}:TextWithIconLinkProps) {
+
+    return (
+        <Link href={href} as={as} target={openInNewTab ? '_blank' : undefined}>
+            <Box display="inline" sx={{
+                color: 'initial',
+                transition: 'color 300ms',
+                '&:hover': {
+                    color: 'primary.dark'
+                }
+            }}>
+                <Grid container spacing={1} alignItems="center">
+                    <Grid item>
+                        <Box height="100%" display="grid" alignItems="center">
+                            {icon}
+                        </Box>
+                    </Grid>
+                    <Grid item>
+                        <Typography {...typographyProps} color="inherit">
+                            {children}
+                        </Typography>
+                    </Grid>
+                </Grid>
+            </Box>
         </Link>
     )
 }
