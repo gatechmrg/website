@@ -1,14 +1,14 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
 import { StandardLine } from "../../misc/line";
 
-export default function Competition() {
+export default function AUV() {
 
     return (
-        <Box mt={6}>
+        <Box mt={12}>
             <Container maxWidth="xl">
                 <Box textAlign="center">
                     <Typography variant="h2">
-                        The Competition
+                        AUV 2024
                     </Typography>
                 </Box>
                 <Box mt={2} mb={5}>
@@ -16,7 +16,7 @@ export default function Competition() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/robosub/robosub-comp.png"
+                        <img width="100%" src="/projects/robosub/plongeur.png"
                         style={{borderRadius: 16}} />
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -25,18 +25,20 @@ export default function Competition() {
                                 <Box>
                                     <Typography variant="body1" textAlign={{xs: 'center', md: 'left'}}
                                         lineHeight={1.7} fontSize="1.2rem">
-                                        The RoboSub competition challenges students to build and program
-                                        autonomous underwater vehicles. This competition takes place annually,
-                                        and it was last held at the University of Maryland.
+                                        Plongeur was our vehicle in past years. 
+                                        However, we will be constructing a new vehicle for 2024, which
+                                        does not yet have a name!
+                                        We typically test in the CRC.
                                     </Typography>
                                 </Box>
                                 <Box mt={2}>
                                     <Typography variant="body1" textAlign={{xs: 'center', md: 'left'}}
                                         lineHeight={1.7} fontSize="1.2rem">
-                                        The robot must complete a series of tasks autonomously, including 
-                                        obstacle avoidance, pinger detection, breaching, and more! We last 
-                                        participated in RoboSub in 2020, and we are looking forward to returning
-                                        in 2024.
+                                        We plan on learning from our previous RoboSub vehicle as we tackle
+                                        the building and programming of the new vehicle. Upcoming projects 
+                                        include designing of main platform, actuator development, 
+                                        perception development, navigation development, and electrical system 
+                                        construction.
                                     </Typography>
                                 </Box>
                             </Box>
