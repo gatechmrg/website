@@ -4,6 +4,7 @@ import Competition from "./Competition";
 import AUV from "./AUV";
 import Mechanical from "./Mechanical";
 import Electrical from "./Electrical";
+import Software from "./Software";
 
 export default function Main() {
 
@@ -14,6 +15,7 @@ export default function Main() {
             <AUV />
             <Mechanical />
             <Electrical />
+            <Software />
         </Box>
     )
 }
