@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import FirstBanner from "./FirstBanner";
 import Challenge from "./Challenge";
 import Vessel from "./Vessel";
+import Team from "./Team";
 
 export default function Main() {
 
@@ -10,6 +11,7 @@ export default function Main() {
             <FirstBanner />
             <Challenge />
             <Vessel />
+            <Team />
         </Box>
     )
 }
