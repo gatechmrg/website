@@ -19,7 +19,7 @@ export default function Team() {
                         width="100%" height="auto" style={{borderRadius: 16}} />
                 </Box>
                 <Box maxWidth="sm" mx="auto" textAlign="center" mt={3}>
-                    <Typography variant="body1" fontSize="1.25rem">
+                    <Typography variant="body1" fontSize="1.2rem">
                         We are looking for new members who are interested in dedicating time
                         to starting and working through a long-term project.
                     </Typography>
