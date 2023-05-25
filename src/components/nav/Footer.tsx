@@ -107,13 +107,13 @@ export default function Footer() {
                     <Box gridArea="c1">
                         <Box mb={2}>
                             <SecondaryLink href="https://www.youtube.com/channel/UCiqAntXwDVWI06lwqC3OO-w/featured"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 Youtube
                             </SecondaryLink>
                         </Box>
                         <Box mb={5}>
                             <SecondaryLink href="https://www.instagram.com/gatechmrg/"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 Instagram
                             </SecondaryLink>
                         </Box>
@@ -121,25 +121,25 @@ export default function Footer() {
                     <Box gridArea="c2">
                         <Box mb={2}>
                             <SecondaryLink href="https://www.microtransat.org/"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 Microtransat
                             </SecondaryLink>
                         </Box>
                         <Box mb={2}>
                             <SecondaryLink href="https://robonation.org/programs/roboboat/"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 RoboBoat
                             </SecondaryLink>
                         </Box>
                         <Box mb={2}>
                             <SecondaryLink href="https://robotx.org/"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 RobotX
                             </SecondaryLink>
                         </Box>
                         <Box mb={5}>
                             <SecondaryLink href="https://robonation.org/programs/robosub/"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 RoboSub
                             </SecondaryLink>
                         </Box>
@@ -147,25 +147,25 @@ export default function Footer() {
                     <Box gridArea="c3">
                         <Box mb={2}>
                             <SecondaryLink href="https://teams.microsoft.com/l/team/19%3a145c8cc1e9e54d83a85307ca5a431838%40thread.tacv2/conversations?groupId=dadb59d0-92b1-4f99-914e-b4aa1b5f44ee&tenantId=482198bb-ae7b-4b25-8b7a-6d7f32faa083"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 Teams
                             </SecondaryLink>
                         </Box>
                         <Box mb={2}>
                             <SecondaryLink href="https://github.com/gt-marine-robotics-group"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 GitHub
                             </SecondaryLink>
                         </Box>
                         <Box mb={2}>
                             <SecondaryLink href="https://gt-mrg.notion.site/GT-MRG-Team-Home-473529159696471bb0dac927b7ebe360"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 Notion
                             </SecondaryLink>
                         </Box>
                         <Box mb={5}>
                             <SecondaryLink href="https://mrg-operations.vercel.app/"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 Inventory
                             </SecondaryLink>
                         </Box>
@@ -174,14 +174,14 @@ export default function Footer() {
                         <Box mb={2}>
                             <TextWithIconLink icon={<PlaceIcon fontSize="large" />}
                                 href="https://goo.gl/maps/eTw7mVBfbWXGP9GE9?coh=178572&entry=tt"
-                                fontSize="1.25rem" openInNewTab>
+                                fontSize="1.2rem" openInNewTab>
                                 Weber 112
                             </TextWithIconLink>
                         </Box>
                         <Box mb={5}>
                             <TextWithIconLink icon={<EmailIcon fontSize="large" />}
                                 href="mailto:marinerobotics@groups.gatech.edu"
-                                fontSize="1.25rem">
+                                fontSize="1.2rem">
                                 Email Us
                             </TextWithIconLink>
                         </Box>
