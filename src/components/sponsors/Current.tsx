@@ -19,19 +19,23 @@ export default function Current() {
                         justifyContent="center">
                         <Grid item>
                             <img src="/sponsors/asdl.png" 
-                                style={{maxWidth: 500, maxHeight: 500}} />
+                                style={{maxWidth: 500, maxHeight: 500}}
+                                title="ASDL" />
                         </Grid>
                         <Grid item>
                             <img src="/sponsors/sga.png" 
-                                style={{maxWidth: 500, maxHeight: 500}} />
+                                style={{maxWidth: 500, maxHeight: 500}}
+                                title="SGA" />
                         </Grid>
                         <Grid item>
                             <img src="/sponsors/altium.png" 
-                                style={{maxWidth: 500, maxHeight: 500}} />
+                                style={{maxWidth: 500, maxHeight: 500}}
+                                title="Altium" />
                         </Grid>
                         <Grid item>
                             <img src="/sponsors/greenzie.png" 
-                                style={{maxWidth: 500, maxHeight: 500}} />
+                                style={{maxWidth: 500, maxHeight: 500}}
+                                title="Greenzie" />
                         </Grid>
                     </Grid>
                 </Box>
