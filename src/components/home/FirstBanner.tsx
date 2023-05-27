@@ -6,11 +6,11 @@ import Link from "next/link";
 export default function FirstBanner() {
 
     const theme = useTheme()
-    const small = useMediaQuery(theme.breakpoints.down('md'))
+    const lg = useMediaQuery(theme.breakpoints.up('md'))
 
     return (
         <Box sx={{
-            backgroundImage: small ? 'url(/home/landing_banner_small.jpg)' : 'url(/home/landing_banner_4x.jpg)',
+            backgroundImage: !lg ? 'url(/home/landing_banner_small.webp)' : 'url(/home/landing_banner_4x.webp)',
             height: 'min(800px, calc(100vh - 83px))',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
