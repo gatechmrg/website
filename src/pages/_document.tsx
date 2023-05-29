@@ -11,7 +11,7 @@ interface MyDocumentInitialProps extends Omit<DocumentInitialProps, 'enhanceApp'
 export default class MyDocument extends Document<MyDocumentInitialProps> {
     render() {
         return (
-            <Html>
+            <Html lang="en">
                 <Head>
                     {this.props.emotionStyleTags}
                 </Head>

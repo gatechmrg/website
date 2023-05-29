@@ -45,7 +45,8 @@ export default function Header() {
                         ))
                         :
                         <Grid item>
-                            <IconButton onClick={() => setOpenDrawer(true)}>
+                            <IconButton onClick={() => setOpenDrawer(true)} 
+                                aria-label="Page navigation menu button">
                                 <MenuIcon fontSize="large" />
                             </IconButton>
                         </Grid>
