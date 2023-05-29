@@ -9,7 +9,7 @@ export default function Main() {
         <Box>
             <FirstBanner />
             <Exploration />
-            {/* <Projects /> */}
+            <Projects />
         </Box>
     )
 }
