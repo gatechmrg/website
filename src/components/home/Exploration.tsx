@@ -33,7 +33,7 @@ export default function Exploration() {
                         <Grid item md={6} xs={12} order={1}>
                             <Box textAlign="center">
                                 <img src="/home/training.webp" width={small ? 564 : '100%'}
-                                    style={{borderRadius: 16}} />
+                                    style={{borderRadius: 16}} alt="MRG mechanical training in the lab" />
                             </Box>
                         </Grid>
                         <Grid item md={6} order={small ? 0 : 2}>
@@ -83,7 +83,7 @@ export default function Exploration() {
                         <Grid item md={6} xs={12}>
                             <Box textAlign="center">
                                 <img src="/home/building.webp" width={small ? 564 : '100%'}
-                                    style={{borderRadius: 16}} />
+                                    style={{borderRadius: 16}} alt="Members fiberglassing pontoons" />
                             </Box>
                         </Grid>
                     </Grid>
@@ -93,7 +93,8 @@ export default function Exploration() {
                         <Grid item md={6} xs={12} order={1}>
                             <Box textAlign="center">
                                 <img src="/home/testing.webp" width={small ? 564 : '100%'}
-                                    style={{borderRadius: 16}} />
+                                    style={{borderRadius: 16}} alt="Members testing a robot at
+                                    a local lake" />
                             </Box>
                         </Grid>
                         <Grid item md={6} order={small ? 0 : 2}>

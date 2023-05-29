@@ -7,16 +7,19 @@ export default function FirstBanner() {
 
     const theme = useTheme()
     const lg = useMediaQuery(theme.breakpoints.up('md'))
+    const sm = useMediaQuery(theme.breakpoints.down('md'))
 
     return (
         <Box sx={{
-            backgroundImage: !lg ? 'url(/home/landing_banner_small.webp)' : 'url(/home/landing_banner_4x.webp)',
+            backgroundImage: sm ? 'url(/home/landing_banner_small.webp)' : lg ? 'url(/home/landing_banner_4x.webp)' : '',
             height: 'min(800px, calc(100vh - 83px))',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             position: 'relative',
         }}>
+            <img src={sm ? 'url(/home/landing_banner_small.webp)' : lg ? 'url(/home/landing_banner_4x.webp)' : ''}
+                style={{display: 'none'}} width={0} height={0} alt="Dummy background image to prioritize loading" />
             <Grid container wrap="nowrap" height="100%">
                 <Grid item xl={6} lg={4} md={2} />
                 <Grid item flex={1}>

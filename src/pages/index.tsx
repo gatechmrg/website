@@ -9,6 +9,9 @@ export default function Home() {
 		<>
 			<Head>
 				<title>GT Marine Robotics Group</title>
+				<meta name="description" 
+					content="Marine Robotics Group at Georgia Tech: 
+					competitive and explorative autonomous robots" />
 			</Head>
 			<div className="root-header-footer">
 				<Header />
