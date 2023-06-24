@@ -98,14 +98,14 @@ export default function About() {
                         <Grid container>
                             <Grid item xs={12} lg={6}>
                                 <Box m={3}>
-                                    <Profile width={500} imgWidth={250} imgSrc="/about/aaron.jpg"
+                                    <Profile width={500} imgWidth={250} imgSrc="/about/aaron.webp"
                                         name="Aaron Wu" title="President & Electrical Lead" 
                                         study="Electrical Engineering" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={6}>
                                 <Box m={3}>
-                                    <Profile width={500} imgWidth={250} imgSrc="/about/manuel.jpg"
+                                    <Profile width={500} imgWidth={250} imgSrc="/about/manuel.webp"
                                         name="Manuel Roglan" title="Operations Officer & Software Lead"
                                         study="Computer Science" />
                                 </Box>
@@ -114,13 +114,13 @@ export default function About() {
                         <Grid container>
                             <Grid item xs={12} lg={6}>
                                 <Box m={3}>
-                                    <Profile width={500} imgWidth={250} imgSrc="/about/ryan.jpg"
+                                    <Profile width={500} imgWidth={250} imgSrc="/about/ryan.webp"
                                         name="Ryan Otsuka" title="Treasurer" study="Computer Science" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={6}>
                                 <Box m={3}>
-                                    <Profile width={500} imgWidth={250} imgSrc="/about/nico.png"
+                                    <Profile width={500} imgWidth={250} imgSrc="/about/nico.webp"
                                         name="Nicolas Marsilio" title="Mechanical Lead"
                                         study="Mechanical Engineering" />
                                 </Box>
