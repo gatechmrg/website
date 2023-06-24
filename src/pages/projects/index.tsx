@@ -9,6 +9,9 @@ export default function Projects() {
         <>
             <Head>
                 <title>Projects | GT Marine Robotics Group</title>   
+                <meta name="description" 
+                    content="Projects at the Marine Robotics Group at Georgia Tech:
+                    Microtransat, RoboBoat, RobotX, RoboSub" />
             </Head> 
             <div className="root-header-footer">
                 <Header />
