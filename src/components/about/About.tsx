@@ -44,7 +44,7 @@ export default function About() {
                             width={small ? 'min(80%,400px)' : 700} height={small ? 300 : 500}
                             zIndex={10}>
                             <img src="/about/sean-carrying.webp" width="100%" height="100%"
-                            style={{borderRadius: 10}} />
+                            style={{borderRadius: 10}} alt="MRG working on their robot at RoboBoat" />
                         </Box>
                     </Box>
                     <Box height={350} />
