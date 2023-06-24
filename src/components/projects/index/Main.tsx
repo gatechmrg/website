@@ -91,7 +91,7 @@ export default function Main() {
                         <Box maxWidth={400} mx="auto" mb={bottomMargin}>
                             <Link href="/projects/microtransat">
                                 <Paper elevation={3} sx={{width: '100%', height: 400, 
-                                backgroundImage: 'url(/projects/microtransat.png)', backgroundSize: 'cover',
+                                backgroundImage: 'url(/projects/microtransat.webp)', backgroundSize: 'cover',
                                 backgroundPosition: 'center', borderRadius: 3, ...hoverAnimation}}>
                                     <Box pt="300px">
                                         <Box height={100} bgcolor="rgba(0,0,0,.7)" display="grid"
@@ -109,7 +109,7 @@ export default function Main() {
                         <Box maxWidth={400} mx="auto" mb={bottomMargin}>
                             <Link href="/projects/roboboat">
                                 <Paper elevation={3} sx={{width: '100%', height: 400, 
-                                backgroundImage: 'url(/projects/roboboat.jpg)', backgroundSize: 'cover',
+                                backgroundImage: 'url(/projects/roboboat.webp)', backgroundSize: 'cover',
                                 backgroundPosition: 'center', borderRadius: 3, ...hoverAnimation}}>
                                     <Box pt="300px">
                                         <Box height={100} bgcolor="rgba(0,0,0,.7)" display="grid"
@@ -127,7 +127,7 @@ export default function Main() {
                         <Box maxWidth={400} mx="auto" mb={lgScreen ? 0 : bottomMargin}>
                             <Link href="/projects/robotx">
                                 <Paper elevation={3} sx={{width: '100%', height: 400, 
-                                backgroundImage: 'url(/projects/robotx.JPG)', backgroundSize: 'cover',
+                                backgroundImage: 'url(/projects/robotx.webp)', backgroundSize: 'cover',
                                 backgroundPosition: 'center', borderRadius: 3, ...hoverAnimation}}>
                                     <Box pt="300px">
                                         <Box height={100} bgcolor="rgba(0,0,0,.7)" display="grid"
@@ -145,7 +145,7 @@ export default function Main() {
                         <Box maxWidth={400} mx="auto" mb={lgScreen ? 0 : bottomMargin}>
                             <Link href="/projects/robosub">
                                 <Paper elevation={3} sx={{width: '100%', height: 400, 
-                                backgroundImage: 'url(/projects/robosub.png)', backgroundSize: 'cover',
+                                backgroundImage: 'url(/projects/robosub.webp)', backgroundSize: 'cover',
                                 backgroundPosition: 'center', borderRadius: 3, ...hoverAnimation}}>
                                     <Box pt="300px">
                                         <Box height={100} bgcolor="rgba(0,0,0,.7)" display="grid"
