@@ -43,7 +43,7 @@ export default function About() {
                         <Box position="absolute" top={small ? 0 : -200} left={small ? '24px' : 0}
                             width={small ? 'min(80%,400px)' : 700} height={small ? 300 : 500}
                             zIndex={10}>
-                            <img src="/about/sean-carrying.jpg" width="100%" height="100%"
+                            <img src="/about/sean-carrying.webp" width="100%" height="100%"
                             style={{borderRadius: 10}} />
                         </Box>
                     </Box>
