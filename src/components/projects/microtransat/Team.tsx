@@ -16,7 +16,8 @@ export default function Team() {
                 </Box>
                 <Box maxWidth={800} mx="auto">
                     <img src="/projects/microtransat/microtransat-team.webp"
-                        width="100%" height="auto" style={{borderRadius: 16}} />
+                        width="100%" height="auto" style={{borderRadius: 16}}
+                        alt="Some members of the Microtransat team" />
                 </Box>
                 <Box maxWidth="sm" mx="auto" textAlign="center" mt={3}>
                     <Typography variant="body1" fontSize="1.2rem">
