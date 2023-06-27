@@ -9,6 +9,9 @@ export default function RobotX() {
         <>
             <Head>
                 <title>RobotX | GT Marine Robotics Group</title>     
+                <meta name="description" 
+                    content="The RobotX competition at the Marine Robotics Group at Georgia Tech:
+                    building the multi-robot autonomy of a 16-foot pontoon boat and drone." />
             </Head> 
             <div className="root-header-footer">
                 <Header />
