@@ -6,17 +6,20 @@ import Link from "next/link";
 export default function FirstBanner() {
 
     const theme = useTheme()
-    const small = useMediaQuery(theme.breakpoints.down('md'))
+    const lg = useMediaQuery(theme.breakpoints.up('md'))
+    const sm = useMediaQuery(theme.breakpoints.down('md'))
 
     return (
         <Box sx={{
-            backgroundImage: small ? 'url(/home/landing_banner_small.jpg)' : 'url(/home/landing_banner_4x.jpg)',
-            height: 'min(800px, calc(100vh - 83px))',
+            backgroundImage: sm ? 'url(/home/landing_banner_small.webp)' : lg ? 'url(/home/landing_banner_4x.webp)' : '',
+            height: 800,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             position: 'relative',
         }}>
+            <img src={sm ? '/home/landing_banner_small.webp' : lg ? '/home/landing_banner_4x.webp' : ''}
+                style={{display: 'none'}} width={0} height={0} alt="Dummy background image to prioritize loading" />
             <Grid container wrap="nowrap" height="100%">
                 <Grid item xl={6} lg={4} md={2} />
                 <Grid item flex={1}>

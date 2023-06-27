@@ -18,24 +18,24 @@ export default function Current() {
                     <Grid container spacing={8} alignItems="center"
                         justifyContent="center">
                         <Grid item>
-                            <img src="/sponsors/asdl.png" 
+                            <img src="/sponsors/asdl.webp" 
                                 style={{maxWidth: 500, maxHeight: 500}}
-                                title="ASDL" />
+                                title="ASDL" alt="ASDL" />
                         </Grid>
                         <Grid item>
-                            <img src="/sponsors/sga.png" 
+                            <img src="/sponsors/sga.webp" 
                                 style={{maxWidth: 500, maxHeight: 500}}
-                                title="SGA" />
+                                title="SGA" alt="SGA" />
                         </Grid>
                         <Grid item>
-                            <img src="/sponsors/altium.png" 
+                            <img src="/sponsors/altium.webp" 
                                 style={{maxWidth: 500, maxHeight: 500}}
-                                title="Altium" />
+                                title="Altium" alt="Altium" />
                         </Grid>
                         <Grid item>
-                            <img src="/sponsors/greenzie.png" 
+                            <img src="/sponsors/greenzie.webp" 
                                 style={{maxWidth: 500, maxHeight: 500}}
-                                title="Greenzie" />
+                                title="Greenzie" alt="Greenzie" />
                         </Grid>
                     </Grid>
                 </Box>

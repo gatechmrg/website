@@ -16,8 +16,8 @@ export default function Competition() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/robosub/robosub-comp.png"
-                        style={{borderRadius: 16}} />
+                        <img width="100%" src="/projects/robosub/robosub-comp.webp"
+                        style={{borderRadius: 16}} alt="Simulation of tasks for the competition." />
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Box mx={3} mt={{xs: 3, md: 0}}>

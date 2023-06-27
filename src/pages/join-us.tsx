@@ -9,6 +9,8 @@ export default function JoinUs() {
         <>
             <Head>
                 <title>Join Us | GT Marine Robotics Group</title>     
+                <meta name="description"
+                    content="Join the Marine Robotics Group at Georgia Tech!" />
             </Head> 
             <div className="root-header-footer">
                 <Header />

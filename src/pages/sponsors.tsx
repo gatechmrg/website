@@ -9,6 +9,9 @@ export default function Sponsors() {
         <>
             <Head>
                 <title>Sponsors | GT Marine Robotics Group</title>     
+                <meta name="description"
+                    content="Sponsors of the Marine Robotics Group at Georgia Tech.
+                    Learn about our sponsors and how to sponsor us." />
             </Head> 
             <div className="root-header-footer">
                 <Header />

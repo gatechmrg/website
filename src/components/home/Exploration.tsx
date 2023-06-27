@@ -29,11 +29,11 @@ export default function Exploration() {
             </Container>
             <Container maxWidth="lg">
                 <Box mb={12}>
-                    <Grid container>
+                    <Grid container justifyContent="center" spacing={3}>
                         <Grid item md={6} order={1}>
                             <Box>
-                                <img src="/home/training.jpeg" width="100%"
-                                    style={{borderRadius: 16}} />
+                                <img src="/home/training.webp" width="100%"
+                                    style={{borderRadius: 16}} alt="MRG training in the lab" />
                             </Box>
                         </Grid>
                         <Grid item md={6} order={small ? 0 : 2}>
@@ -59,7 +59,7 @@ export default function Exploration() {
                     </Grid>
                 </Box>
                 <Box mb={12}>
-                    <Grid container>
+                    <Grid container justifyContent="center" spacing={3}>
                         <Grid item md={6}>
                             <Box mx={3} mb={{xs: 3, md: 0}}>
                                 <Box textAlign={{xs: 'center', md: 'left'}}>
@@ -82,18 +82,18 @@ export default function Exploration() {
                         </Grid>
                         <Grid item md={6}>
                             <Box>
-                                <img src="/home/building.jpeg" width="100%"
-                                    style={{borderRadius: 16}} />
+                                <img src="/home/building.webp" width="100%"
+                                    style={{borderRadius: 16}} alt="Members fiberglassing pontoons" />
                             </Box>
                         </Grid>
                     </Grid>
                 </Box>
                 <Box>
-                    <Grid container>
+                    <Grid container justifyContent="center" spacing={3}>
                         <Grid item md={6} order={1}>
                             <Box>
-                                <img src="/home/testing.jpeg" width="100%"
-                                    style={{borderRadius: 16}} />
+                                <img src="/home/testing.webp" width="100%"
+                                    style={{borderRadius: 16}} alt="Members testing a robot at a local lake" />
                             </Box>
                         </Grid>
                         <Grid item md={6} order={small ? 0 : 2}>

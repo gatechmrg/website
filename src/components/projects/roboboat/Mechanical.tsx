@@ -11,7 +11,7 @@ export default function Mechanical() {
                     <Grid container>
                         <Grid item xs={0} sm={2} md={3} lg={4}>
                             <Box width="100%" height="100%" sx={{
-                                backgroundImage: 'url(/projects/roboboat/mechanical.PNG)',
+                                backgroundImage: 'url(/projects/roboboat/mechanical.webp)',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover'

@@ -16,8 +16,8 @@ export default function AUV() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/robosub/plongeur.png"
-                        style={{borderRadius: 16}} />
+                        <img width="100%" src="/projects/robosub/plongeur.webp"
+                        style={{borderRadius: 16}} alt="MRG's Plongeur being tested at the CRC" />
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Box mx={3} mt={{xs: 3, md: 0}}>

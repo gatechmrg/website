@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { useTheme } from '@mui/material/styles'
 import MenuIcon from "@mui/icons-material/Menu"
+import Image from "next/image";
 
 const pages = [
     {name: 'About', link: '/about'},
@@ -25,8 +26,7 @@ export default function Header() {
                     <Grid item>
                         <Link href="/">
                             <Box>
-                                <img src="/mrg_logo.png" alt="MRG Logo"
-                                    height={60} />
+                                <Image src="/mrg_logo.png" alt="MRG Logo" height={60} width={95} />
                             </Box>
                         </Link>
                     </Grid>
@@ -45,7 +45,8 @@ export default function Header() {
                         ))
                         :
                         <Grid item>
-                            <IconButton onClick={() => setOpenDrawer(true)}>
+                            <IconButton onClick={() => setOpenDrawer(true)} 
+                                aria-label="Page navigation menu button">
                                 <MenuIcon fontSize="large" />
                             </IconButton>
                         </Grid>
