@@ -16,7 +16,7 @@ export default function UAV() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/robotx/uav.jpg"
+                        <img width="100%" src="/projects/robotx/uav.webp"
                         style={{borderRadius: 16}} />
                     </Grid>
                     <Grid item xs={12} md={6}>
