@@ -16,8 +16,9 @@ export default function Competition() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/roboboat/roboboat-watershooter.png"
-                        style={{borderRadius: 16}} />
+                        <img width="100%" src="/projects/roboboat/roboboat-watershooter.webp"
+                        style={{borderRadius: 16}} alt="MRG's robot attempting the watershooting
+                        task at RoboBoat 2023." />
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Box mx={3} mt={{xs: 3, md: 0}}>
