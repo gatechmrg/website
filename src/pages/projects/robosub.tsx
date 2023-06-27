@@ -9,6 +9,9 @@ export default function RoboSub() {
         <>
             <Head>
                 <title>RoboSub | GT Marine Robotics Group</title>     
+                <meta name="description" 
+                    content="The RoboSub competition at the Marine Robotics Group at Georgia Tech:
+                    building an autonomous sub to compete internationally." />
             </Head> 
             <div className="root-header-footer">
                 <Header />
