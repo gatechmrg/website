@@ -11,7 +11,7 @@ export default function Software() {
                     <Grid container>
                         <Grid item xs={0} sm={2} md={3} lg={4}>
                             <Box width="100%" height="100%" sx={{
-                                backgroundImage: 'url(/projects/roboboat/software.PNG)',
+                                backgroundImage: 'url(/projects/roboboat/software.webp)',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover'

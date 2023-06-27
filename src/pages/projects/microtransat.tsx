@@ -9,6 +9,9 @@ export default function Microtransat() {
         <>
             <Head>
                 <title>Microtransat | GT Marine Robotics Group</title>     
+                <meta name="description"
+                    content="The Microtransat project at the Marine Robotics Group at Georgia Tech:
+                        sending an autonomous boat across the Atlantic." />
             </Head> 
             <div className="root-header-footer">
                 <Header />

@@ -17,7 +17,8 @@ export default function Profile({width, imgWidth, imgSrc, name, title, study}:Pr
                 <Paper elevation={3} sx={{position: 'relative', borderRadius: 5}}>
                     <Box position="relative" left="50%" top={`${-imgWidth/2}px`}>
                         <img src={imgSrc} width={imgWidth} height={imgWidth} 
-                            style={{borderRadius: '50%', transform: 'translateX(-51%)'}} />
+                            style={{borderRadius: '50%', transform: 'translateX(-51%)'}}
+                            alt={name} />
                     </Box>
                     <Box mt={`${-imgWidth / 2}px`} />
                     <Box mt={2} textAlign="center">

@@ -16,8 +16,8 @@ export default function Competition() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/robotx/nav-gates.JPG"
-                        style={{borderRadius: 16}} />
+                        <img width="100%" src="/projects/robotx/nav-gates.webp"
+                        style={{borderRadius: 16}} alt="MRG's WAM-V competition at RobotX 2022." />
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Box mx={3} mt={{xs: 3, md: 0}}>

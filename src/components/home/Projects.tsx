@@ -69,20 +69,20 @@ export default function Projects() {
                 <Box position="absolute" zIndex={3} width="100%" height="200%" overflow="hidden">
                     <Box position="absolute" bottom="40%" zIndex={3}
                         height={300} width={200} left={`${microOffset}vw`}
-                        sx={{backgroundImage: 'url(/home/microtransat.png)', backgroundSize: '100% 100%',
+                        sx={{backgroundImage: 'url(/home/microtransat.webp)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
                     <Box position="absolute" bottom={`calc(40% + ${waterOffset}vh)`} zIndex={3}
                         height={200} width={400} left={`${roboBoatOffset}vw`}
-                        sx={{backgroundImage: 'url(/home/roboboat2.png)', backgroundSize: '100% 100%',
+                        sx={{backgroundImage: 'url(/home/roboboat2.webp)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
                     <Box position="absolute" bottom={`calc(40% + ${waterOffset}vh)`} zIndex={3}
                         height={400} width={800} left={`${wamvOffset}vw`}
-                        sx={{backgroundImage: 'url(/home/wamv.png)', backgroundSize: '100% 100%',
+                        sx={{backgroundImage: 'url(/home/wamv.webp)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
                     <Box position="absolute" bottom={`${roboSubOffset - 50}vh`} zIndex={3}
                         height={400} width={200} 
                         left={breakpoint.indexOf(true) >= 3 ? "min(25vw, calc(100vw - 1050px))" : "50vw"}
-                        sx={{backgroundImage: 'url(/home/robosub.png)', backgroundSize: '100% 100%',
+                        sx={{backgroundImage: 'url(/home/robosub.webp)', backgroundSize: '100% 100%',
                             transform: 'translate(-50%, 100%)'}} />
                 </Box>
                 <Box pt={12} />
