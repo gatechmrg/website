@@ -16,7 +16,7 @@ export default function USV() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/robotx/usv.JPG"
+                        <img width="100%" src="/projects/robotx/usv.webp"
                         style={{borderRadius: 16}} />
                     </Grid>
                     <Grid item xs={12} md={6}>
