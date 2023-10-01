@@ -32,19 +32,25 @@ export default function Electrical() {
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Aaron
+                                                Segmented electrical system via acrylic plates
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Aaron
+                                                Back plate for wire input to pressure cylinder
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Aaron
+                                                All plates on rails for ease of access
+                                            </Typography>
+                                        </ListItem>
+                                        <ListItem sx={{display: 'list-item'}}>
+                                            <Typography variant="body1" lineHeight={1.7}
+                                                fontSize="1.2rem">
+                                                Batteries in separate cylinder below sub
                                             </Typography>
                                         </ListItem>
                                     </List>
