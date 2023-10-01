@@ -35,7 +35,7 @@ export default function Competition() {
                                         lineHeight={1.7} fontSize="1.2rem">
                                         The robot must complete a series of tasks autonomously, including 
                                         obstacle avoidance, pinger detection, breaching, and more! We last 
-                                        participated in RoboSub in 2020, and we are looking forward to returning
+                                        participated in RoboSub in 2019, and we are looking forward to returning
                                         in 2024.
                                     </Typography>
                                 </Box>
