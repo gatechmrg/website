@@ -32,19 +32,25 @@ export default function Mechanical() {
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Shawn
+                                                Target weight of 48.5 lbs
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Shawn
+                                                Centralized electrical system in a single central pressure cylinder
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Shawn
+                                                Design utilizing all dimensions around pressure cylinder
+                                            </Typography>
+                                        </ListItem>
+                                        <ListItem sx={{display: 'list-item'}}>
+                                            <Typography variant="body1" lineHeight={1.7}
+                                                fontSize="1.2rem">
+                                                Maximize translational thrust
                                             </Typography>
                                         </ListItem>
                                     </List>
