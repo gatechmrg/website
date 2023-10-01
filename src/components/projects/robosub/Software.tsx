@@ -32,25 +32,25 @@ export default function Software() {
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Code to be written in Python and C++ under the ROS 2 framework
+                                                Code written in Python and C++ under the ROS 2 framework
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Zed 2i Stereo Camera to be used for localization
+                                                Gazebo simulation environment
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Zed 2i Stereo Camera to be used for perception
+                                                IMU, DVL, and Sonar used for localization
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Possible use of ArduSub for motor controller
+                                                Stereo Camera and Sonar used for perception
                                             </Typography>
                                         </ListItem>
                                     </List>
