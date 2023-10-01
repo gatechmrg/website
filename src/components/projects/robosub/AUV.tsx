@@ -16,7 +16,7 @@ export default function AUV() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/robosub/plongeur.webp"
+                        <img width="100%" src="/projects/robosub/shawnsub.webp"
                         style={{borderRadius: 16}} alt="MRG's Plongeur being tested at the CRC" />
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -25,16 +25,14 @@ export default function AUV() {
                                 <Box>
                                     <Typography variant="body1" textAlign={{xs: 'center', md: 'left'}}
                                         lineHeight={1.7} fontSize="1.2rem">
-                                        Plongeur was our vehicle in past years. 
-                                        However, we will be constructing a new vehicle for 2024, which
-                                        does not yet have a name!
-                                        We typically test in the CRC.
+                                        We will be constructing a new vehicle for 2024, which
+                                        does not yet have a name! Testing will take place in the CRC.
                                     </Typography>
                                 </Box>
                                 <Box mt={2}>
                                     <Typography variant="body1" textAlign={{xs: 'center', md: 'left'}}
                                         lineHeight={1.7} fontSize="1.2rem">
-                                        We plan on learning from our previous RoboSub vehicle as we tackle
+                                        We plan on learning from our previous RoboSub vehicle (from 2019) as we tackle
                                         the building and programming of the new vehicle. Upcoming projects 
                                         include designing of main platform, actuator development, 
                                         perception development, navigation development, and electrical system 
