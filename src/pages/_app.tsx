@@ -8,6 +8,8 @@ import { CssBaseline, ThemeProvider } from '@mui/material'
 import { theme } from '../styles/theme';
 import createCache, { EmotionCache } from '@emotion/cache'
 import { CacheProvider } from '@emotion/react'
+import React from 'react'
+import Head from 'next/head';
 
 export interface CustomAppProps extends AppProps {
 	emotionCache: EmotionCache;
@@ -21,14 +23,17 @@ const clientSideEmotionCache = createEmotionCache()
 
 function MyApp({ Component, pageProps, emotionCache=clientSideEmotionCache }: CustomAppProps) {
 	return (
-		<>
+		<React.Fragment>
+			<Head>
+				<link rel="icon" type="image/png" href="/mrg_logo2.png" />
+			</Head>
 			<CacheProvider value={emotionCache}>
 				<ThemeProvider theme={theme}>
 					<CssBaseline />
 					<Component {...pageProps} />
 				</ThemeProvider>
 			</CacheProvider>
-		</> 
+		</React.Fragment> 
 	)
 }
 
