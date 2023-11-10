@@ -26,7 +26,7 @@ export default function Header() {
                     <Grid item>
                         <Link href="/">
                             <Box>
-                                <Image src="/mrg_logo2.png" alt="MRG Logo" height={62.5} width={100} />
+                                <Image src="/mrg_logo.png" alt="MRG Logo" width={95} height={60} />
                             </Box>
                         </Link>
                     </Grid>
