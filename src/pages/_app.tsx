@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps, emotionCache=clientSideEmotionCache }: Cu
 	return (
 		<React.Fragment>
 			<Head>
-				<link rel="icon" type="image/png" href="/mrg_logo2.png" />
+				<link rel="icon" type="image/png" href="/mrg_logo3.svg" />
 			</Head>
 			<CacheProvider value={emotionCache}>
 				<ThemeProvider theme={theme}>
