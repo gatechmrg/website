@@ -33,9 +33,19 @@ export default function Current() {
                                 title="Altium" alt="Altium" />
                         </Grid>
                         <Grid item>
-                            <img src="/sponsors/greenzie.webp" 
+                            <img src="/sponsors/firefly_automatix.webp"
                                 style={{maxWidth: 500, maxHeight: 500}}
-                                title="Greenzie" alt="Greenzie" />
+                                title="Firefly Automatix" alt="Firefly Automatix" />
+                        </Grid>
+                        <Grid item>
+                            <img src="/sponsors/bluetrail.webp"
+                                style={{maxWidth: 500, maxHeight: 500}}
+                                title="Blue Trail Engineering" alt="Blue Trail Engineering" />
+                        </Grid>
+                        <Grid item>
+                            <img src="/sponsors/ansys.webp"
+                                style={{maxWidth: 500, maxHeight: 500}}
+                                title="Ansys" alt="Ansys" />
                         </Grid>
                     </Grid>
                 </Box>
