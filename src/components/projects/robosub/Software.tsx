@@ -56,7 +56,7 @@ export default function Software() {
                                     </List>
                                 </Box>
                                 <Box mt={3}>
-                                    <PrimaryLink href="https://github.com/gt-marine-robotics-group/Virtuoso"
+                                    <PrimaryLink href="https://github.com/gt-marine-robotics-group/Pontus"
                                         openInNewTab fontSize="1.2rem">
                                         Full Documentation
                                     </PrimaryLink>
