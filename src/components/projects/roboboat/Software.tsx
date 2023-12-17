@@ -50,14 +50,14 @@ export default function Software() {
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Hybrid A* path planning through Nav2
+                                                Mapping capabilities with A*, RRT, and other path planners
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                In-house motor controller, supporting various 
-                                                motor configurations
+                                                Motor controller, supporting various 
+                                                motor configurations such as X and H drive
                                             </Typography>
                                         </ListItem>
                                     </List>
