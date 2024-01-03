@@ -1,8 +1,12 @@
-import { Box, Container, Grid, List, ListItem, Paper, Typography } from "@mui/material";
+import { Box, Container, Grid, List, ListItem, Paper, Typography, useMediaQuery } from "@mui/material";
+import { useTheme } from "@mui/material/styles"
 import { StandardLine } from "../../misc/line";
 import { PrimaryLink } from "../../misc/links";
 
 export default function Mechanical() {
+
+    const theme = useTheme()
+    const small = useMediaQuery(theme.breakpoints.down('sm'))
 
     return (
         <Box mt={12}>
@@ -10,12 +14,10 @@ export default function Mechanical() {
                 <Paper elevation={3} sx={{borderRadius: 3}}>
                     <Grid container>
                         <Grid item xs={0} sm={2} md={3} lg={4}>
-                            <Box width="100%" height="100%" sx={{
-                                backgroundImage: 'url(/projects/roboboat/mechanical.webp)',
-                                backgroundPosition: 'center',
-                                backgroundRepeat: 'no-repeat',
-                                backgroundSize: 'cover'
-                            }} borderRadius="12px 0 0 12px" />
+                            {!small && 
+                            <Box sx={{height: '100%', borderRadius: '12px 0 0 12px', overflow: 'hidden'}} className="sketchfab-embed-wrapper"> 
+                                <iframe height="100%" width="100%" title="Robobat2024" frameBorder="0" allowFullScreen allow="autoplay; fullscreen; xr-spatial-tracking" src="https://sketchfab.com/models/182befec1e9742c98429603179811cca/embed"> </iframe> <p style={{fontSize: "13px", fontWeight: "normal", margin: "5px", color: "#4A4A4A"}}> <a href="https://sketchfab.com/3d-models/robobat2024-182befec1e9742c98429603179811cca?utm_medium=embed&utm_campaign=share-popup&utm_content=182befec1e9742c98429603179811cca" target="_blank" rel="nofollow" style={{fontWeight: "bold", color: "#1CAAD9"}}> Robobat2024 </a> by <a href="https://sketchfab.com/mroglan?utm_medium=embed&utm_campaign=share-popup&utm_content=182befec1e9742c98429603179811cca" target="_blank" rel="nofollow" style={{fontWeight: "bold", color: "#1CAAD9"}}> mroglan </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=182befec1e9742c98429603179811cca" target="_blank" rel="nofollow" style={{fontWeight: "bold", color: "#1CAAD9"}}>Sketchfab</a></p>
+                            </Box> }
                         </Grid>
                         <Grid item flex={1}>
                             <Box px={3} pt={3} pb={1}>
