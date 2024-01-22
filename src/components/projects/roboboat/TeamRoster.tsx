@@ -2,9 +2,9 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import { StandardLine } from "../../misc/line";
 
 const roster = [
-    'Erin Beazley', 'Shawn Coutinho', 'Sean Fish', 'Santiago Fiz',
+    'Shawn Coutinho', 'Joshua Diao', 'Sean Fish', 'Santiago Fiz',
     'Zachary Greenberg', 'Yiming Guo', 'Jorge Ortiz Solano', 'Ryan Otsuka',
-    'Manuel Roglan', 'Mitchell Turton', 'Aaron Wu'
+    'Manuel Roglan', 'Aaron Wu'
 ]
 
 export default function TeamRoster() {
