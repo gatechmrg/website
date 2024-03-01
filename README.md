@@ -6,6 +6,12 @@
 2. Clone this repo
 3. From the root of this repo, run `npm install`
 
+## Local Development
+
+To run a local server, use the command `npm run dev`. The server will run on port 3000, and can be accessed in the browser through `localhost:3000` or `127.0.0.1:3000`. After the server is ran, any changes made to a file will, after saving, be automatically updated on the server.
+
+When testing peformance or determining SEO metrics, it is not recommended to use the development server. Instead, to get a more accurate analysis, you should first use `npm run build` to build static pages locally, and then use `npm run start` to launch the server. Note that in this case, any changes made to files will not automatically be visible on the webiste; you will have to rebuild and restart the server.
+
 ## Design
 
 ### TypeScript
