@@ -1,5 +1,11 @@
 # The Website
 
+## Local Installation
+
+1. Install [Node.js](https://nodejs.org/en/blog/release/v18.12.0) version 18.x.x
+2. Clone this repo
+3. From the root of this repo, run `npm install`
+
 ## Design
 
 ### TypeScript
