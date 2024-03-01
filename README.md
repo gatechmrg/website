@@ -1,34 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# The Website
 
-## Getting Started
+## Design
 
-First, run the development server:
+### TypeScript
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Anyone who has used JavaScript and TypeScript will be glad this design decision was made. Little more need be said.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Next.js
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+The website is built with [Next.js](https://nextjs.org/), a [React](https://react.dev/) framework which provides a number of utilities that make development simpler and a number of optimizations to improve user experience and SEO.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+The organization of code follows a structure a typical when using Next.js. Routes to pages are defined in the `pages` directory and React components are found in the `components` directory, where they can be used in multiple pages.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Material UI
 
-## Learn More
+The website uses the [Material UI](https://mui.com/) CSS framework to simplify the design of the website. MUI provides a baseline for many common components like buttons, headers, or navigation bars that we can then easily build on.
 
-To learn more about Next.js, take a look at the following resources:
+The theme for the website can be found in `styles/theme.ts`. A monochromatic palette was chosen simply because Manuel is no great UI designer and wished to keep things simple. 
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+As a side note, to have MUI CSS generated server-side in Next.js, changes were made to the `_app.tsx` and `_document.tsx` as can be found in tutorials online.
