@@ -80,7 +80,7 @@ export default function Projects() {
                         sx={{backgroundImage: 'url(/home/wamv.webp)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
                     <Box position="absolute" bottom={`${roboSubOffset - 50}vh`} zIndex={3}
-                        height={400} width={200} 
+                        height={400} width={400} 
                         left={breakpoint.indexOf(true) >= 3 ? "min(25vw, calc(100vw - 1050px))" : "50vw"}
                         sx={{backgroundImage: 'url(/home/robosub.webp)', backgroundSize: '100% 100%',
                             transform: 'translate(-50%, 100%)'}} />
