@@ -7,6 +7,7 @@ import Mechanical from "./Mechanical";
 import Electrical from "./Electrical";
 import Software from "./Software";
 import TeamRoster from "./TeamRoster";
+import WeeklyReports from "./WeeklyReports";
 
 export default function Main() {
 
@@ -20,6 +21,7 @@ export default function Main() {
             <Electrical />
             <Software />
             <TeamRoster />
+            <WeeklyReports />
         </Box>
     )
 }

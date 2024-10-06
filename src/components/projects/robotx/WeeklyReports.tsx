@@ -4,12 +4,12 @@ import { useRouter } from "next/router";
 import { StandardLine } from "../../misc/line";
 
 
-export default function TeamRoster() {
+export default function WeeklyReports() {
 
     const router = useRouter(); // for programmatic navigation
 
     const handleRedirect = () => {
-        router.push('/team-roster'); // navigate to the team roster page
+        router.push('/weekly-reports'); // navigate to the weekly reports page
     };
 
     return (
@@ -17,7 +17,7 @@ export default function TeamRoster() {
             <Container maxWidth="xl">
                 <Box textAlign="center">
                     <Typography variant="h2">
-                        2024 Team Roster
+                        2024 Weekly Reports
                     </Typography>
                 </Box>
                 <Box mt={2} mb={5}>
@@ -25,14 +25,9 @@ export default function TeamRoster() {
                 </Box>
                 <Box mt={4} pb={4} display="flex" justifyContent="center">
                         <GreenPrimaryButton variant="contained" color="primary" onClick={handleRedirect}>
-                            View Full Roster Here
+                            View Weekly Reports Here
                         </GreenPrimaryButton>
                     </Box>
-                <Box textAlign="center">
-                    <Typography variant="h6" >
-                        This could be you! Join Us!
-                    </Typography>
-                </Box>
             </Container>
         </Box>
     )
