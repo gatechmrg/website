@@ -16,7 +16,7 @@ export default function UAV() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/robotx/uav.webp"
+                        <img width="100%" src="/projects/robotx/uav_new.jpg"
                         style={{borderRadius: 16}} alt="El Tigre poses at RobotX." />
                     </Grid>
                     <Grid item xs={12} md={6}>
@@ -38,6 +38,34 @@ export default function UAV() {
                                         on improving the drone&#39;s autonomy, especially in regard to 
                                         collaborating with the USV.
                                     </Typography>
+                                </Box>
+                                {/* YouTube Video Box */}
+                                <Box textAlign="center">
+                                    <Typography variant="h5" mb={1}>
+                                        Watch El Tigre in Action
+                                    </Typography>
+                                    <Box 
+                                        sx={{ 
+                                            position: 'relative', 
+                                            paddingTop: '56.25%', // 16:9 Aspect Ratio
+                                            height: 0, 
+                                            overflow: 'hidden', 
+                                            borderRadius: 0, 
+                                        }}
+                                    >
+                                        <iframe 
+                                            src="https://www.youtube.com/embed/RBAFhkYkhRQ" // Replace with your YouTube video ID
+                                            allowFullScreen 
+                                            style={{ 
+                                                position: 'absolute', 
+                                                top: 0, 
+                                                left: 0, 
+                                                width: '100%', 
+                                                height: '100%' 
+                                            }} 
+                                            title="El Tigre Video"
+                                        />
+                                    </Box>
                                 </Box>
                             </Box>
                         </Box>

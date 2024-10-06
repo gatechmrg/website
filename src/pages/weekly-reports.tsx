@@ -2,6 +2,8 @@ import { Box, Container, Grid, Typography } from "@mui/material";
 import { StandardLine } from "../components/misc/line";
 import Header from "../components/nav/Header";
 import Footer from "../components/nav/Footer";
+import { GreenPrimaryButton } from "../components/misc/buttons";
+import { useRouter } from "next/router";
 
 const weeklyUpdates = [
     { 
@@ -59,11 +61,24 @@ const weeklyUpdates = [
 
 
 export default function WeeklyReports() {
+    const router = useRouter();
+
+    const handleBackButtonClick = () => {
+        router.push('/projects/robotx'); // Redirect to the original page (adjust the route as needed)
+    };
     return (
         <Box>
             <Box>
-            {/* Header */}
-            <Header />
+                {/* Header */}
+                <Header />
+                <Box sx={{
+                backgroundImage: "url(projects/robotx/weekly-updates.jpg)",
+                height: 500,
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundSize: 'cover',
+                position: 'relative',
+            }}></Box>
 
             {/* Main Content */}
             <Box mt={12}>
@@ -109,6 +124,12 @@ export default function WeeklyReports() {
 
                             </Box>
                         ))}
+                    </Box>
+                        {/* Back Button */}
+                        <Box mt={4} textAlign="center">
+                        <GreenPrimaryButton onClick={handleBackButtonClick}>
+                            Back to RobotX Page
+                        </GreenPrimaryButton>
                     </Box>
                 </Container>
             </Box>
