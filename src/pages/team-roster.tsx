@@ -1,7 +1,8 @@
-import { Box, Container, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Link, Typography } from "@mui/material";
 import { StandardLine } from "../components/misc/line";
 import { useRouter } from "next/router";
 import { GreenPrimaryButton } from "../components/misc/buttons";
+import { SecondaryLink } from "../components/misc/links";
 import Header from "../components/nav/Header";
 import Footer from "../components/nav/Footer";
 
@@ -104,7 +105,7 @@ export default function TeamRosterPage() {
                         <Box mt={2} mb={5}>
                             <StandardLine width={150} height={5} centered borderRadius={3} />
                         </Box>
-                        <Box>
+                        <Box pb={4}>
                             {fullTeamRoster.map((member, index) => (
                                 <Typography variant="body1" key={index}>
                                     {member}
@@ -112,9 +113,24 @@ export default function TeamRosterPage() {
                             ))}
                         </Box>
                     </Box>
-                    
+                    <Box textAlign="center">
+                    <Typography variant="h6">
+                        This could be you!{" "}
+                        {/* Make Join Us a clickable link */}
+                        <Link 
+                            href="/join-us" 
+                            underline="always" 
+                            sx={{ 
+                                color: 'purple',
+                            }}
+                        >
+                            Join Us!
+                        </Link>
+                    </Typography>
+
+                    </Box>
                     {/* Back Button */}
-                    <Box mt={4} textAlign="center">
+                    <Box mt={4} pb={4} textAlign="center">
                         <GreenPrimaryButton onClick={handleBackButtonClick}>
                             Back to RobotX Page
                         </GreenPrimaryButton>

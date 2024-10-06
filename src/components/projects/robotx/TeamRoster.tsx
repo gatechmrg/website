@@ -23,16 +23,11 @@ export default function TeamRoster() {
                 <Box mt={2} mb={5}>
                     <StandardLine width={200} height={5} centered borderRadius={3} />
                 </Box>
-                <Box mt={4} pb={4} display="flex" justifyContent="center">
+                <Box mt={4} display="flex" justifyContent="center">
                         <GreenPrimaryButton variant="contained" color="primary" onClick={handleRedirect}>
                             View Full Roster Here
                         </GreenPrimaryButton>
                     </Box>
-                <Box textAlign="center">
-                    <Typography variant="h6" >
-                        This could be you! Join Us!
-                    </Typography>
-                </Box>
             </Container>
         </Box>
     )

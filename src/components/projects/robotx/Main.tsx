@@ -8,12 +8,14 @@ import Electrical from "./Electrical";
 import Software from "./Software";
 import TeamRoster from "./TeamRoster";
 import WeeklyReports from "./WeeklyReports";
+import Notion from "./Notion";
 
 export default function Main() {
 
     return (
         <Box>
             <FirstBanner />
+            <Notion />
             <Competition />
             <USV />
             <UAV />
