@@ -9,15 +9,17 @@ import Footer from "../components/nav/Footer";
 const teamMembers = [
     // Grad Students first
     { name: "Jorge Ortiz Solano", title: "Electromechanical Engineer, MSME, MSAE", photo: "/team-roster/JorgeOrtizSolano.png" },
-    { name: "Matthew Woodward", title: "4th year Computer Engineering Masters Student, Software/Control subteam", photo: "/team-roster/MatthewWoodward.jpg" },
     { name: "Thomas Devlin", title: "Master of Electrons, ROBO PhD 2nd year, All Subteam(s)", photo: "/team-roster/thomas_devlin_headshot_Thomas Devlin.jpg" },
-    { name: "Sean Fish", title: "Temporary Title", photo: "/team-roster/blank_headshot.webp" },
-    { name: "Aaron Wu", title: "Temporary Title", photo: "/team-roster/blank_headshot.webp" },
-    { name: "Alice Chan", title: "Temporary Title", photo: "/team-roster/blank_headshot.webp" },
+    { name: "Sean Fish", title: "Robotics PhD Student", photo: "/team-roster/SeanFish.jpeg" },
+    { name: "Aaron Wu", title: "", photo: "/team-roster/AaronWu.jpg" },
+    { name: "Alice Chan", title: "Robotics, 1st year PhD, sensing", photo: "/team-roster/AliceChan.jpeg" },
     { name: "Ibidapo Samuel", title: "PhD Robotics, UAV Team", photo: "/team-roster/SamuelIbidapo.jpeg" },
     // Undergrad Students second
+    { name: "Allyson Martinez", title: "Club Member, CS, 3, Propulsion", photo: "/team-roster/AllysonMartinez.jpeg" },
     { name: "William McConnell", title: "2nd Year Computer Science Undergrad, Integration Team and Website", photo: "/team-roster/WilliamMcConnell.jpg" },
-    // Add more team members as needed
+    { name: "Matthew Woodward", title: "4th year Computer Engineering Masters Student, Software/Control subteam", photo: "/team-roster/MatthewWoodward.jpg" },
+    { name: "Shawn Coutinho", title: "3rd Year Computer Science major, Propulsion and Controls", photo: "/team-roster/ShawnCoutinho.png" },
+    { name: "Daniel Mittelman", title: "Undergraduate, Computer Science Major, Third Year, Sensing", photo: "/team-roster/DanielMittelman.jpg" },
 ];
 
 const fullTeamRoster = [
