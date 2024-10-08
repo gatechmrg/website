@@ -56,6 +56,12 @@ const weeklyUpdates = [
             "Software has a quick update this week, with a new manual control branch pushed back until further notice. Moving on into sensing, we hope to have testing this weekend, ideally avoiding the storm planning to hit Georgia. Finally our control team has the last update for the week: path following system is done. Giving the GPS system a coordinate, the WAM-V finds a way and stops if an obstacle is in the way. Thank you!",
         ] 
     },
+    { 
+        week: "10/07/2024 - Lake Test", 
+        report: [
+            "After having to push back our water test a weekend and a few days, we are finally ready to go to the water to test the WAM'blin Wreck today! We tested manual control successfully and bagged sensor data. We also worked through a new routine for deploying and recovering the vehicle. This data will be integral for further development of our vehicle and maximizing its potential."
+        ] 
+    },
     // Add more weeks as needed
 ];
 
@@ -71,7 +77,7 @@ export default function WeeklyReports() {
             <Box>
                 {/* Header */}
                 <Header />
-                <Box sx={{
+            <Box sx={{
                 backgroundImage: "url(projects/robotx/weekly-updates.jpg)",
                 height: 500,
                 backgroundPosition: 'center',

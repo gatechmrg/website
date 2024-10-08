@@ -24,19 +24,17 @@ export default function UAV() {
                             <Box maxWidth={600} mx={{xs: 'auto', md: 'none'}}>
                                 <Box>
                                     <Typography variant="body1" textAlign={{xs: 'center', md: 'left'}}
-                                        lineHeight={1.7} fontSize="1.2rem">
-                                        El Tigre is our autonomous aerial vehicle built for RobotX 2022.
-                                        The drone performed well in 2022, placing second in the RobotX Air 
-                                        competition. We typically test the drone at Tech Green or other 
-                                        outdoor spaces at Tech.
+                                        lineHeight={1.7} fontSize="1.02rem">
+                                        The autonomous aerial vehicle is a custom built UAV with a DJI F550 Hexacopter frame, capable of carrying a payload of 1,200g.
+                                        It’s 6 motors, flight controller, camera and companion computer are powered by a 5000mAh battery giving it an endurance of ~15min at 70% throttle.
                                     </Typography>
                                 </Box>
                                 <Box mt={2}>
                                     <Typography variant="body1" textAlign={{xs: 'center', md: 'left'}}
-                                        lineHeight={1.7} fontSize="1.2rem">
-                                        RobotX 2024 will likely still have a drone component, so we plan
-                                        on improving the drone&#39;s autonomy, especially in regard to 
-                                        collaborating with the USV.
+                                        lineHeight={1.7} fontSize="1.02rem">
+                                        In the RobotX 2024 competition, the UAV will participate in the “Search and Report” and “UAV Replenishment” missions.
+                                        The search and report mission involves the detection and reporting of the GPS coordinates of two markers before returning to land autonomously,
+                                        and the UAV replenishment mission involves autonomous pickup and replacement of small tin cans from one location to another.
                                     </Typography>
                                 </Box>
                                 {/* YouTube Video Box */}
