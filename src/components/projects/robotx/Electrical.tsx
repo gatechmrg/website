@@ -11,7 +11,7 @@ export default function Electrical() {
                     <Grid container>
                         <Grid item xs={0} sm={2} md={3} lg={4}>
                             <Box width="100%" height="100%" sx={{
-                                backgroundImage: 'url(/projects/robotx/electrical.webp)',
+                                backgroundImage: 'url(/projects/robotx/electrical_new.jpeg)',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover'
@@ -32,21 +32,21 @@ export default function Electrical() {
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                12V battery powering the computer, sensors, and motors
+                                                24V battery powering the computer, sensors, and motors
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Arduino Due microcontroller bridging communication between the
-                                                software and the motors
+                                                Teensy 4.1 microcontroller bridging communication between the
+                                                software and the motors using Micro-ROS
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                4 Pulse Width Modulation modules to control individual speed
-                                                of each motor
+                                                Elco EP-5 Motors are controlled via WigWag signals through
+                                                digital potentiometer
                                             </Typography>
                                         </ListItem>
                                     </List>

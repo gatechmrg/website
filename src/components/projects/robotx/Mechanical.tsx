@@ -32,22 +32,21 @@ export default function Mechanical() {
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                4-motor X drive configuration, with custom-made
-                                                8020 aluminum motor mounts
+                                                2-motor tank drive configuration, powered by two
+                                                Torqueedo 26-104 batteries
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                UAV landing platform made from 8020, featuring a white 
-                                                landing pad for the drone to recognize
+                                                Watertight box for housing the essential electrical components,
+                                                including the main computer, motor controller, and network switches
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Sensor bar with 3-d printed sensor mounts to allow for a 
-                                                flexible arrangement of sensors
+                                                Custom 3-D printed light tower mounts mount onto 8020 aluminum rail 
                                             </Typography>
                                         </ListItem>
                                     </List>
