@@ -44,13 +44,8 @@ export default function Software() {
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                A camera and a 3-d LiDAR responsible for perception
-                                            </Typography>
-                                        </ListItem>
-                                        <ListItem sx={{display: 'list-item'}}>
-                                            <Typography variant="body1" lineHeight={1.7}
-                                                fontSize="1.2rem">
-                                                Hybrid A* path planning through Nav2
+                                                3 cameras and a 3-d LiDAR responsible for perception,
+                                                allowing for enhanced sensing from multiple angles
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
