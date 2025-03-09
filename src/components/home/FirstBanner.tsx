@@ -11,14 +11,14 @@ export default function FirstBanner() {
 
     return (
         <Box sx={{
-            backgroundImage: sm ? 'url(/home/landing_banner_small.webp)' : lg ? 'url(/home/landing_banner_4x.webp)' : '',
+            backgroundImage: sm ? 'url(/home/wamv_banner_small.webp)' : lg ? 'url(/home/wamv_banner_large.webp)' : '',
             height: 800,
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
             position: 'relative',
         }}>
-            <img src={sm ? '/home/landing_banner_small.webp' : lg ? '/home/landing_banner_4x.webp' : ''}
+            <img src={sm ? '/home/wamv_banner_small.webp' : lg ? '/home/wamv_banner_large.webp' : ''}
                 style={{display: 'none'}} width={0} height={0} alt="Dummy background image to prioritize loading" />
             <Grid container wrap="nowrap" height="100%">
                 <Grid item xl={6} lg={4} md={2} />
