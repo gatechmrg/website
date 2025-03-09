@@ -25,8 +25,8 @@ export default function Header() {
                 <Grid container alignItems="center">
                     <Grid item>
                         <Link href="/">
-                            <Box>
-                                <Image src="/mrg_logo.png" alt="MRG Logo" width={95} height={60} />
+                            <Box  sx={{display: 'flex', alignItems: 'center', p: .5}}>
+                                <Image src="/mrg_wordmark.svg" alt="MRG Logo" width={95} height={60} />
                             </Box>
                         </Link>
                     </Grid>
