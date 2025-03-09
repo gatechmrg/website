@@ -77,7 +77,7 @@ export default function Projects() {
                             transform: 'translateX(-100%)'}} />
                     <Box position="absolute" bottom={`calc(40% + ${waterOffset}vh)`} zIndex={3}
                         height={400} width={800} left={`${wamvOffset}vw`}
-                        sx={{backgroundImage: 'url(/home/wamv.webp)', backgroundSize: '100% 100%',
+                        sx={{backgroundImage: 'url(/home/wamv24-cutout.webp)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
                     <Box position="absolute" bottom={`${roboSubOffset - 50}vh`} zIndex={3}
                         height={400} width={400} 
