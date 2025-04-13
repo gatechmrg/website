@@ -43,8 +43,8 @@ export default function About() {
                         <Box position="absolute" top={small ? 0 : -200} left={small ? '24px' : 0}
                             width={small ? 'min(80%,400px)' : 700} height={small ? 300 : 500}
                             zIndex={10}>
-                            <img src="/about/sean-carrying.webp" width="100%" height="100%"
-                            style={{borderRadius: 10}} alt="MRG working on their robot at RoboBoat" />
+                            <img src="/about/team2025.webp" width="100%" height="100%"
+                            style={{borderRadius: 10}} alt="The MRG Team (2025)" />
                         </Box>
                     </Box>
                     <Box height={350} />
@@ -96,33 +96,86 @@ export default function About() {
                     </Box>
                     <Box mt={8} overflow="hidden">
                         <Grid container>
-                            <Grid item xs={12} lg={6}>
+                            <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={500} imgWidth={250} imgSrc="/about/aaron.webp"
-                                        name="Aaron Wu" title="President & Electrical Lead" 
-                                        study="Electrical Engineering" />
+                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                        name="Erin Beazley" title="President" />
                                 </Box>
                             </Grid>
-                            <Grid item xs={12} lg={6}>
+                            <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={500} imgWidth={250} imgSrc="/about/manuel.webp"
-                                        name="Manuel Roglan" title="Operations Officer & Software Lead"
-                                        study="Computer Science" />
+                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                        name="William McConnell" title="Operations Chair" />
+                                </Box>
+                            </Grid>
+                            <Grid item xs={12} lg={4}>
+                                <Box m={3}>
+                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                        name="Alexander Dumas" title="Treasurer" />
                                 </Box>
                             </Grid>
                         </Grid>
-                        <Grid container>
-                            <Grid item xs={12} lg={6}>
+                    </Box>
+                </Box>
+                <Box mx={small ? 6 : 8}>
+                    <Box>
+                        <Typography variant="h2">
+                            Project Leads
+                        </Typography>
+                    </Box>
+                    <Box>
+                        <StandardLine width={200} height={5} borderRadius={5} />
+                    </Box>
+                    <Box mt={8} overflow="hidden">
+                        <Grid container justifyContent="center">
+                            <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={500} imgWidth={250} imgSrc="/about/ryan.webp"
-                                        name="Ryan Otsuka" title="Treasurer" study="Computer Science" />
+                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                        name="Shawn Coutinho" title="RoboSub" />
                                 </Box>
                             </Grid>
-                            <Grid item xs={12} lg={6}>
+                            <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={500} imgWidth={250} imgSrc="/about/nico.webp"
-                                        name="Nicolas Marsilio" title="Mechanical Lead"
-                                        study="Mechanical Engineering" />
+                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                        name="Carson Ray" title="Microtransat" />
+                                </Box>
+                            </Grid>
+                            {/* <Grid item xs={12} lg={4}>
+                                <Box m={3}>
+                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                        name="" title="RobotX" />
+                                </Box>
+                            </Grid> */}
+                        </Grid>
+                    </Box>
+                </Box>
+                <Box mx={small ? 6 : 8}>
+                    <Box>
+                        <Typography variant="h2">
+                            Technical Leads
+                        </Typography>
+                    </Box>
+                    <Box>
+                        <StandardLine width={200} height={5} borderRadius={5} />
+                    </Box>
+                    <Box mt={8} overflow="hidden">
+                        <Grid container justifyContent="center">
+                            <Grid item xs={12} lg={4}>
+                                <Box m={3}>
+                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                        name="Matthew Zhou" title="Mechanical" />
+                                </Box>
+                            </Grid>
+                            <Grid item xs={12} lg={4}>
+                                <Box m={3}>
+                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                        name="Nicholas Lai" title="Electrical" />
+                                </Box>
+                            </Grid>
+                            <Grid item xs={12} lg={4}>
+                                <Box m={3}>
+                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                        name="Mitchell Turton" title="Software" />
                                 </Box>
                             </Grid>
                         </Grid>
