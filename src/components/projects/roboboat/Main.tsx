@@ -10,7 +10,7 @@ import TeamRoster from "./TeamRoster";
 export default function Main() {
 
     return (
-        <Box>
+        <Box sx={{ overflow: 'hidden' }}>
             <FirstBanner />
             <Competition />
             <USV />
