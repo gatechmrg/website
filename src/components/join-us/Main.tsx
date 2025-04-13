@@ -5,7 +5,7 @@ import { PrimaryLink } from "../misc/links";
 export default function Main() {
 
     return (
-        <Box my={12} sx={{ overflow: 'hidden' }}>
+        <Box my={12}>
             <Container maxWidth="xl">
                 <Paper elevation={3} sx={{borderRadius: 3}}>
                     <Grid container>

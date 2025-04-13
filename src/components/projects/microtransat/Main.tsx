@@ -7,7 +7,7 @@ import Team from "./Team";
 export default function Main() {
 
     return (
-        <Box sx={{ overflow: 'hidden' }}>
+        <Box>
             <FirstBanner />
             <Challenge />
             <Vessel />
