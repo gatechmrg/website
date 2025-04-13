@@ -22,7 +22,7 @@ export default function Header() {
 
     return (
         <AppBar position="sticky" sx={{bgcolor: "background.default", height: '80px'}}>
-            <Box mx={3} py={1} sx={{ height: '100%'}}>
+            <Box mx={3} py={1}>
                 <Grid container alignItems="center">
                     <Grid item>
                         <Link href="/">
