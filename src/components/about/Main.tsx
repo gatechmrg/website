@@ -5,7 +5,7 @@ import About from "./About";
 export default function Main() {
 
     return (
-        <Box sx={{ overflow: 'hidden' }}>
+        <Box>
             <FirstBanner />
             <About />
             {/* <Box mt={-20} /> */}
