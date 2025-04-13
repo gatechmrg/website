@@ -4,7 +4,7 @@ import Current from "./Current";
 export default function Main() {
     
     return (
-        <Box>
+        <Box sx={{ overflow: 'hidden' }}>
             <Current />
         </Box>
     )

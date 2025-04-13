@@ -6,7 +6,7 @@ import Projects from "./Projects";
 export default function Main() {
 
     return (
-        <Box>
+        <Box sx={{ overflow: 'hidden' }}>
             <FirstBanner />
             <Exploration />
             <Projects />
