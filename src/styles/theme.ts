@@ -9,5 +9,16 @@ export const theme = createTheme({
             default: 'hsl(166, 98%, 98%)',
             paper: '#fff'
         }
-    }
+    },
+    components: {
+        MuiTypography: {
+            styleOverrides: {
+                root: {
+                    overflowWrap: 'break-word',
+                    wordBreak: 'break-word',
+                    whiteSpace: 'normal',  // allow multi-line wrapping
+                },
+            },
+        },
+    },
 })
