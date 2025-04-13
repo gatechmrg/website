@@ -13,7 +13,7 @@ import Notion from "./Notion";
 export default function Main() {
 
     return (
-        <Box sx={{ overflow: 'hidden' }}>
+        <Box>
             <FirstBanner />
             <Notion />
             <Competition />
