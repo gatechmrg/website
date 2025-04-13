@@ -21,13 +21,13 @@ export default function Header() {
     const [openDrawer, setOpenDrawer] = useState(false)
 
     return (
-        <AppBar position="sticky" sx={{bgcolor: "background.default"}}>
+        <AppBar position="sticky" sx={{bgcolor: "background.default", height: '80px'}}>
             <Box mx={3} py={1}>
                 <Grid container alignItems="center">
                     <Grid item>
                         <Link href="/">
                             <Box  sx={{display: 'flex', alignItems: 'center', p: .5}}>
-                                <Image src="/mrg_wordmark.svg" alt="MRG Logo" width={95} height={60} />
+                                <Image src="/mrg_wordmark.svg" alt="MRG Logo" width={95} height={55} />
                             </Box>
                         </Link>
                     </Grid>
