@@ -21,7 +21,7 @@ export default function Header() {
     const [openDrawer, setOpenDrawer] = useState(false)
 
     return (
-        <AppBar position="sticky" sx={{bgcolor: "background.default", height: '80px'}}>
+        <AppBar position="sticky" sx={{bgcolor: "#ffffff", height: '80px'}}>
             <Box mx={3} py={1}>
                 <Grid container alignItems="center">
                     <Grid item>
