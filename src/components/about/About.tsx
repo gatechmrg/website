@@ -25,7 +25,8 @@ export default function About() {
                 </defs>
             </svg>
             <Box sx={{
-                backgroundColor: '#003566',
+                // backgroundColor: '#003566',
+                backgroundColor: '#001848', // dark navy blue '
                 // backgroundColor: '#3a86ff',
                 // backgroundColor: '#ffffff',
                 backgroundPosition: 'center',
