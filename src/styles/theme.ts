@@ -6,7 +6,8 @@ export const theme = createTheme({
       main: '#C2AC6D' // Gold (lines, hyperlinks, hover)
     },
     background: {
-      default: '#001848', // dark navy blue 
+      // default: '#001848', // dark navy blue 
+      default: '#003566', // Midnight blue
       paper: '#C2AC6D'    // Gold modal
     },
     text: {
