@@ -1,23 +1,25 @@
 import { createTheme } from '@mui/material/styles'
-
 export const theme = createTheme({
   palette: {
     primary: {
-        main: '#00000'
+      // main: 'hsl(166, 100%, 35%)'
+      main: '#C2AC6D' // Gold (lines, hyperlinks, hover)
     },
     background: {
       default: '#001848', // dark navy blue 
       paper: '#C2AC6D'    // Gold modal
     },
     text: {
-          primary: '#ffffff', // white text on Gold
-        // primary: '#00000'
+      primary: '#ffffff' // White
     }
-    },
-    typography: {
-        fontWeightRegular: 500, 
-        allVariants: {
-            fontWeight: 700 // default bold
-        }
+  },
+  typography: {
+    fontWeightRegular: 450,
+    fontWeightMedium: 600,
+    fontWeightLight: 400, // h1
+    h2: {
+      fontWeight: 400
     }
+  }
 })
+
