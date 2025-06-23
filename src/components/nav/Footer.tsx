@@ -53,7 +53,7 @@ export default function Footer() {
                     </clipPath>
                 </defs>
             </svg>
-            <Box overflow="hidden" zIndex={10} bgcolor="#001848" pt={5} px={13}
+            <Box overflow="hidden" zIndex={10} bgcolor="#001848" pt={5} px={13} // dark navy blue 
                 sx={{
                     clipPath: 'url(#footer-clip-path)'
                 }}>
