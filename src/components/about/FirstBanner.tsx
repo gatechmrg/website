@@ -40,7 +40,7 @@ export default function FirstBanner() {
                     position="relative"
                     zIndex={2}
                     px={sm ? 3 : 1}
-                    pt={sm ? 2 : 28}  // padding-top to push text down 
+                    pt={sm ? 10 : 28}  // padding-top to push text down 
                 >
                     <Typography sx={{marginTop: '0px', marginLeft: sm ? 3 : 5}} 
                         variant={sm ? 'h2' : 'h1'}>
