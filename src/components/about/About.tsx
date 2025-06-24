@@ -25,10 +25,9 @@ export default function About() {
                 </defs>
             </svg>
             <Box sx={{
-                // backgroundColor: '#003566',
-                backgroundColor: '#001848', // dark navy blue '
+                // backgroundColor: '#001848', // dark navy blue '
                 // backgroundColor: '#3a86ff',
-                // backgroundColor: '#ffffff',
+                backgroundColor: '#205375',  // new mid blue
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
                 backgroundSize: 'cover',
@@ -47,7 +46,7 @@ export default function About() {
                             width={small ? 'min(80%,400px)' : 700} height={small ? 300 : 500}
                             zIndex={10}>
                             <img src="/about/team2025.webp" width="100%" height="100%"
-                            style={{borderRadius: 10}} alt="The MRG Team (2025)" />
+                            style={{borderRadius: 10, boxShadow: '0 4px 25px rgba(0, 0, 0, 0.25)'}} alt="The MRG Team (2025)" />
                         </Box>
                     </Box>
                     <Box height={350} />
