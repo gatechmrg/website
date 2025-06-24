@@ -53,9 +53,9 @@ export default function About() {
                     <Box maxWidth="md" pb={5} mx={small ? 3 : 5}>
                         <Paper elevation={3}>
                             <Box p={3}>
-                                <Box mb={3}>
+                                {/* <Box mb={3}>
                                     <StandardLine width={200} height={5} borderRadius={5} />
-                                </Box>
+                                </Box> */}
                                 <Box>
                                     <Typography variant="body1" fontSize="1.25rem">
                                         The Marine Robotics Group (MRG) at Georgia Tech is a student-led
