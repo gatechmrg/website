@@ -20,7 +20,7 @@ export default function Main() {
                         <Grid item flex={1}>
                             <Box px={3} pt={3} pb={1}>
                                 <Box>
-                                    <Typography variant="h3" fontWeight={300}>
+                                    <Typography variant="h3" fontWeight={500}>
                                         Come Aboard!
                                     </Typography>
                                 </Box>
@@ -36,6 +36,7 @@ export default function Main() {
                                         <PrimaryLink 
                                             href="https://forms.office.com/Pages/ResponsePage.aspx?id=u5ghSHuuJUuLem1_Mvqgg9BZ29qxkplPkU60qhtfRO5URU9ESDlEVkFWWVVWTkxFSENGMDM0TVYxQyQlQCN0PWcu"
                                             openInNewTab
+                                            color="#1a0dab"
                                             fontSize="1.25rem">
                                             interest form
                                         </PrimaryLink>
