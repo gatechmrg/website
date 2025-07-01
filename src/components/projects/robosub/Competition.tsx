@@ -16,8 +16,8 @@ export default function Competition() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/robosub/robosub-comp.webp"
-                        style={{borderRadius: 16}} alt="Simulation of tasks for the competition." />
+                        <img width="100%" src="/projects/robosub/pool_test.jpg"
+                        style={{borderRadius: 16}} alt="Field testing in the Georgia Tech pool" />
                     </Grid>
                     <Grid item xs={12} md={6}>
                         <Box mx={3} mt={{xs: 3, md: 0}}>
@@ -26,8 +26,8 @@ export default function Competition() {
                                     <Typography variant="body1" textAlign={{xs: 'center', md: 'left'}}
                                         lineHeight={1.7} fontSize="1.2rem">
                                         The RoboSub competition challenges students to build and program
-                                        autonomous underwater vehicles. This competition takes place annually,
-                                        and it was last held at the University of Maryland.
+                                        autonomous underwater vehicles. The underwater environment poses unique development
+                                        challenges and inspires creative solutions.
                                     </Typography>
                                 </Box>
                                 <Box mt={2}>
@@ -36,7 +36,7 @@ export default function Competition() {
                                         The robot must complete a series of tasks autonomously, including 
                                         obstacle avoidance, pinger detection, breaching, and more! We last 
                                         participated in RoboSub in 2019, and we are looking forward to returning
-                                        in 2024.
+                                        in 2025.
                                     </Typography>
                                 </Box>
                             </Box>

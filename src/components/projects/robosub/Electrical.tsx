@@ -11,7 +11,7 @@ export default function Electrical() {
                     <Grid container>
                         <Grid item xs={0} sm={2} md={3} lg={4}>
                             <Box width="100%" height="100%" sx={{
-                                backgroundImage: 'url(/projects/robosub/electrical.webp)',
+                                backgroundImage: 'url(/projects/robosub/electrical_cover.jpg)',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover'
@@ -32,25 +32,25 @@ export default function Electrical() {
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Segmented electrical system via acrylic plates
+                                                Electrically isolated Computation and Thruster Power Systems
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Back plate for wire input to pressure cylinder
+                                                In-house developed motor control board and circuuit protection boards
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                All plates on rails for ease of access
+                                                Extendable interior drawer to facilitate access and maintenance 
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Batteries in separate cylinder below sub
+                                                External battery housing for improved test-flow and modularity
                                             </Typography>
                                         </ListItem>
                                     </List>
