@@ -100,19 +100,19 @@ export default function About() {
                         <Grid container>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/about/Erin Beazley.webp"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Erin Beazley.jpeg"
                                         name="Erin Beazley" title="President" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/about/William McConnell.webp"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/William McConnell.jpeg"
                                         name="William McConnell" title="Operations Chair" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/about/Alexander Dumas.webp"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Alexander Dumas.jpeg"
                                         name="Alexander Dumas" title="Treasurer" />
                                 </Box>
                             </Grid>
@@ -132,13 +132,13 @@ export default function About() {
                         <Grid container justifyContent="center">
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/about/Shawn Coutinho.webp"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Shawn Coutinho.jpeg"
                                         name="Shawn Coutinho" title="RoboSub" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/about/Carson Ray.webp"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Carson Ray.jpeg"
                                         name="Carson Ray" title="Microtransat" />
                                 </Box>
                             </Grid>
@@ -164,19 +164,19 @@ export default function About() {
                         <Grid container justifyContent="center">
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/about/Matthew Zhou.webp"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Matthew Zhou.jpeg"
                                         name="Matthew Zhou" title="Mechanical" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/about/Nicholas Lai.webp"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Nicholas Lai.webp"  // I could have found a better image of nick but I found this funny :) - Mitchell
                                         name="Nicholas Lai" title="Electrical" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/about/Mitchell Turton.webp"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Mitchell Turton.jpeg"
                                         name="Mitchell Turton" title="Software" />
                                 </Box>
                             </Grid>
