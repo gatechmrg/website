@@ -138,7 +138,7 @@ export default function About() {
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/about/Carson Ray.jpeg"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Carson Ray.jpg"
                                         name="Carson Ray" title="Microtransat" />
                                 </Box>
                             </Grid>
