@@ -100,19 +100,19 @@ export default function About() {
                         <Grid container>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Erin Beazley.webp"
                                         name="Erin Beazley" title="President" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/William McConnell.webp"
                                         name="William McConnell" title="Operations Chair" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Alexander Dumas.webp"
                                         name="Alexander Dumas" title="Treasurer" />
                                 </Box>
                             </Grid>
@@ -132,13 +132,13 @@ export default function About() {
                         <Grid container justifyContent="center">
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Shawn Coutinho.webp"
                                         name="Shawn Coutinho" title="RoboSub" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Carson Ray.webp"
                                         name="Carson Ray" title="Microtransat" />
                                 </Box>
                             </Grid>
@@ -164,19 +164,19 @@ export default function About() {
                         <Grid container justifyContent="center">
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Matthew Zhou.webp"
                                         name="Matthew Zhou" title="Mechanical" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Nicholas Lai.webp"
                                         name="Nicholas Lai" title="Electrical" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/mrg_icon.svg"
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/Mitchell Turton.webp"
                                         name="Mitchell Turton" title="Software" />
                                 </Box>
                             </Grid>
