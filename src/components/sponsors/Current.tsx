@@ -43,9 +43,29 @@ export default function Current() {
                                 title="Blue Trail Engineering" alt="Blue Trail Engineering" />
                         </Grid>
                         <Grid item>
-                            <img src="/sponsors/ansys.webp"
+                            <img src="/sponsors/dassault.png"
                                 style={{maxWidth: 500, maxHeight: 500}}
-                                title="Ansys" alt="Ansys" />
+                                title="Dassault Systems" alt="Dassault Systems" />
+                        </Grid>
+                        <Grid item>
+                            <img src="/sponsors/tdk-lambda-1.png"
+                                style={{maxWidth: 500, maxHeight: 500}}
+                                title="TDK Lambda" alt="TDK Lambda" />
+                        </Grid>
+                        <Grid item>
+                            <img src="/sponsors/theia.jpg"
+                                style={{maxWidth: 500, maxHeight: 500}}
+                                title="Theia Technologies" alt="Theia Technologies" />
+                        </Grid>
+                        <Grid item>
+                            <img src="/sponsors/vectornav.jpg"
+                                style={{maxWidth: 500, maxHeight: 500}}
+                                title="Vectornav" alt="Vectornav" />
+                        </Grid>
+                        <Grid item>
+                            <img src="/sponsors/waterlinked_logo.png"
+                                style={{maxWidth: 500, maxHeight: 500}}
+                                title="WaterLinked" alt="WaterLinkedgot " />
                         </Grid>
                     </Grid>
                 </Box>
