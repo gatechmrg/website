@@ -110,6 +110,7 @@ export default function Exploration() {
                                 <Box mt={3}>
                                     <Typography variant="h5" textAlign={{xs: 'center', md: 'left'}}>
                                         MRG frequently tests robots at lakes near Georgia Tech 
+                                        and in the Campus Recreational Center on campus
                                         in preparation for various competitions and challenges.
                                     </Typography>
                                 </Box>
