@@ -1,5 +1,11 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { StandardLine } from "../../misc/line";
+
+const roster = [
+    'Shawn Coutinho', 'Sean Fish', 'Mitchell Turton', 'John Beeson',
+    'Zachary Greenberg', 'Agatta Betancourth Pollett', 'Erin Beazley', 'Matthew Woodward',
+    'Nicholas Lai', 'Aaron Wu'
+]
 
 export default function TeamRoster() {
 
@@ -8,16 +14,24 @@ export default function TeamRoster() {
             <Container maxWidth="xl">
                 <Box textAlign="center">
                     <Typography variant="h2">
-                        2024 Team Roster
+                        2025 Team Roster
                     </Typography>
                 </Box>
                 <Box mt={2} mb={5}>
                     <StandardLine width={200} height={5} centered borderRadius={3} />
                 </Box>
                 <Box textAlign="center">
-                    <Typography variant="h6" >
-                        This could be you! Join Us!
-                    </Typography>
+                    <Grid container spacing={3}>
+                        {roster.map(person => (
+                            <Grid item key={person} lg={3} md={6} xs={12}>
+                                <Box textAlign="center">
+                                    <Typography variant="h6">
+                                        {person}
+                                    </Typography>
+                                </Box>
+                            </Grid>
+                        ))} 
+                    </Grid>
                 </Box>
             </Container>
         </Box>
