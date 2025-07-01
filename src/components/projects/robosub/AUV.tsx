@@ -39,7 +39,7 @@ export default function AUV() {
                                 <Box>
                                     <Typography variant="body1" textAlign={{xs: 'center', md: 'left'}}
                                         lineHeight={1.7} fontSize="1.2rem">
-                                        A new vehicle, Take Two, will be making it's competition debut at RoboSub 2025 for MRG's first return since 2020.
+                                        A new vehicle, Take Two, will be making it&apos;s competition debut at RoboSub 2025 for MRG&apos;s first return since 2020.
                                         The platform focuses on simplicity and modularity, enabeling strong future development.
                                     </Typography>
                                 </Box>
