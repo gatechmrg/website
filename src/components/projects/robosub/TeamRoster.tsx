@@ -14,7 +14,7 @@ export default function TeamRoster() {
             <Container maxWidth="xl">
                 <Box textAlign="center">
                     <Typography variant="h2">
-                        2024 Team Roster
+                        2025 Team Roster
                     </Typography>
                 </Box>
                 <Box mt={2} mb={5}>
