@@ -11,7 +11,7 @@ export default function Software() {
                     <Grid container>
                         <Grid item xs={0} sm={2} md={3} lg={4}>
                             <Box width="100%" height="100%" sx={{
-                                backgroundImage: 'url(/projects/robosub/software.webp)',
+                                backgroundImage: 'url(/projects/robosub/software_cover.png)',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover'
@@ -38,13 +38,13 @@ export default function Software() {
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Gazebo simulation environment
+                                                Gazebo simulation environment used for rapid software development in parallel with physical development
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                IMU, DVL, and Sonar used for localization
+                                                IMU and WaterLinked DVL A50 used for localization
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
