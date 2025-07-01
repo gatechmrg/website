@@ -11,7 +11,7 @@ export default function Mechanical() {
                     <Grid container>
                         <Grid item xs={0} sm={2} md={3} lg={4}>
                             <Box width="100%" height="100%" sx={{
-                                backgroundImage: 'url(/projects/robosub/mechanical.webp)',
+                                backgroundImage: 'url(/projects/robosub/mechanical_cover.png)',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover'
@@ -32,25 +32,25 @@ export default function Mechanical() {
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Target weight of 48.5 lbs
+                                                X-Drive thruster configuration for maneuverability and sway
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Centralized electrical system in a single central pressure cylinder
+                                                Cast acrylic hull with polycarbonate guide rails to efficiently mount subsystems and facilitate future development
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Design utilizing all dimensions around pressure cylinder
+                                                Custom printed mounting solutions with attention to weight balance and bouyancy
                                             </Typography>
                                         </ListItem>
                                         <ListItem sx={{display: 'list-item'}}>
                                             <Typography variant="body1" lineHeight={1.7}
                                                 fontSize="1.2rem">
-                                                Maximize translational thrust
+                                                In-progress development of autonomous torpedos with on-board visual processing and control 
                                             </Typography>
                                         </ListItem>
                                     </List>

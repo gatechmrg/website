@@ -8,7 +8,7 @@ export default function FirstBanner() {
 
     return (
         <Box sx={{
-            backgroundImage: 'url(/projects/robosub/in-pool.webp)',
+            backgroundImage: 'url(/projects/robosub/sub_banner.png)',
             height: 'min(800px, calc(100vh - 83px))',
             backgroundPosition: 'bottom',
             backgroundRepeat: 'no-repeat',
