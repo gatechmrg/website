@@ -55,13 +55,19 @@ export default function Projects() {
                 }}>
                 <Box position="absolute" bottom={`${-50 + waterOffset}vh`}
                     height="50vh" width="100%" zIndex={2}
-                    sx={{backgroundImage: 'url(/home/ocean.png)', backgroundSize: 'cover'}} />
+                    sx={{backgroundImage: 'url(/home/ocean.png)', backgroundSize: 'cover',}} />
+                <Box position = "absolute" bottom = {`${-50 + waterOffset -15}vh`}
+                    height = "30vh" width = "100%" zIndex = {3}
+                    sx={{
+                        backgroundImage: 'linear-gradient(to bottom,rgba(12, 58, 104, 0), rgb(12, 83, 104), rgba(66, 155, 118,0))'
+                    }}
+                />
                 <Box position="absolute"  zIndex={1}
                     top={`calc(100% + ${-waterOffset + 50}vh)`}
                     height={` ${waterOffset + 1}vh`} 
                     width="100%"
-                    sx={{backgroundImage: 'url(/home/under-ocean5.png)', backgroundSize: '100% 150vh'}} />
-                <Box position="absolute" zIndex={3}
+                    sx={{backgroundImage: 'url(/home/under_ocean.jpg)', backgroundSize: '100% 150vh'}} />
+                <Box position="absolute" zIndex={2}
                     top={`calc(100% + ${-waterOffset + 50}vh - 50px)`}
                     width="100%" height={100}
                     sx={{backgroundImage: 'linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,.1), rgba(255,255,255,0))'}}
@@ -80,9 +86,9 @@ export default function Projects() {
                         sx={{backgroundImage: 'url(/home/wamv24-cutout.webp)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
                     <Box position="absolute" bottom={`${roboSubOffset - 50}vh`} zIndex={3}
-                        height={400} width={400} 
+                        height={700} width={700} 
                         left={breakpoint.indexOf(true) >= 3 ? "min(25vw, calc(100vw - 1050px))" : "50vw"}
-                        sx={{backgroundImage: 'url(/home/robosub.webp)', backgroundSize: '100% 100%',
+                        sx={{backgroundImage: 'url(/home/robosub_no_background.svg)', backgroundSize: '100% 100%',
                             transform: 'translate(-50%, 100%)'}} />
                 </Box>
                 <Box pt={12} />
@@ -234,8 +240,8 @@ export default function Projects() {
                                                         For this competition, we build and program an 
                                                         underwater vehicle to complete a series of tasks 
                                                         autonomously. The competition takes place annually,
-                                                        and we planning on entering it in 2024 after a four 
-                                                        year hiatus.
+                                                        and we are eager to return to competition after a five year hiatus
+                                                        this Summer 2025.
                                                     </Typography>
                                                 </Box>
                                                 <Box mt={3}>
