@@ -44,8 +44,8 @@ export default function Projects() {
         } 
     }
 
-    return (
-        <Box position="relative">
+    return ( 
+        <Box position="relative" >
             <Box id="sticky-root" sx={{
                     backgroundImage: 'linear-gradient(to bottom, rgba(255,255,255,1), rgba(255,255,255,0)), url(/home/blue-sky.png)',
                     backgroundSize: 'cover',
