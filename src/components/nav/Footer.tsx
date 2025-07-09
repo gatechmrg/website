@@ -46,7 +46,7 @@ export default function Footer() {
 
     return (
         <div>
-            {/* <Box sx={{ position: 'relative', width: '100%', height: 100, overflow: 'hidden' }}>
+            <Box sx={{ position: 'relative', width: '100%', height: 80, overflow: 'hidden' }}>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 24 150 28"
@@ -73,7 +73,7 @@ export default function Footer() {
             />
             </g>
             </svg>
-            </Box> */}
+            </Box>
 
             <Box overflow="hidden" zIndex={10} bgcolor="#001848" pt={5} px={13} // dark navy blue 
                 sx={{
