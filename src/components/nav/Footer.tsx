@@ -46,7 +46,7 @@ export default function Footer() {
 
     return (
         <div>
-            <Box sx={{ position: 'relative', width: '100%', height: 100, overflow: 'hidden' }}>
+            {/* <Box sx={{ position: 'relative', width: '100%', height: 100, overflow: 'hidden' }}>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 24 150 28"
@@ -56,8 +56,8 @@ export default function Footer() {
                 <defs>
                 <path
                     id="gentle-wave"
-                    d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                    // d="M-160 44 c30 0 58 -8 88 -8 s58 8 88 8 s58 -8 88 -8 s58 8 88 8 v44 h-352 z"
+                    // d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                    d="M-160 44 c30 0 58 -8 88 -8 s58 8 88 8 s58     -8 88 -8 s58 8 88 8 v44 h-352 z"
                 />
                 </defs>
             <g>
@@ -73,7 +73,7 @@ export default function Footer() {
             />
             </g>
             </svg>
-            </Box>
+            </Box> */}
 
             <Box overflow="hidden" zIndex={10} bgcolor="#001848" pt={5} px={13} // dark navy blue 
                 sx={{
