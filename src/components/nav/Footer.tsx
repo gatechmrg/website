@@ -47,34 +47,32 @@ export default function Footer() {
     return (
         <Box >
             <Box sx={{ position: 'relative', width: '100%', height: 80, overflow: 'hidden' }}>
-             {/* <Box sx={{ position: 'absolute', left: 0, width: '100%', height: 80, pointerEvents: 'none' }}> */}
-
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 24 150 28"
-                preserveAspectRatio="none"
-                style={{ width: '100%', height: '100%', display: 'block' }}
-            >
-                <defs>
-                <path
-                    id="gentle-wave"
-                    d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-                    // d="M-160 44 c30 0 58 -8 88 -8 s58 8 88 8 s58     -8 88 -8 s58 8 88 8 v44 h-352 z"
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 24 150 28"
+                    preserveAspectRatio="none"
+                    style={{ width: '100%', height: '100%', display: 'block' }}
+                >
+                    <defs>
+                    <path
+                        id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                        // d="M-160 44 c30 0 58 -8 88 -8 s58 8 88 8 s58     -8 88 -8 s58 8 88 8 v44 h-352 z"
+                    />
+                    </defs>
+                <g>
+                <use xlinkHref="#gentle-wave" x="0" y="0" fill="#001848" />
+                <use xlinkHref="#gentle-wave" x="352" y="0" fill="#001848" />
+                <animateTransform
+                    attributeName="transform"
+                    type="translate"
+                    from="0,0"
+                    to="-352,0"
+                    dur="14s"
+                    repeatCount="indefinite"
                 />
-                </defs>
-            <g>
-            <use xlinkHref="#gentle-wave" x="0" y="0" fill="#001848" />
-            <use xlinkHref="#gentle-wave" x="352" y="0" fill="#001848" />
-            <animateTransform
-                attributeName="transform"
-                type="translate"
-                from="0,0"
-                to="-352,0"
-                dur="14s"
-                repeatCount="indefinite"
-            />
-            </g>
-            </svg>
+                </g>
+                </svg>
             </Box>
 
             <Box overflow="hidden" zIndex={10} bgcolor="#001848" pt={5} px={13} // dark navy blue 
