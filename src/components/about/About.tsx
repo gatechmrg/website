@@ -28,7 +28,7 @@ export default function About() {
                     </clipPath>
                 </defs>
             </svg>
-            {/* <svg display="block" width="0px" height="0px" viewBox="0 0 2000 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg display="block" width="0px" height="0px" viewBox="0 0 2000 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <clipPath id="about-clip-path3">
                         <path>
@@ -45,7 +45,7 @@ export default function About() {
                         </path>
                     </clipPath>
                 </defs>
-            </svg> */}
+            </svg>
 
 
             <Box sx={{
