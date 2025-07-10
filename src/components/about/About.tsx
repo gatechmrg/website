@@ -28,7 +28,7 @@ export default function About() {
                     </clipPath>
                 </defs>
             </svg>
-            <svg display="block" width="0px" height="0px" viewBox="0 0 2000 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            {/* <svg display="block" width="0px" height="0px" viewBox="0 0 2000 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                     <clipPath id="about-clip-path3">
                         <path>
@@ -45,7 +45,7 @@ export default function About() {
                         </path>
                     </clipPath>
                 </defs>
-            </svg>
+            </svg> */}
 
 
             <Box sx={{
@@ -59,8 +59,42 @@ export default function About() {
             }}>
                 <Box position="absolute" top={0} left={0} width="calc(50vw - 600px)" height={200}
                     bgcolor="background.default" />
-                <Box position="absolute" top="calc(100% - 200px)" left={0} width="100%" height={200}
-                    bgcolor="background.default" sx={{clipPath: 'url(#about-clip-path3)'}} />
+                {/* <Box position="absolute" top="calc(100% - 200px)" left={0} width="100%" height={200}
+                    bgcolor="background.default" sx={{clipPath: 'url(#about-clip-path3)'}} /> */}
+
+                <Box position="absolute" top="calc(100% - 200px)" left={0} width="100%" height={200}>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 24 150 28"
+                    preserveAspectRatio="none"
+                    style={{
+                    width: '100%',
+                    height: '100%',
+                    display: 'block',
+                    }}
+                >
+                    <defs>
+                    <path
+                        id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                    />
+                    </defs>
+                    <g>
+                    <use xlinkHref="#gentle-wave" x="0" y="0" fill="#003566" />
+                    <use xlinkHref="#gentle-wave" x="352" y="0" fill="#003566" />
+                    bgcolor="background.default"
+                    <animateTransform
+                        attributeName="transform"
+                        type="translate"
+                        from="0,0"
+                        to="-352,0"
+                        dur="25s"
+                        repeatCount="indefinite"
+                    />
+                    </g>
+                </svg>
+                </Box>
+
                 <Box maxWidth="lg" mx="auto" sx={{position: 'relative'}}>
                     <Box position="absolute" top={0} left={0} bgcolor="background.default"
                         width="100%" height={200}
