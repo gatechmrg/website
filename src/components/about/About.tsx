@@ -8,6 +8,76 @@ export default function About() {
     const theme = useTheme()
     const small = useMediaQuery(theme.breakpoints.down('md'))
 
+    // const floatingStyle1 = {
+    //     animation: 'float 5s ease-in-out infinite',
+    //     '@keyframes float': {
+    //         '0%': { transform: 'translateY(-4px)' },
+    //         '50%': { transform: 'translateY(1px)' },
+    //         '100%': { transform: 'translateY(-4px)' }
+    //     }
+    // };
+
+//     const floatingStyle1 = {
+//   animation: 'float 6s ease-in-out infinite',
+//   '@keyframes float': {
+//     '0%':   { transform: 'translateY(0px)' },
+//     '25%':  { transform: 'translateY(-8px)' },
+//     '50%':  { transform: 'translateY(-12px)' },
+//     '75%':  { transform: 'translateY(-8px)' },
+//     '100%': { transform: 'translateY(0px)' },
+//   }
+// };
+
+const floatingStyle1 = {
+  animation: 'float 6s ease-in-out infinite',
+  '@keyframes float': {
+    '0%':   { transform: 'translateY(0px)' },
+    '25%':  { transform: 'translateY(-2px)' },
+    '50%':  { transform: 'translateY(-4px)' },
+    '75%':  { transform: 'translateY(-2px)' },
+    '100%': { transform: 'translateY(0px)' },
+  }
+};
+
+    
+    const floatingStyle2 = {
+  animation: 'float 25s ease-in-out infinite',
+  '@keyframes float': {
+    '0%':   { transform: 'translateY(0px)' },
+    '12.5%': { transform: 'translateY(-4px)' },
+    '25%':  { transform: 'translateY(-8px)' },
+    '37.5%': { transform: 'translateY(-4px)' },
+    '50%':  { transform: 'translateY(0px)' },
+    '62.5%': { transform: 'translateY(4px)' },
+    '75%':  { transform: 'translateY(8px)' },
+    '87.5%': { transform: 'translateY(4px)' },
+    '100%': { transform: 'translateY(0px)' },
+  }
+};
+
+
+    // const floatingStyle2 = {
+    //     animation: 'float 10s ease-in-out infinite',
+    //     '@keyframes float': {
+    //         '0%': { transform: 'translateY(0px)' },
+    //         '50%': { transform: 'translateY(-10px)' },
+    //         '100%': { transform: 'translateY(0px)' }
+    //     }
+    // };
+
+//     const floatingStyle = {
+//   animation: 'float 8s ease-in-out infinite',
+//   '@keyframes float': {
+//     '0%': { transform: 'translate(0px, 0px)' },
+//     '25%': { transform: 'translate(-4px, -6px)' },
+//     '50%': { transform: 'translate(0px, -8px)' },
+//     '75%': { transform: 'translate(4px, -6px)' },
+//     '100%': { transform: 'translate(0px, 0px)' }
+//   }
+// };
+
+
+
     return (
         <Box>
             <svg display="block" width="0px" height="0px" viewBox="0 0 1091 200" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,7 +152,6 @@ export default function About() {
                     <g>
                     <use xlinkHref="#gentle-wave" x="0" y="0" fill="#003566" />
                     <use xlinkHref="#gentle-wave" x="352" y="0" fill="#003566" />
-                    bgcolor="background.default"
                     <animateTransform
                         attributeName="transform"
                         type="translate"
@@ -102,45 +171,48 @@ export default function About() {
                     <Box mx={small ? 0 : 5} position="absolute" top={0} left={0} width="100%">
                         <Box position="absolute" top={small ? 0 : -200} left={small ? '24px' : 0}
                             width={small ? 'min(80%,400px)' : 700} height={small ? 300 : 500}
-                            zIndex={10}>
+                            zIndex={10} >
+                            {/* sx={floatingStyle1} */}
                             <img src="/about/team2025.webp" width="100%" height="100%"
                             style={{borderRadius: 10, boxShadow: '0 4px 25px rgba(0, 0, 0, 0.25)'}} alt="The MRG Team (2025)" />
                         </Box>
                     </Box>
                     <Box height={350} />
                     <Box maxWidth="md" pb={5} mx={small ? 3 : 5}>
-                        <Paper elevation={3}>
-                            <Box p={3}>
-                                {/* <Box mb={3}>
-                                    <StandardLine width={200} height={5} borderRadius={5} />
-                                </Box> */}
-                                <Box>
-                                    <Typography variant="body1" fontSize="1.25rem">
-                                        The Marine Robotics Group (MRG) at Georgia Tech is a student-led
-                                        organization dedicated to the exploration and advancement of
-                                        maritime technologies. This may include long range autonomy, 
-                                        multi-robot collaboration, sensor development, and other areas 
-                                        of research. Maritime technology is important for understanding
-                                        our own planet and eventually others.
-                                    </Typography>
+                        <Box sx={floatingStyle2}>
+                            <Paper elevation={3}>
+                                <Box p={3}>
+                                    {/* <Box mb={3}>
+                                        <StandardLine width={200} height={5} borderRadius={5} />
+                                    </Box> */}
+                                    <Box>
+                                        <Typography variant="body1" fontSize="1.25rem">
+                                            The Marine Robotics Group (MRG) at Georgia Tech is a student-led
+                                            organization dedicated to the exploration and advancement of
+                                            maritime technologies. This may include long range autonomy, 
+                                            multi-robot collaboration, sensor development, and other areas 
+                                            of research. Maritime technology is important for understanding
+                                            our own planet and eventually others.
+                                        </Typography>
+                                    </Box>
+                                    <Box mt={3}>
+                                        <Typography variant="body1" fontSize="1.25rem">
+                                            We&#39;ve also been known as Georgia Tech Marine Robotics
+                                            or Why Yes Team. Our organization is based out of the 
+                                            Adaptive Design Prototyping and Testing (ADePT) Lab in the
+                                            Aerospace Systems Design Laboratory (ASDL).
+                                        </Typography>
+                                    </Box>
+                                    <Box mt={3}>
+                                        <Typography variant="body1" fontSize="1.25rem">
+                                            Our activities include development of vehicles for a number of
+                                            competitions and challenges. These include RoboBoat, RoboSub, 
+                                            RobotX, and Microtransat.
+                                        </Typography>
+                                    </Box>
                                 </Box>
-                                <Box mt={3}>
-                                    <Typography variant="body1" fontSize="1.25rem">
-                                        We&#39;ve also been known as Georgia Tech Marine Robotics
-                                        or Why Yes Team. Our organization is based out of the 
-                                        Adaptive Design Prototyping and Testing (ADePT) Lab in the
-                                        Aerospace Systems Design Laboratory (ASDL).
-                                    </Typography>
-                                </Box>
-                                <Box mt={3}>
-                                    <Typography variant="body1" fontSize="1.25rem">
-                                        Our activities include development of vehicles for a number of
-                                        competitions and challenges. These include RoboBoat, RoboSub, 
-                                        RobotX, and Microtransat.
-                                    </Typography>
-                                </Box>
-                            </Box>
-                        </Paper>
+                            </Paper>
+                        </Box>
                     </Box>
                 </Box>
             </Box>
