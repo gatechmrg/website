@@ -45,14 +45,36 @@ const FooterGrid = styled('div')(({theme}) => ({
 export default function Footer() {
 
     return (
-        <div>
-            <svg width="0px" height="0px" viewBox="0 0 2048 1352" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <clipPath id="footer-clip-path">
-                        <path d="M0.503418 84.5096C0.503418 84.5096 57 22.9958 216.5 3.49702C382.078 -16.7448 441.374 71.5 669 84.5092C922.5 98.9971 2047.5 84.5092 2047.5 84.5092V1351.5H0.503418V84.5096Z" fill="#AD9191"/>
-                    </clipPath>
-                </defs>
-            </svg>
+        <Box >
+            <Box sx={{ position: 'relative', width: '100%', height: 80, overflow: 'hidden' }}>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 24 150 28"
+                    preserveAspectRatio="none"
+                    style={{ width: '100%', height: '100%', display: 'block' }}
+                >
+                    <defs>
+                    <path
+                        id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                        // d="M-160 44 c30 0 58 -8 88 -8 s58 8 88 8 s58     -8 88 -8 s58 8 88 8 v44 h-352 z"
+                    />
+                    </defs>
+                <g>
+                <use xlinkHref="#gentle-wave" x="0" y="0" fill="#001848" />
+                <use xlinkHref="#gentle-wave" x="352" y="0" fill="#001848" />
+                <animateTransform
+                    attributeName="transform"
+                    type="translate"
+                    from="0,0"
+                    to="-352,0"
+                    dur="14s"
+                    repeatCount="indefinite"
+                />
+                </g>
+                </svg>
+            </Box>
+
             <Box overflow="hidden" zIndex={10} bgcolor="#001848" pt={5} px={13} // dark navy blue 
                 sx={{
                     clipPath: 'url(#footer-clip-path)'
@@ -205,6 +227,6 @@ export default function Footer() {
                     </Grid>
                 </Box>
             </Box>
-        </div>
+        </Box>
     )
 }

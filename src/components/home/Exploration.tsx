@@ -8,7 +8,7 @@ export default function Exploration() {
     const small = useMediaQuery(theme.breakpoints.down('md'))
 
     return (
-        <Box mt={6}>
+        <Box mt={6}  >
             <Box textAlign="center">
                 <Typography variant="h2">
                     Student-led Exploration
