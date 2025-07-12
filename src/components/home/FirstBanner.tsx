@@ -2,29 +2,41 @@ import { Box, Grid, Paper, Typography, useMediaQuery } from "@mui/material";
 import { GreenPrimaryButton } from "../misc/buttons";
 import { useTheme } from '@mui/material/styles'
 import Link from "next/link";
+import {useState, useEffect} from "react";
+
 export default function FirstBanner() {
     const theme = useTheme()
     const lg = useMediaQuery(theme.breakpoints.up('md'))
     const sm = useMediaQuery(theme.breakpoints.down('md'))
+    
+    const [isClient, setIsClient] = useState(false)
+
+    useEffect(() => {
+        setIsClient(true)
+    })
+
     return (
         <Box position={"relative"} width="100%" height="100vh" overflow="hidden">
             {/* <img src={sm ? '/home/wamv_banner_small.webp' : lg ? '/home/wamv_banner_large.webp' : ''}
                 style={{display: 'none'}} width={0} height={0} alt="Dummy background image to prioritize loading" /> */}
-            <Box
-                component="video"
-                src="/home/hero-video.mp4"
-                autoPlay
-                muted
-                loop
-                playsInline
-                sx={{
-                position: "absolute",
-                width: "100%",
-                height: "100%",
-                    objectFit: "cover",
-                zIndex: -1,
-                }}
-            />
+            {isClient && (
+                <Box
+                    component="video"
+                    src="/home/hero-video.mp4"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    sx={{
+                    position: "absolute",
+                    width: "100%",
+                    height: "100%",
+                        objectFit: "cover",
+                    zIndex: -1,
+                    }}
+                />
+            )}
+
             
             <Grid container wrap="nowrap" height="100%" justifyContent="center" >
                 <Grid item xl={4} lg={2} md={1} />
