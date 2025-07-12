@@ -19,7 +19,7 @@ export default function Exploration() {
             </Box>
             <Container maxWidth="md">
                 <Box textAlign="center" mt={3} mb={12}>
-                    <Typography variant="h6" fontWeight={300}>
+                    <Typography variant="h6" fontWeight={400}>
                         The furthest reaches of human exploration are pioneered by robots. 
                         At the Marine Robotics Group at Georgia Tech, 
                         students likewise partake in the development of 
@@ -33,10 +33,10 @@ export default function Exploration() {
                     <Grid item xs={12} md={4}>
                         <Box textAlign="center">
                             <img src="/home/training.webp" width="100%"  style={{ borderRadius: 16 }} alt="MRG training in the lab" />
-                            <Typography variant="h3" fontWeight={300} mt={2}>
+                            <Typography variant="h4" fontWeight={400} mt={2}>
                             Learning
                             </Typography>
-                            <StandardLine width={190} height={5} borderRadius={3} centered />
+                            <StandardLine width={80} height={5} borderRadius={3} centered />
                             <Typography variant="body1" fontWeight={300} mt={2}>
                             MRG provides an opportunity to learn new skills and work with tools 
                             for robotics, regardless of incoming skill level. We run a training
@@ -49,10 +49,10 @@ export default function Exploration() {
                     <Grid item xs={12} md={4}>
                     <Box textAlign="center">
                         <img src="/home/building.webp" width="100%" style={{ borderRadius: 16 }} alt="Members fiberglassing pontoons" />
-                        <Typography variant="h3" fontWeight={300} mt={2}>
+                        <Typography variant="h4" fontWeight={400} mt={2}>
                         Building
                         </Typography>
-                        <StandardLine width={170} height={5} borderRadius={3} centered />
+                        <StandardLine width={80} height={5} borderRadius={3} centered />
                         <Typography variant="body1" fontWeight={300} mt={2}>
                         MRG has the goal of iterating on and creating new  
                         Autonomous Underwater Vehicles (AUVs)
@@ -65,10 +65,10 @@ export default function Exploration() {
                     <Grid item xs={12} md={4}>
                     <Box textAlign="center">
                         <img src="/home/testing.webp" width="100%" style={{ borderRadius: 16 }} alt="Members testing a robot at a local lake" />
-                        <Typography variant="h3" fontWeight={300} mt={2}>
+                        <Typography variant="h4" fontWeight={400} mt={2}>
                         Testing
                         </Typography>
-                        <StandardLine width={160} height={5} borderRadius={3} centered />
+                        <StandardLine width={80} height={5} borderRadius={3} centered />
                         <Typography variant="body1" fontWeight={300} mt={2}>
                         MRG frequently tests robots at lakes near Georgia Tech 
                         and in the Campus Recreational Center on campus
