@@ -8,7 +8,7 @@ export default function Exploration() {
     const small = useMediaQuery(theme.breakpoints.down('md'))
 
     return (
-        <Box mt={6}> 
+        <Box mt={6} sx={{backgroundColor: '#f5f5f5', padding: '2rem', color: "text.secondary" }}> 
             <Box textAlign="center">
                 <Typography variant="h2">
                     Student-led Exploration
@@ -108,7 +108,7 @@ export default function Exploration() {
                                         centered={small} />
                                 </Box>
                                 <Box mt={3}>
-                                    <Typography variant="h7" textAlign={{xs: 'center', md: 'left'}}>
+                                    <Typography variant="body1" fontWeight={300} textAlign={{xs: 'center', md: 'left'}}>
                                         MRG frequently tests robots at lakes near Georgia Tech 
                                         and in the Campus Recreational Center on campus
                                         in preparation for various competitions and challenges.
