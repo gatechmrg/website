@@ -16,7 +16,7 @@ export default function FirstBanner() {
     })
 
     return (
-        <Box position={"relative"} width="100%" height="100vh" overflow="hidden">
+        <Box position={"relative"} width="100%" height="100vh" overflow="hidden" >
             {/* <img src={sm ? '/home/wamv_banner_small.webp' : lg ? '/home/wamv_banner_large.webp' : ''}
                 style={{display: 'none'}} width={0} height={0} alt="Dummy background image to prioritize loading" /> */}
             {isClient && (
@@ -31,7 +31,7 @@ export default function FirstBanner() {
                     position: "absolute",
                     width: "100%",
                     height: "100%",
-                        objectFit: "cover",
+                    objectFit: "cover",
                     zIndex: -1,
                     }}
                 />
@@ -41,7 +41,7 @@ export default function FirstBanner() {
             <Grid container wrap="nowrap" height="100%" justifyContent="center" >
                 <Grid item xl={4} lg={2} md={1} />
                 <Grid item flex={1}>
-                    <Box mt={40} textAlign={{xs: 'center', xl: 'left'}}>
+                    <Box mt={40} textAlign={{xs: 'center', xl: 'left'}} >
                         <Box display="inline-block" >
                             <Typography variant="h1" fontWeight={500} color="#fff"
                             sx={{textShadow: "1px 1px 3px #000"}}>
