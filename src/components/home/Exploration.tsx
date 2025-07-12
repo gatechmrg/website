@@ -8,7 +8,7 @@ export default function Exploration() {
     const small = useMediaQuery(theme.breakpoints.down('md'))
 
     return (
-        <Box mt={6}  >
+        <Box mt={6}> 
             <Box textAlign="center">
                 <Typography variant="h2">
                     Student-led Exploration
@@ -19,7 +19,7 @@ export default function Exploration() {
             </Box>
             <Container maxWidth="md">
                 <Box textAlign="center" mt={3} mb={12}>
-                    <Typography variant="h5">
+                    <Typography variant="h6" fontWeight={300}>
                         The furthest reaches of human exploration are pioneered by robots. 
                         At the Marine Robotics Group at Georgia Tech, 
                         students likewise partake in the development of 
@@ -48,7 +48,7 @@ export default function Exploration() {
                                         centered={small} />
                                 </Box>
                                 <Box mt={3}>
-                                    <Typography variant="h5" textAlign={{xs: 'center', md: 'left'}}>
+                                    <Typography variant="body1" fontWeight={300} textAlign={{xs: 'center', md: 'left'}}>
                                         MRG provides an opportunity to learn new skills and work with tools 
                                         for robotics, regardless of incoming skill level. We run a training
                                         program during the beginning of each semester.
@@ -72,7 +72,7 @@ export default function Exploration() {
                                         centered={small} />
                                 </Box>
                                 <Box mt={3}>
-                                    <Typography variant="h5" textAlign={{xs: 'center', md: 'left'}}>
+                                    <Typography variant="body1" fontWeight={300} textAlign={{xs: 'center', md: 'left'}}>
                                         MRG has the goal of iterating on and creating new  
                                         Autonomous Underwater Vehicles (AUVs)
                                         and Autonomous Surfaces Vehicle (ASVs).
@@ -108,7 +108,7 @@ export default function Exploration() {
                                         centered={small} />
                                 </Box>
                                 <Box mt={3}>
-                                    <Typography variant="h5" textAlign={{xs: 'center', md: 'left'}}>
+                                    <Typography variant="h7" textAlign={{xs: 'center', md: 'left'}}>
                                         MRG frequently tests robots at lakes near Georgia Tech 
                                         and in the Campus Recreational Center on campus
                                         in preparation for various competitions and challenges.

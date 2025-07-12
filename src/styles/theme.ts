@@ -14,7 +14,8 @@ export const theme = createTheme({
       paper: '#C2AC6D'    // Gold modal
     },
     text: {
-      primary: '#ffffff' // White
+      primary: '#ffffff', // White
+      secondary: '#000000', // Black
     }
   },
   typography: {
@@ -23,6 +24,9 @@ export const theme = createTheme({
     fontWeightLight: 400, // h1
     h2: {
       fontWeight: 400
+    },
+    h7: {
+      fontWeight: 300
     }
   }
 })
