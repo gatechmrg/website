@@ -94,7 +94,7 @@ export default function Projects() {
                 <Box pt={12} />
                 <Box>
                     <Box textAlign="center">
-                        <Typography variant="h2">
+                        <Typography variant="h2" color="text.secondary">
                             Ongoing Projects
                         </Typography>
                     </Box>
