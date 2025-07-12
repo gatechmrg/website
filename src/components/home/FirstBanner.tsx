@@ -16,6 +16,7 @@ export default function FirstBanner() {
     })
 
     return (
+        <>
         <Box position={"relative"} width="100%" height="100vh" overflow="hidden" >
             {/* <img src={sm ? '/home/wamv_banner_small.webp' : lg ? '/home/wamv_banner_large.webp' : ''}
                 style={{display: 'none'}} width={0} height={0} alt="Dummy background image to prioritize loading" /> */}
@@ -36,8 +37,6 @@ export default function FirstBanner() {
                     }}
                 />
             )}
-
-            
             <Grid container wrap="nowrap" height="100%" justifyContent="center" >
                 <Grid item xl={4} lg={2} md={1} />
                 <Grid item flex={1}>
@@ -62,6 +61,35 @@ export default function FirstBanner() {
                     </Box>
                 </Grid>
             </Grid>
-        </Box>
+            </Box>
+            <Box sx={{ position: 'relative', width: '100%', height: 80, overflow: 'hidden', marginTop: '-80px' }}>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 24 150 28"
+                    preserveAspectRatio="none"
+                    style={{ width: '100%', height: '100%', display: 'block' }}
+                >
+                    <defs>
+                    <path
+                        id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+                        // d="M-160 44 c30 0 58 -8 88 -8 s58 8 88 8 s58     -8 88 -8 s58 8 88 8 v44 h-352 z"
+                    />
+                    </defs>
+                <g>
+                <use xlinkHref="#gentle-wave" x="0" y="0" fill="#f5f5f5" />
+                <use xlinkHref="#gentle-wave" x="352" y="0" fill="#f5f5f5" />
+                <animateTransform
+                    attributeName="transform"
+                    type="translate"
+                    from="0,0"
+                    to="-352,0"
+                    dur="14s"
+                    repeatCount="indefinite"
+                />
+                </g>
+                </svg>
+            </Box>
+    </>
     )
 }
