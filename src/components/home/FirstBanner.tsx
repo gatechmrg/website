@@ -76,13 +76,24 @@ export default function FirstBanner() {
                     d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
                 />
                 </defs>
+                {/* Background rectangle with midnight blue */}
+                {/* <rect width="100%" height="100%" fill="#003566" /> */}
+
                 <g>
-                <use xlinkHref="#gentle-wave" x="0" y="0" fill="rgba(245,245,245, 0.9)" />
-                <use xlinkHref="#gentle-wave" x="352" y="0" fill="rgba(245,245,245,0.9)" />
+                {/* <use xlinkHref="#gentle-wave" x="0" y="0" fill="rgba(245,245,245, 0.7)" />
+                <use xlinkHref="#gentle-wave" x="352" y="0" fill="rgba(245,245,245,0.7)" />
                 <use xlinkHref="#gentle-wave" x="50" y="3" fill="rgba(245,245,245, 0.5)" />
-                <use xlinkHref="#gentle-wave" x="402" y="3" fill="rgba(245,245,245, 0.5)" />
+                <use xlinkHref="#gentle-wave" x="402" y="3" fill="rgba(245,245,245, 0.5)" /> 
                 <use xlinkHref="#gentle-wave" x="100" y="6" fill="rgba(245,245,245, 0.3)" />
-                <use xlinkHref="#gentle-wave" x="452" y="6" fill="rgba(245,245,245, 0.3)" />
+                <use xlinkHref="#gentle-wave" x="452" y="6" fill="rgba(245,245,245, 0.3)" /> */}
+                        
+                <use xlinkHref="#gentle-wave" x="0" y="0" fill="rgba(0, 53, 102, 0.7)" />
+                <use xlinkHref="#gentle-wave" x="352" y="0" fill="rgba(0, 53, 102, 0.7)" />
+                <use xlinkHref="#gentle-wave" x="50" y="3" fill="rgba(0, 53, 102, 0.5)" />
+                <use xlinkHref="#gentle-wave" x="402" y="3" fill="rgba(0, 53, 102, 0.5)" />
+                <use xlinkHref="#gentle-wave" x="100" y="6" fill="rgba(0, 53, 102, 0.3)" />
+                <use xlinkHref="#gentle-wave" x="452" y="6" fill="rgba(0, 53, 102, 0.3)" />
+                
                 <animateTransform
                     attributeName="transform"
                     type="translate"
