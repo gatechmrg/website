@@ -6,7 +6,7 @@ export const theme = createTheme({
       main: '#C2AC6D' // Gold (lines, hyperlinks, hover)
     },
     // secondary: {
-    //   main: '#1a0dab' // Dark navy blue
+    //   main: '#001848', // dark navy blue (logo)
     // },
     background: {
       // default: '#001848', // dark navy blue 
