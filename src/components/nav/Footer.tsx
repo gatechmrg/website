@@ -213,7 +213,7 @@ export default function Footer() {
                     <Grid container>
                         <Grid item>
                             <Typography variant="body1">
-                                &#169; 2023 MRG
+                                &#169; 2023-2025 MRG
                             </Typography>
                         </Grid>
                         <Grid item>
