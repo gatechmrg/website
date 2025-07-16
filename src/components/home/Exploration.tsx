@@ -8,7 +8,7 @@ export default function Exploration() {
     const small = useMediaQuery(theme.breakpoints.down('md'))
 
     return (
-        <Box mt={6}  >
+        <Box mt={0} sx={{backgroundColor: 'background', padding: '2rem', color: "text.primary" }}> 
             <Box textAlign="center">
                 <Typography variant="h2">
                     Student-led Exploration
@@ -19,7 +19,7 @@ export default function Exploration() {
             </Box>
             <Container maxWidth="md">
                 <Box textAlign="center" mt={3} mb={12}>
-                    <Typography variant="h5">
+                    <Typography variant="h6" fontWeight={400}>
                         The furthest reaches of human exploration are pioneered by robots. 
                         At the Marine Robotics Group at Georgia Tech, 
                         students likewise partake in the development of 
@@ -28,96 +28,55 @@ export default function Exploration() {
                 </Box>
             </Container>
             <Container maxWidth="lg">
-                <Box mb={12}>
-                    <Grid container justifyContent="center" spacing={3}>
-                        <Grid item md={6} order={1}>
-                            <Box>
-                                <img src="/home/training.webp" width="100%"
-                                    style={{borderRadius: 16}} alt="MRG training in the lab" />
-                            </Box>
-                        </Grid>
-                        <Grid item md={6} order={small ? 0 : 2}>
-                            <Box mx={3} mb={{xs: 3, md: 0}}>
-                                <Box textAlign={{xs: 'center', md: 'left'}}>
-                                    <Typography variant="h3" fontWeight={300}>
-                                        Learning
-                                    </Typography>
-                                </Box>
-                                <Box>
-                                    <StandardLine width={190} height={5} borderRadius={3}
-                                        centered={small} />
-                                </Box>
-                                <Box mt={3}>
-                                    <Typography variant="h5" textAlign={{xs: 'center', md: 'left'}}>
-                                        MRG provides an opportunity to learn new skills and work with tools 
-                                        for robotics, regardless of incoming skill level. We run a training
-                                        program during the beginning of each semester.
-                                    </Typography>
-                                </Box>
-                            </Box>
-                        </Grid>
+                <Grid container spacing={4} justifyContent="center">
+                    {/* Learning */}
+                    <Grid item xs={12} md={4}>
+                        <Box textAlign="center">
+                            <img src="/home/training.webp" width="100%"  style={{ borderRadius: 16 }} alt="MRG training in the lab" />
+                            <Typography variant="h4" fontWeight={400} mt={2}>
+                            Learning
+                            </Typography>
+                            <StandardLine width={80} height={5} borderRadius={3} centered />
+                            <Typography variant="body1" fontWeight={300} mt={2}>
+                            MRG provides an opportunity to learn new skills and work with tools 
+                            for robotics, regardless of incoming skill level. We run a training
+                            program during the beginning of each semester.
+                            </Typography>
+                        </Box>
                     </Grid>
-                </Box>
-                <Box mb={12}>
-                    <Grid container justifyContent="center" spacing={3}>
-                        <Grid item md={6}>
-                            <Box mx={3} mb={{xs: 3, md: 0}}>
-                                <Box textAlign={{xs: 'center', md: 'left'}}>
-                                    <Typography variant="h3" fontWeight={300}>
-                                        Building
-                                    </Typography>
-                                </Box>
-                                <Box>
-                                    <StandardLine width={170} height={5} borderRadius={3}
-                                        centered={small} />
-                                </Box>
-                                <Box mt={3}>
-                                    <Typography variant="h5" textAlign={{xs: 'center', md: 'left'}}>
-                                        MRG has the goal of iterating on and creating new  
-                                        Autonomous Underwater Vehicles (AUVs)
-                                        and Autonomous Surfaces Vehicle (ASVs).
-                                    </Typography>
-                                </Box>
-                            </Box>
-                        </Grid>
-                        <Grid item md={6}>
-                            <Box>
-                                <img src="/home/building.webp" width="100%"
-                                    style={{borderRadius: 16}} alt="Members fiberglassing pontoons" />
-                            </Box>
-                        </Grid>
+
+                    {/* Building */}
+                    <Grid item xs={12} md={4}>
+                    <Box textAlign="center">
+                        <img src="/home/building.webp" width="100%" style={{ borderRadius: 16 }} alt="Members fiberglassing pontoons" />
+                        <Typography variant="h4" fontWeight={400} mt={2}>
+                        Building
+                        </Typography>
+                        <StandardLine width={80} height={5} borderRadius={3} centered />
+                        <Typography variant="body1" fontWeight={300} mt={2}>
+                        MRG has the goal of iterating on and creating new  
+                        Autonomous Underwater Vehicles (AUVs)
+                        and Autonomous Surfaces Vehicle (ASVs).
+                        </Typography>
+                    </Box>
                     </Grid>
-                </Box>
-                <Box>
-                    <Grid container justifyContent="center" spacing={3}>
-                        <Grid item md={6} order={1}>
-                            <Box>
-                                <img src="/home/testing.webp" width="100%"
-                                    style={{borderRadius: 16}} alt="Members testing a robot at a local lake" />
-                            </Box>
-                        </Grid>
-                        <Grid item md={6} order={small ? 0 : 2}>
-                            <Box mx={3} mb={{xs: 3, md: 0}}>
-                                <Box textAlign={{xs: 'center', md: 'left'}}>
-                                    <Typography variant="h3" fontWeight={300}>
-                                        Testing
-                                    </Typography>
-                                </Box>
-                                <Box>
-                                    <StandardLine width={160} height={5} borderRadius={3}
-                                        centered={small} />
-                                </Box>
-                                <Box mt={3}>
-                                    <Typography variant="h5" textAlign={{xs: 'center', md: 'left'}}>
-                                        MRG frequently tests robots at lakes near Georgia Tech 
-                                        and in the Campus Recreational Center on campus
-                                        in preparation for various competitions and challenges.
-                                    </Typography>
-                                </Box>
-                            </Box>
-                        </Grid>
+
+                    {/* Testing */}
+                    <Grid item xs={12} md={4}>
+                    <Box textAlign="center">
+                        <img src="/home/testing.webp" width="100%" style={{ borderRadius: 16 }} alt="Members testing a robot at a local lake" />
+                        <Typography variant="h4" fontWeight={400} mt={2}>
+                        Testing
+                        </Typography>
+                        <StandardLine width={80} height={5} borderRadius={3} centered />
+                        <Typography variant="body1" fontWeight={300} mt={2}>
+                        MRG frequently tests robots at lakes near Georgia Tech 
+                        and in the Campus Recreational Center on campus
+                        in preparation for various competitions and challenges.
+                        </Typography>
+                    </Box>
                     </Grid>
-                </Box>
+                </Grid>
             </Container>
         </Box>
     )
