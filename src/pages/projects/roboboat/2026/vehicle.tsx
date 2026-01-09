@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../../../../components/nav/Header";
 import Footer from "../../../../components/nav/Footer";
-import { Container, Box, Typography, Grid, Paper } from "@mui/material";
+import { Container, Box, Typography, Grid, Paper, Tooltip } from "@mui/material";
 import Link from "next/link";
 
 export default function RoboBoat2026Vehicle() {
@@ -25,13 +25,34 @@ export default function RoboBoat2026Vehicle() {
         <Header />
 
         <Container maxWidth="lg" sx={{ py: 8 }}>
+          {/* Title with Tooltip */}
           <Box textAlign="center" mb={6}>
-            <Typography variant="h3">RoboBoat 2026 — Vehicle Specifications</Typography>
-            <Typography variant="body1" color="text.secondary" sx={{ mt: 1 }}>
+            <Tooltip title="Click to return to project home" placement="bottom" arrow>
+              <Link href="/projects/roboboat/2026/" passHref>
+                <Typography
+                  component="a"
+                  variant="h3"
+                  sx={{
+                    color: 'primary.light',
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    transition: 'color 0.2s ease, text-shadow 0.2s ease',
+                    '&:hover': {
+                      color: 'primary.main',
+                      textShadow: '0 0 12px rgba(144, 202, 249, 0.6)'
+                    }
+                  }}
+                >
+                  RoboBoat 2026 — Vehicle Specifications
+                </Typography>
+              </Link>
+            </Tooltip>
+            <Typography variant="body1" color="text.primary" sx={{ mt: 1 }}>
               Key hardware and software components used on the vehicle.
             </Typography>
           </Box>
 
+          {/* Specs Grid */}
           <Grid container spacing={2}>
             {specs.map((spec, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
@@ -46,7 +67,10 @@ export default function RoboBoat2026Vehicle() {
                   }}
                   elevation={0}
                 >
-                  <Typography variant="caption" sx={{ color: 'primary.light', textTransform: 'uppercase', fontWeight: 600 }}>
+                  <Typography
+                    variant="caption"
+                    sx={{ color: 'primary.light', textTransform: 'uppercase', fontWeight: 600 }}
+                  >
                     {spec.label}
                   </Typography>
                   <Typography variant="body1" sx={{ color: 'white', mt: 0.5 }}>
@@ -56,12 +80,6 @@ export default function RoboBoat2026Vehicle() {
               </Grid>
             ))}
           </Grid>
-
-          <Box mt={6} textAlign="center">
-            <Link href="/projects/roboboat/2026/" style={{ textDecoration: 'none' }}>
-              <Typography sx={{ color: 'primary.main', cursor: 'pointer' }}>Back to RoboBoat 2026</Typography>
-            </Link>
-          </Box>
         </Container>
 
         <Footer />
