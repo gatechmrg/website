@@ -4,6 +4,7 @@ import Footer from "../../../../../components/nav/Footer";
 import { Box, Container, Typography, Button, Grid, Paper, Divider } from "@mui/material";
 import Link from "next/link";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import { Tooltip } from "@mui/material"; 
 
 export default function RoboBoat2026Timeline() {
   const sampleTimeline = [
@@ -46,48 +47,52 @@ export default function RoboBoat2026Timeline() {
         <Header />
         <Container maxWidth="md" sx={{ py: 8 }}>
           {/* Header Section */}
-          <Box textAlign="center" mb={6}>
+          
+        <Box textAlign="center" mb={6}>
+        <Tooltip title="Click to return to RoboBoat 2026" arrow placement="bottom">
             <Link href="/projects/roboboat/2026" passHref>
-                <Typography 
-                    component="a"
-                    variant="h2"
-                    sx={{ 
-                    color: 'primary.light',
-                    fontSize: { xs: '2rem', md: '2.75rem' }, 
-                    fontWeight: 700,
-                    mb: 2,
-                    letterSpacing: '-0.02em',
-                    cursor: 'pointer',
-                    textDecoration: 'none',
-                    transition: 'color 0.2s ease, text-shadow 0.2s ease',
-                    '&:hover': {
-                        color: 'primary.main',
-                        textShadow: '0 0 12px rgba(144, 202, 249, 0.6)'
-                    },
-                    '&:focus-visible': {
-                        outline: '2px solid',
-                        outlineColor: 'primary.main',
-                        outlineOffset: '4px'
-                    }
-                    }}
-                >
-                    RoboBoat 2026
-                </Typography>
-                </Link>
-
             <Typography 
-              variant="h5" 
-              sx={{ 
-                color: 'rgba(255, 255, 255, 0.85)',
-                fontSize: { xs: '1.1rem', md: '1.3rem' },
-                fontWeight: 400,
-                maxWidth: '600px',
-                mx: 'auto'
-              }}
+                component="a"
+                variant="h2"
+                sx={{ 
+                color: 'primary.light',
+                fontSize: { xs: '2rem', md: '2.75rem' }, 
+                fontWeight: 700,
+                mb: 2,
+                letterSpacing: '-0.02em',
+                cursor: 'pointer',
+                textDecoration: 'none',
+                transition: 'color 0.2s ease, text-shadow 0.2s ease',
+                '&:hover': {
+                    color: 'primary.main',
+                    textShadow: '0 0 12px rgba(144, 202, 249, 0.6)'
+                },
+                '&:focus-visible': {
+                    outline: '2px solid',
+                    outlineColor: 'primary.main',
+                    outlineOffset: '4px'
+                }
+                }}
             >
-              Development Timeline & Key Milestones
+                RoboBoat 2026 - Development Timeline
             </Typography>
-          </Box>
+            </Link>
+        </Tooltip>
+
+        <Typography 
+            variant="h5" 
+            sx={{ 
+            color: 'rgba(255, 255, 255, 0.85)',
+            fontSize: { xs: '1.1rem', md: '1.3rem' },
+            fontWeight: 400,
+            maxWidth: '600px',
+            mx: 'auto'
+            }}
+        >
+            Development Timeline & Key Milestones
+        </Typography>
+        </Box>
+
 
           {/* Timeline */}
           <Box sx={{ position: 'relative', pl: { xs: 3, md: 4 } }}>
