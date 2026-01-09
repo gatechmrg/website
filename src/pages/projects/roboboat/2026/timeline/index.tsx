@@ -47,18 +47,34 @@ export default function RoboBoat2026Timeline() {
         <Container maxWidth="md" sx={{ py: 8 }}>
           {/* Header Section */}
           <Box textAlign="center" mb={6}>
-            <Typography 
-              variant="h2" 
-              sx={{ 
-                color: 'primary.light',
-                fontSize: { xs: '2rem', md: '2.75rem' }, 
-                fontWeight: 700,
-                mb: 2,
-                letterSpacing: '-0.02em'
-              }}
-            >
-              RoboBoat 2026
-            </Typography>
+            <Link href="/projects/roboboat/2026" passHref>
+                <Typography 
+                    component="a"
+                    variant="h2"
+                    sx={{ 
+                    color: 'primary.light',
+                    fontSize: { xs: '2rem', md: '2.75rem' }, 
+                    fontWeight: 700,
+                    mb: 2,
+                    letterSpacing: '-0.02em',
+                    cursor: 'pointer',
+                    textDecoration: 'none',
+                    transition: 'color 0.2s ease, text-shadow 0.2s ease',
+                    '&:hover': {
+                        color: 'primary.main',
+                        textShadow: '0 0 12px rgba(144, 202, 249, 0.6)'
+                    },
+                    '&:focus-visible': {
+                        outline: '2px solid',
+                        outlineColor: 'primary.main',
+                        outlineOffset: '4px'
+                    }
+                    }}
+                >
+                    RoboBoat 2026
+                </Typography>
+                </Link>
+
             <Typography 
               variant="h5" 
               sx={{ 
@@ -188,37 +204,7 @@ export default function RoboBoat2026Timeline() {
             </Grid>
           </Box>
 
-          {/* Footer Note */}
-          <Box 
-            mt={8} 
-            p={3}
-            sx={{
-              bgcolor: 'rgba(255, 255, 255, 0.03)',
-              borderRadius: 2,
-              border: '1px solid rgba(255, 255, 255, 0.08)'
-            }}
-          >
-            <Typography 
-              variant="body2" 
-              sx={{ 
-                color: 'rgba(255, 255, 255, 0.5)',
-                fontSize: '0.875rem',
-                fontFamily: 'monospace'
-              }}
-            >
-              To add or edit timeline entries, update:
-              <br />
-              <code style={{ 
-                color: 'rgba(255, 255, 255, 0.7)',
-                backgroundColor: 'rgba(255, 255, 255, 0.05)',
-                padding: '4px 8px',
-                borderRadius: '4px',
-                fontSize: '0.85rem'
-              }}>
-                src/pages/projects/roboboat/2026/timeline/index.tsx
-              </code>
-            </Typography>
-          </Box>
+          
         </Container>
         <Footer />
       </div>

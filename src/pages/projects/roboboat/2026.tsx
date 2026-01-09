@@ -2,6 +2,7 @@ import Head from "next/head";
 import Header from "../../../components/nav/Header";
 import Footer from "../../../components/nav/Footer";
 import { Box, Container, Typography, Grid, Paper, Chip } from "@mui/material";
+import Image from 'next/image'
 import Link from "next/link";
 import { GreenPrimaryButton } from "../../../components/misc/buttons";
 import DescriptionIcon from '@mui/icons-material/Description';
@@ -69,50 +70,83 @@ export default function RoboBoat2026() {
             </Typography>
           </Box>
 
-          {/* Vehicle Image Placeholder */}
-          <Box 
-            sx={{ 
-              mb: 6,
-              borderRadius: 3,
-              overflow: 'hidden',
-              border: '2px solid',
-              borderColor: 'rgba(255, 255, 255, 0.1)',
-              bgcolor: 'rgba(255, 255, 255, 0.03)',
-              position: 'relative',
-              height: { xs: '300px', md: '450px' },
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center'
-            }}
+          {/* Vehicle Image Placeholder with clickable label */}
+          <Link
+            href="/projects/roboboat/2026/vehicle"
+            style={{ textDecoration: 'none' }}
+            aria-label="Go to full vehicle specifications page"
           >
-            {/* Replace this Box with <img> when you have the actual image */}
             <Box
               sx={{
-                width: '100%',
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: 2
+                textAlign: 'center',
+                mb: 6,
+                cursor: 'pointer',
+                transition: 'all 200ms ease-in-out',
+                // make the clickable area match the image width and center it
+                width: { xs: '90%', md: '70%' },
+                mx: 'auto',
+                '&:hover .vehicle-title': {
+                  color: 'primary.main',
+                  textShadow: '0 0 10px rgba(144, 202, 249, 0.6)'
+                },
+                '&:hover .vehicle-image': {
+                  transform: 'translateY(-8px) scale(1.02)',
+                  boxShadow: theme => `0 15px 35px ${theme.palette.primary.main}33`
+                }
               }}
             >
-              <BuildIcon sx={{ fontSize: '4rem', color: 'rgba(255, 255, 255, 0.2)' }} />
-              <Typography sx={{ color: 'rgba(255, 255, 255, 0.4)', fontSize: '1.1rem' }}>
-                Vehicle Image Coming Soon
+              <Typography
+                className="vehicle-title"
+                variant="h4"
+                sx={{
+                  color: 'primary.light',
+                  fontWeight: 800,
+                  mb: 2,
+                  fontSize: { xs: '1.5rem', md: '2rem' },
+                  transition: 'color 200ms, text-shadow 200ms'
+                }}
+              >
+                Vehicle
               </Typography>
-              <Typography sx={{ color: 'rgba(255, 255, 255, 0.3)', fontSize: '0.875rem' }}>
-                BlueBoat Extended Platform
+              <Box
+                className="vehicle-image"
+                sx={{
+                  borderRadius: 4,
+                  overflow: 'hidden',
+                  border: '2px solid rgba(255,255,255,0.1)',
+                  bgcolor: 'rgba(255,255,255,0.03)',
+                  position: 'relative',
+                  width: '100%',
+                  height: { xs: '240px', md: '400px' },
+                  mx: 'auto',
+                  transition: 'transform 200ms ease, box-shadow 200ms ease'
+                }}
+              >
+                <Image
+                  src="/bb.png"
+                  alt="RoboBoat 2026 Vehicle"
+                  fill
+                  style={{ objectFit: 'contain' }}
+                />
+              </Box>
+              <Typography
+                sx={{
+                  mt: 1,
+                  color: 'primary.light',
+                  fontWeight: 700,
+                  fontSize: { xs: '1rem', md: '1.25rem' },
+                  letterSpacing: '0.5px',
+                  width: '100%',
+                  textAlign: 'center',
+                  display: 'block'
+                }}
+              >
+                Click to View Vehicle Specs!
               </Typography>
             </Box>
-            {/* When you have an image, replace the above with:
-            <img 
-              src="/path-to-your-image.jpg" 
-              alt="RoboBoat 2026 Vehicle"
-              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-            />
-            */}
-          </Box>
+          </Link>
+
+
 
           {/* Quick Links Section */}
           <Grid container spacing={3} mb={6}>
@@ -222,63 +256,7 @@ export default function RoboBoat2026() {
             </Grid>
           </Grid>
 
-          {/* Vehicle Specifications */}
-          <Box mb={6}>
-            <Typography 
-              variant="h4" 
-              sx={{ 
-                color: 'primary.light',
-                fontSize: { xs: '1.75rem', md: '2rem' }, 
-                fontWeight: 600,
-                mb: 4,
-                textAlign: 'center'
-              }}
-            >
-              Vehicle Specifications
-            </Typography>
-            <Grid container spacing={2}>
-              {specs.map((spec, index) => (
-                <Grid item xs={12} sm={6} md={4} key={index}>
-                  <Paper
-                    sx={{
-                      p: 2.5,
-                      bgcolor: 'rgba(255, 255, 255, 0.05)',
-                      backdropFilter: 'blur(10px)',
-                      border: '1px solid',
-                      borderColor: 'rgba(255, 255, 255, 0.1)',
-                      borderLeft: '3px solid',
-                      borderLeftColor: 'primary.main',
-                    }}
-                    elevation={0}
-                  >
-                    <Typography 
-                      variant="caption" 
-                      sx={{ 
-                        color: 'primary.light',
-                        fontSize: '0.75rem',
-                        fontWeight: 600,
-                        letterSpacing: '0.5px',
-                        textTransform: 'uppercase'
-                      }}
-                    >
-                      {spec.label}
-                    </Typography>
-                    <Typography 
-                      variant="body1" 
-                      sx={{ 
-                        color: 'white',
-                        fontSize: '1rem',
-                        fontWeight: 500,
-                        mt: 0.5
-                      }}
-                    >
-                      {spec.value}
-                    </Typography>
-                  </Paper>
-                </Grid>
-              ))}
-            </Grid>
-          </Box>
+          {/* Vehicle specifications moved to a dedicated page */}
 
           {/* About Section */}
           <Paper
