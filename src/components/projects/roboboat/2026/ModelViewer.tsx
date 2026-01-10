@@ -1,0 +1,35 @@
+// src/components/ModelViewer.tsx
+import React, { useEffect, forwardRef } from 'react';
+
+interface ModelViewerProps extends React.HTMLAttributes<HTMLElement> {
+  src: string;
+  alt?: string;
+  cameraControls?: boolean;
+  autoRotate?: boolean;
+  interactionPrompt?: string;
+  style?: React.CSSProperties;
+}
+
+const ModelViewer = forwardRef<HTMLElement, ModelViewerProps>(
+  ({ src, alt, cameraControls = false, autoRotate = false, interactionPrompt = 'auto', style, ...props }, ref) => {
+    useEffect(() => {
+      // Dynamically import model-viewer (client only)
+      import('@google/model-viewer');
+    }, []);
+
+    return (
+      <model-viewer
+        ref={ref}
+        src={src}
+        alt={alt}
+        camera-controls={cameraControls}
+        auto-rotate={autoRotate}
+        interaction-prompt={interactionPrompt}
+        style={style}
+        {...props}
+      />
+    );
+  }
+);
+
+export default ModelViewer;
