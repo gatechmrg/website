@@ -1,19 +1,29 @@
-import Image from 'next/image';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { Box, Typography } from '@mui/material';
 
+const ModelViewer = dynamic(() => import('./ModelViewer'), { ssr: false });
+
 export default function VehicleSection() {
+  const handleInspectClick = (e: React.MouseEvent) => {
+    e.stopPropagation(); // prevent navigating to vehicle page
+    window.open('/models/roboboat.glb', '_blank'); // open model in new tab
+  };
+
   return (
     <Box sx={{ textAlign: 'center', mb: 6 }}>
       <Typography
-        className="vehicle-title"
         variant="h4"
         sx={{ color: 'primary.light', fontWeight: 800, mb: 2, fontSize: { xs: '1.5rem', md: '2rem' } }}
       >
         Vehicle
       </Typography>
 
-      <Link href="/projects/roboboat/2026/vehicle" style={{ textDecoration: 'none', display: 'block', width: '100%' }} aria-label="Vehicle specs">
+      <Link
+        href="/projects/roboboat/2026/vehicle"
+        style={{ textDecoration: 'none', display: 'block', width: '100%' }}
+        aria-label="Vehicle specs"
+      >
         <Box
           sx={{
             width: { xs: '90%', md: '70%' },
@@ -23,30 +33,53 @@ export default function VehicleSection() {
             overflow: 'hidden',
             border: '2px solid rgba(255,255,255,0.1)',
             bgcolor: 'rgba(255,255,255,0.03)',
-            transition: 'all 200ms ease-in-out',
-            '&:hover .vehicle-image': {
-              transform: 'translateY(-8px) scale(1.02)',
-              boxShadow: theme => `0 15px 35px ${theme.palette.primary.main}33`
-            },
-            '&:hover .vehicle-cta': {
-              bgcolor: 'primary.main',
-              color: 'white'
-            }
+            position: 'relative',
           }}
         >
+          <Box className="vehicle-image" sx={{ width: '100%', height: { xs: '240px', md: '400px' } }}>
+            <ModelViewer
+              src="/models/roboboat.glb"
+              alt="RoboBoat 2026 Vehicle"
+              camera-controls
+              auto-rotate
+              interaction-prompt="none"
+              style={{ width: '100%', height: '100%' }}
+            />
+          </Box>
+
+          {/* Corner Inspect Link */}
           <Box
-            className="vehicle-image"
-            sx={{ position: 'relative', width: '100%', height: { xs: '240px', md: '400px' }, transition: 'transform 200ms ease, box-shadow 200ms ease' }}
+            onClick={handleInspectClick}
+            sx={{
+              position: 'absolute',
+              bottom: 12,
+              right: 12,
+              px: 1.5,
+              py: 0.5,
+              bgcolor: 'rgba(0,0,0,0.65)',
+              color: 'white',
+              fontSize: '0.8rem',
+              borderRadius: 1,
+              fontWeight: 600,
+              cursor: 'pointer',
+              userSelect: 'none',
+            }}
           >
-            <Image src="/bb.png" alt="RoboBoat 2026 Vehicle" fill style={{ objectFit: 'contain' }} />
+            Inspect more →
           </Box>
 
           <Typography
-            className="vehicle-cta"
-            role="button"
-            sx={{ mt: 1, color: 'primary.light', fontWeight: 700, fontSize: { xs: '1rem', md: '1.25rem' }, letterSpacing: '0.5px', width: '100%', textAlign: 'center', display: 'block', px: 2, py: 0.5, borderRadius: 1, transition: 'all 160ms ease' }}
+            sx={{
+              mt: 1,
+              color: 'primary.light',
+              fontWeight: 700,
+              fontSize: { xs: '1rem', md: '1.25rem' },
+              letterSpacing: '0.5px',
+              textAlign: 'center',
+              py: 0.5,
+            }}
           >
-            Click to View Vehicle Specs!
+            Interactive 3D Vehicle Model
           </Typography>
         </Box>
       </Link>
