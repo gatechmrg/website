@@ -17,7 +17,7 @@ export default function VehicleSection() {
           fontSize: { xs: '1.5rem', md: '2rem' },
         }}
       >
-        Vehicle
+        BlueBoat Extended
       </Typography>
 
       {/* Vehicle Page Link (ABOVE model) */}
