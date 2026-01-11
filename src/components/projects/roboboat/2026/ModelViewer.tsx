@@ -17,16 +17,21 @@ const ModelViewer = forwardRef<HTMLElement, ModelViewerProps>(
       import('@google/model-viewer');
     }, []);
 
+    // Remove auto-rotate from props if false
+    const filteredProps = { ...props };
+    if ('auto-rotate' in filteredProps) {
+      delete filteredProps['auto-rotate'];
+    }
     return (
       <model-viewer
         ref={ref}
         src={src}
         alt={alt}
         camera-controls={cameraControls}
-        auto-rotate={autoRotate}
         interaction-prompt={interactionPrompt}
         style={style}
-        {...props}
+        {...(autoRotate ? { 'auto-rotate': true } : {})}
+        {...filteredProps}
       />
     );
   }
