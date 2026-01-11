@@ -3,7 +3,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 import Header from "../../../../components/nav/Header";
 import Footer from "../../../../components/nav/Footer";
-import { Container, Box, Typography, Grid, Paper, List, ListItem, ListItemButton, ListItemText, Tooltip } from "@mui/material";
+import { Container, Box, Typography, Grid, Paper, List, ListItem, ListItemButton, ListItemText, Tooltip, Button } from "@mui/material";
 import Link from "next/link";
 
 const ModelViewer = dynamic(() => import('../../../../components/projects/roboboat/2026/ModelViewer'), { ssr: false });
@@ -11,8 +11,8 @@ const ModelViewer = dynamic(() => import('../../../../components/projects/robobo
 export default function RoboBoat2026Vehicle() {
   const modelViewerRef = useRef<any>(null);
   const [selectedComponent, setSelectedComponent] = useState<string | null>(null);
-  const [cameraOrbit, setCameraOrbit] = useState("45deg 75deg 3m");
-  const [cameraTarget, setCameraTarget] = useState("0m 0.15m 0m");
+  const [cameraOrbit, setCameraOrbit] = useState("45deg 80deg 3m");
+  const [cameraTarget, setCameraTarget] = useState("0m 0.3m 0m");
 
   // Component data with camera positions for 3D model
   const components = [
@@ -99,7 +99,7 @@ export default function RoboBoat2026Vehicle() {
   const handleComponentLeave = () => {
     setSelectedComponent(null);
     setCameraOrbit("45deg 75deg 3m");
-    setCameraTarget("0m 0.15m 0m");
+    setCameraTarget("auto auto auto");
   };
 
   return (
@@ -380,6 +380,32 @@ export default function RoboBoat2026Vehicle() {
             </Grid>
           </Grid>
         </Container>
+        {/* Subsystem Navigation Buttons */}
+        <Box textAlign="center" mt={8} mb={4}>
+          <Grid container spacing={3} justifyContent="center">
+            <Grid item>
+              <Link href="/projects/roboboat/2026/mechanical" passHref>
+                <Button variant="contained" color="primary" sx={{ fontWeight: 600, px: 4, py: 1.5 }}>
+                  Mechanical Subsystems
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="/projects/roboboat/2026/electrical" passHref>
+                <Button variant="contained" color="primary" sx={{ fontWeight: 600, px: 4, py: 1.5 }}>
+                  Electrical Subsystems
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href="/projects/roboboat/2026/software" passHref>
+                <Button variant="contained" color="primary" sx={{ fontWeight: 600, px: 4, py: 1.5 }}>
+                  Software Design
+                </Button>
+              </Link>
+            </Grid>
+          </Grid>
+        </Box>
         <Footer />
       </div>
     </>
