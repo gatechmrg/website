@@ -1,6 +1,7 @@
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const ModelViewer = dynamic(() => import('./ModelViewer'), { ssr: false });
 
@@ -21,24 +22,29 @@ export default function VehicleSection() {
       </Typography>
 
       {/* Vehicle Page Link (ABOVE model) */}
-      <Link
-        href="/projects/roboboat/2026/vehicle"
-        style={{ textDecoration: 'none' }}
-      >
-        <Typography
+      <Link href="/projects/roboboat/2026/vehicle" passHref style={{ textDecoration: 'none' }}>
+        <Button
+          variant="contained"
+          color="primary"
           sx={{
-            mb: 2,
-            color: 'primary.main',
+            mb: 3,
             fontWeight: 600,
-            fontSize: '0.95rem',
+            fontSize: { xs: '0.85rem', md: '0.95rem' },
+            px: 1.5,
+            py: 0.7,
+            borderRadius: 2,
             letterSpacing: '0.5px',
-            '&:hover': {
-              textDecoration: 'underline',
-            },
+            textTransform: 'none',
+            color: 'white',
+            minWidth: 0,
+            display: 'inline-flex',
+            alignItems: 'center',
+            gap: 1,
           }}
+          endIcon={<ArrowForwardIcon sx={{ fontSize: '1.1em', color: 'white' }} />}
         >
-          View vehicle specs →
-        </Typography>
+          Click to View Vehicle Overview
+        </Button>
       </Link>
 
       {/* Model Container (NO LINK WRAPPER) */}
@@ -57,7 +63,7 @@ export default function VehicleSection() {
             src="/models/roboboat.glb"
             alt="RoboBoat 2026 Vehicle"
             camera-controls
-            auto-rotate
+            autoRotate={true}
             interaction-prompt="none"
             style={{ width: '100%', height: '100%' }}
           />
