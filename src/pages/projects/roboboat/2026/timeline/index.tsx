@@ -178,18 +178,35 @@ export default function RoboBoat2026Timeline() {
                     </Box>
 
                     {/* Title */}
-                    <Typography 
-                      variant="h6" 
-                      sx={{ 
-                        color: 'white',
-                        fontSize: { xs: '1.15rem', md: '1.3rem' },
-                        fontWeight: 600,
-                        mb: 1.5,
-                        lineHeight: 1.3
-                      }}
+                    <Link 
+                      href={`/projects/roboboat/2026/blog#${
+                        item.title
+                          .toLowerCase()
+                          .replace(/[^a-z0-9]+/g, '-')
+                          .replace(/(^-|-$)/g, '')
+                      }`} 
+                      passHref
                     >
-                      {item.title}
-                    </Typography>
+                      <Typography 
+                        component="a"
+                        variant="h6" 
+                        sx={{ 
+                          color: 'primary.main',
+                          fontSize: { xs: '1.15rem', md: '1.3rem' },
+                          fontWeight: 600,
+                          mb: 1.5,
+                          lineHeight: 1.3,
+                          cursor: 'pointer',
+                          textDecoration: 'underline',
+                          transition: 'color 0.2s',
+                          '&:hover': {
+                            color: 'primary.light',
+                          },
+                        }}
+                      >
+                        {item.title}
+                      </Typography>
+                    </Link>
 
                     {/* Details */}
                     <Typography 
@@ -210,6 +227,47 @@ export default function RoboBoat2026Timeline() {
           </Box>
 
           
+        {/* Navigation Buttons */}
+        <Box textAlign="center" mt={8} mb={4}>
+          <Box display="flex" justifyContent="center" gap={2} flexWrap="wrap">
+            <Link href="/projects/roboboat/2026/blog" passHref>
+              <Button
+                variant="contained"
+                color="primary"
+                sx={{
+                  fontWeight: 600,
+                  px: 4,
+                  py: 1.5,
+                  fontSize: { xs: '1rem', md: '1.1rem' },
+                  borderRadius: 2,
+                  letterSpacing: '0.5px',
+                  textTransform: 'none',
+                  color: 'white',
+                }}
+              >
+                RoboBoat 2026 Blog Page
+              </Button>
+            </Link>
+            <Link href="/projects/roboboat/2026" passHref>
+              <Button
+                variant="contained"
+                color="primary"
+                sx={{
+                  fontWeight: 600,
+                  px: 4,
+                  py: 1.5,
+                  fontSize: { xs: '1rem', md: '1.1rem' },
+                  borderRadius: 2,
+                  letterSpacing: '0.5px',
+                  textTransform: 'none',
+                  color: 'white',
+                }}
+              >
+                Back to RoboBoat 2026
+              </Button>
+            </Link>
+          </Box>
+        </Box>
         </Container>
         <Footer />
       </div>

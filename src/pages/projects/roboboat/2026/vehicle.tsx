@@ -11,8 +11,8 @@ const ModelViewer = dynamic(() => import('../../../../components/projects/robobo
 export default function RoboBoat2026Vehicle() {
   const modelViewerRef = useRef<any>(null);
   const [selectedComponent, setSelectedComponent] = useState<string | null>(null);
-  const [cameraOrbit, setCameraOrbit] = useState("45deg 80deg 3m");
-  const [cameraTarget, setCameraTarget] = useState("0m 0.3m 0m");
+  const [cameraOrbit, setCameraOrbit] = useState("45deg 75deg 3m");
+  const [cameraTarget, setCameraTarget] = useState("auto auto auto");
 
   // Component data with camera positions for 3D model
   const components = [
@@ -29,15 +29,15 @@ export default function RoboBoat2026Vehicle() {
       label: "Stereo Cameras", 
       value: "Dual OAK-D",
       description: "RGB-D stereo vision for object detection and depth estimation",
-      cameraOrbit: "135deg 90deg 2m",
-      cameraTarget: "0m 0.2m 0.3m"
+      cameraOrbit: "135deg 90deg 0m",
+      cameraTarget: "0m 0m .4m"
     },
     { 
       id: "perception-lidar",
       label: "LiDAR", 
       value: "Livox Mid-360",
       description: "360° solid-state LiDAR for obstacle detection and mapping",
-      cameraOrbit: "90deg 75deg 1m",
+      cameraOrbit: "90deg 75deg 0m",
       cameraTarget: "0m 0m 0m"
     },
     { 
