@@ -13,9 +13,10 @@
     "@emotion/server": "^11.11.0",
     "@emotion/styled": "^11.11.0",
     "@fontsource/roboto": "^4.5.8",
+    "@google/model-viewer": "^4.1.0",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.0",
-    "next": "13.4.2",
+    "next": "^15.5.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-scrollama": "^2.3.2"
