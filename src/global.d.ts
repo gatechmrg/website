@@ -11,3 +11,6 @@ declare namespace JSX {
     };
   }
 }
+
+// Allow importing untyped third-party modules without @types
+declare module 'react-scrollama';
