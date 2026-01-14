@@ -37,4 +37,7 @@ const ModelViewer = forwardRef<HTMLElement, ModelViewerProps>(
   }
 );
 
+// Give the forwarded component a display name for ESLint `react/display-name`
+ModelViewer.displayName = 'ModelViewer';
+
 export default ModelViewer;
