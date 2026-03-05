@@ -85,11 +85,11 @@ export default function Projects() {
                         height={400} width={800} left={`${wamvOffset}vw`}
                         sx={{backgroundImage: 'url(/home/wamv24-cutout.webp)', backgroundSize: '100% 100%',
                             transform: 'translateX(-100%)'}} />
-                    <Box position="absolute" bottom={`${roboSubOffset - 50}vh`} zIndex={3}
+                    {/* <Box position="absolute" bottom={`${roboSubOffset - 50}vh`} zIndex={3}
                         height={700} width={700} 
                         left={breakpoint.indexOf(true) >= 3 ? "min(25vw, calc(100vw - 1050px))" : "50vw"}
                         sx={{backgroundImage: 'url(/home/robosub_no_background.svg)', backgroundSize: '100% 100%',
-                            transform: 'translate(-50%, 100%)'}} />
+                            transform: 'translate(-50%, 100%)'}} /> */}
                 </Box>
                 <Box pt={12} />
                 <Box>
@@ -223,8 +223,18 @@ export default function Projects() {
                     <Step data={3}>
                         <Box position="relative" height="100vh" mx={3}>
                             <Grid container justifyContent="center">
-                                <Grid item flex={{lg: 1, md: 0}} />
-                                <Grid item xl={6}>
+                                <Grid item flex={{lg: 1, md: 0}} display="flex" justifyContent="center" alignItems="center" mt={-20}>
+                                    <Box
+                                    height={700} width={700} 
+                                    sx={{
+                                        backgroundImage: 'url(/home/robosub_no_background.svg)',
+                                        backgroundSize: 'contain',
+                                        backgroundPosition: 'center',
+                                        backgroundRepeat: 'no-repeat'
+                                    }}
+                                    />
+                                    </Grid>
+                                <Grid item flex={{lg: 1, md: 0}} display="flex" justifyContent="center" alignItems="center" mt={-20}>
                                     <Box maxWidth={800} mx="auto">
                                         <Paper elevation={3}>
                                             <Box p={3}>
