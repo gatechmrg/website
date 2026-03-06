@@ -222,52 +222,45 @@ export default function Projects() {
                     </Step>
                     <Step data={3}>
                         <Box position="relative" height="100vh" mx={3}>
-                            <Grid container justifyContent="center">
-                                <Grid item flex={{lg: 1, md: 0}} display="flex" justifyContent="center" alignItems="center" mt={-20}>
-                                    <Box
-                                    height={700} width={700} 
+                            <Grid container justifyContent="center" alignItems="center" sx={{ height: "100%" }}>
+                                <Grid item xs={12} lg={6} display="flex" justifyContent="center" alignItems="center" mt = {-20}>
+                                <Box
                                     sx={{
-                                        backgroundImage: 'url(/home/robosub_no_background.svg)',
-                                        backgroundSize: 'contain',
-                                        backgroundPosition: 'center',
-                                        backgroundRepeat: 'no-repeat'
-                                    }}
-                                    />
-                                    </Grid>
-                                <Grid item flex={{lg: 1, md: 0}} display="flex" justifyContent="center" alignItems="center" mt={-20}>
-                                    <Box maxWidth={800} mx="auto">
-                                        <Paper elevation={3}>
-                                            <Box p={3}>
-                                                <Box>
-                                                    <Typography variant="h4">
-                                                        RoboSub
-                                                    </Typography>
-                                                </Box>
-                                                <StandardLine width={140} height={5} borderRadius={3} />
-                                                <Box mt={2}>
-                                                    <Typography variant="body1" fontSize="1.2rem"
-                                                        lineHeight={1.7}>
-                                                        For this competition, we build and program an 
-                                                        underwater vehicle to complete a series of tasks 
-                                                        autonomously. The competition takes place annually,
-                                                        and we are eager to return to competition after a five year hiatus
-                                                        this Summer 2025.
-                                                    </Typography>
-                                                </Box>
-                                                <Box mt={3}>
-                                                    <Link href="/projects/robosub">
-                                                        <GreenPrimaryButton sx={{minWidth: 200}}>
-                                                            Learn More
-                                                        </GreenPrimaryButton>
-                                                    </Link>
-                                                </Box>
-                                            </Box>
-                                        </Paper>
-                                    </Box>
+                                        height: { xs: 300, md: 500, lg: 700 },
+                                        width: { xs: 300, md: 500, lg: 700 },
+                                        backgroundImage: "url(/home/robosub_no_background.svg)",
+                                        backgroundSize: "contain",
+                                        backgroundPosition: "center",
+                                        backgroundRepeat: "no-repeat",
+                                        flexShrink: 0,
+                                    }}/>
                                 </Grid>
+                            <Grid item xs={12} lg={6} display="flex" justifyContent="center" alignItems="center" mt = {-20} >
+                                <Paper elevation={3} sx={{ maxWidth: 800, width: "100%" }}>
+                                <Box p={3}>
+                                    <Typography variant="h4">RoboSub</Typography>
+                                    <StandardLine width={140} height={5} borderRadius={3} />
+                                    <Box mt={2}>
+                                    <Typography variant="body1" fontSize="1.2rem" lineHeight={1.7}>
+                                        For this competition, we build and program an underwater vehicle
+                                        to complete a series of tasks autonomously. The competition takes
+                                        place annually, and we are eager to return to competition after a
+                                        five year hiatus this Summer 2025.
+                                    </Typography>
+                                    </Box>
+                                    <Box mt={3}>
+                                    <Link href="/projects/robosub">
+                                        <GreenPrimaryButton sx={{ minWidth: 200 }}>
+                                        Learn More
+                                        </GreenPrimaryButton>
+                                    </Link>
+                                    </Box>
+                                </Box>
+                                </Paper>
+                            </Grid>
                             </Grid>
                         </Box>
-                    </Step>
+                        </Step>
                 </Scrollama>
             </Box>
         </Box>
