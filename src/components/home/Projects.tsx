@@ -226,8 +226,8 @@ export default function Projects() {
                                 <Grid item xs={12} lg={6} display="flex" justifyContent="center" alignItems="center" mt = {-20}>
                                 <Box
                                     sx={{
-                                        height: { xs: 300, md: 500, lg: 700 },
-                                        width: { xs: 300, md: 500, lg: 700 },
+                                        height: 700,
+                                        width: 700,
                                         backgroundImage: "url(/home/robosub_no_background.svg)",
                                         backgroundSize: "contain",
                                         backgroundPosition: "center",
