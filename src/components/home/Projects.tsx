@@ -1,7 +1,7 @@
 import { Box, Grid, Paper, Typography, useMediaQuery } from "@mui/material";
 import { StandardLine } from "../misc/line";
 import { Scrollama, Step} from 'react-scrollama'
-import { GreenPrimaryButton } from "../misc/buttons";
+import { GreenPrimaryButton, BlueButton } from "../misc/buttons";
 import Link from "next/link";
 import { useState, useEffect, useMemo } from "react";
 import { useTheme } from '@mui/material/styles'
@@ -94,7 +94,7 @@ export default function Projects() {
                 <Box pt={12} />
                 <Box>
                     <Box textAlign="center">
-                        <Typography variant="h2">
+                        <Typography variant="h2" color="text.secondary">
                             Ongoing Projects
                         </Typography>
                     </Box>
@@ -131,9 +131,9 @@ export default function Projects() {
                                                 </Box>
                                                 <Box mt={3}>
                                                     <Link href="/projects/microtransat">
-                                                        <GreenPrimaryButton sx={{minWidth: 200}}>
+                                                        <BlueButton>
                                                             Learn More
-                                                        </GreenPrimaryButton>
+                                                        </BlueButton>
                                                     </Link>
                                                 </Box>
                                             </Box>
@@ -169,9 +169,9 @@ export default function Projects() {
                                                 </Box>
                                                 <Box mt={3}>
                                                     <Link href="/projects/roboboat">
-                                                        <GreenPrimaryButton sx={{minWidth: 200}}>
+                                                        <BlueButton>
                                                             Learn More
-                                                        </GreenPrimaryButton>
+                                                        </BlueButton>
                                                     </Link>
                                                 </Box>
                                             </Box>
@@ -208,9 +208,9 @@ export default function Projects() {
                                                 </Box>
                                                 <Box mt={3}>
                                                     <Link href="/projects/robotx">
-                                                        <GreenPrimaryButton sx={{minWidth: 200}}>
+                                                        <BlueButton sx={{minWidth: 200}}>
                                                             Learn More
-                                                        </GreenPrimaryButton>
+                                                        </BlueButton>
                                                     </Link>
                                                 </Box>
                                             </Box>
@@ -246,9 +246,9 @@ export default function Projects() {
                                                 </Box>
                                                 <Box mt={3}>
                                                     <Link href="/projects/robosub">
-                                                        <GreenPrimaryButton sx={{minWidth: 200}}>
+                                                        <BlueButton sx={{minWidth: 200}}>
                                                             Learn More
-                                                        </GreenPrimaryButton>
+                                                        </BlueButton>
                                                     </Link>
                                                 </Box>
                                             </Box>
