@@ -9,6 +9,11 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 const user = "marinerobotics"
 const domain = "groups.gatech.edu"
 
+const handleEmail = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault()
+    window.location.href = `mailto:${user}@${domain}`
+}
+
 const steps = [
     {
         number: "01",
@@ -31,15 +36,9 @@ const steps = [
                 <Box mt={3}>
                     <Typography variant="body1" fontSize="1.25rem">
                         Feel free to{' '}
-                        <PrimaryLink
-                            href="#"
-                            fontSize="1.25rem"
-                            onClick={(e: React.MouseEvent) => {
-                                e.preventDefault()
-                                window.location.href = `mailto:${user}@${domain}`
-                            }}>
+                        <a href="#" onClick={handleEmail} style={{ color: '#B3A369', cursor: 'pointer' }}>
                             email us
-                        </PrimaryLink>
+                        </a>
                         {' '}with any questions you may have!
                     </Typography>
                 </Box>
@@ -54,7 +53,7 @@ const steps = [
             <Box>
                 <Typography variant="body1" fontSize="1.25rem">
                     New members join a small onboarding group led by an experienced team mentor.
-                    Together, you'll build a <strong>Stinger tug</strong> — a hands-on project
+                    Together, you will build a <strong>Stinger tug</strong> — a hands-on project
                     designed to get you up to speed with our tools, workflows, and team culture.
                 </Typography>
                 <Box mt={3}>
@@ -73,8 +72,8 @@ const steps = [
         content: (
             <Box>
                 <Typography variant="body1" fontSize="1.25rem">
-                    After completing the onboarding project, you'll join our competition efforts
-                    as a full member. From here you'll take on real responsibilities —
+                    After completing the onboarding project, you will join our competition efforts
+                    as a full member. From here you will take on real responsibilities —
                     designing, building, and testing systems that compete at the international level.
                 </Typography>
                 <Box mt={3}>
@@ -100,7 +99,7 @@ export default function Main() {
                         <StandardLine width={200} height={5} borderRadius={5} />
                     </Box>
                     <Typography variant="body1" fontSize="1.25rem" mt={3}>
-                        Here's how to get involved with the Marine Robotics Group.
+                        Here is how to get involved with the Marine Robotics Group.
                     </Typography>
                 </Box>
 
