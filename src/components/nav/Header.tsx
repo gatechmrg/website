@@ -10,7 +10,7 @@ const pages = [
     {name: 'About', link: '/about'},
     {name: 'Projects', link: '/projects'},
     {name: 'Sponsors', link: '/sponsors'},
-    {name: 'Join Us', link: '/join-us'}
+    {name: 'Join the Team', link: '/join-us'}
 ]
 
 const projectLinks = [
@@ -79,7 +79,17 @@ export default function Header() {
                             return (
                                 <Grid item key={page.name}>
                                     <Link href={page.link}>
-                                        <Box ml={5} sx={{':hover': {color: "primary.main"}}}>
+                                        <Box ml={5} sx={{
+                                            ...(page.name === 'Join the Team' ? {
+                                                bgcolor: '#B3A369',
+                                                color: '#fff',
+                                                px: 1.5,
+                                                py: 0.5,
+                                                '&:hover': { bgcolor: '#857437' }
+                                            } : {
+                                                '&:hover': { color: "primary.main" }
+                                            })
+                                        }}>
                                             <Typography variant="body1" sx={{fontSize: '1.2rem'}}>
                                                 {page.name}
                                             </Typography>
