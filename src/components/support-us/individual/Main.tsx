@@ -2,7 +2,7 @@ import { Container, Box, Typography, Stack } from "@mui/material";
 import Link from "next/link";
 import EditNoteIcon from '@mui/icons-material/EditNote';
 import OpenInBrowserIcon from '@mui/icons-material/OpenInBrowser';
-import Header from "../nav/Header";
+import Header from "../../nav/Header";
 
 export default function Main() {
     return (
