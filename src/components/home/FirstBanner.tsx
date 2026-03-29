@@ -17,14 +17,7 @@ export default function FirstBanner() {
 
     return (
         <>
-            <Head>
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Gidole&display=swap"
-                    rel="stylesheet"
-                />
-            </Head>
-
-            <Box position={"relative"} width="100%" height="100vh" overflow="hidden">
+            <Box position={"relative"} width="100%" height="80vh" overflow="hidden">
                 {isClient && (
                     <Box
                         component="video"
@@ -49,20 +42,19 @@ export default function FirstBanner() {
                         position: "absolute",
                         width: "100%",
                         height: "100%",
-                        backgroundColor: "rgba(180, 130, 0, 0.25)",
+                        backgroundColor: "rgba(0, 48, 87, 0.3)",
                         zIndex: 0,
                     }}
                 />
 
-                <Grid container wrap="nowrap" height="100%" justifyContent="center" alignItems="center" sx={{ position: "relative", zIndex: 1 }}>
+                <Grid container wrap="nowrap" height="100%" justifyContent="center" alignItems="flex-start" sx={{ position: "relative", zIndex: 1, paddingTop: "40px" }}>
                     <Grid item>
                         <Box textAlign="center">
                             <Typography
-                                variant="h1"
+                                variant={sm ? "h5" : "h2"}
                                 fontWeight={700}
                                 color="#fff"
                                 sx={{
-                                    fontFamily: "'Gidole', sans-serif",
                                     textShadow: "1px 1px 4px rgba(0,0,0,0.6)",
                                     letterSpacing: "0.05em",
                                 }}
@@ -70,20 +62,17 @@ export default function FirstBanner() {
                                 MARINE ROBOTICS GROUP
                             </Typography>
                             <Typography
-                                variant="h6"
+                                variant={sm ? "body1" : "h6"}
                                 fontWeight={500}
                                 color="#fff"
-                                sx={{ textShadow: "1px 1px 3px #000", mt: 1 }}
+                                sx={{ 
+                                    textShadow: "1px 1px 3px #000",
+                                     mt: 1,
+                                     px: { xs: 3, md: 0 },
+                                }}
                             >
-                                Georgia Tech's Multi-domain Robotics Team
+                                Multi-domain Robotics at Georgia Tech
                             </Typography>
-                            <Box mt={2} textAlign="center">
-                                <Link href="/join-us">
-                                    <GreenPrimaryButton sx={{ minWidth: 150 }}>
-                                        Join Us
-                                    </GreenPrimaryButton>
-                                </Link>
-                            </Box>
                         </Box>
                     </Grid>
                 </Grid>
