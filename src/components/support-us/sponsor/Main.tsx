@@ -99,7 +99,7 @@ export default function Main() {
                         <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.8)', lineHeight: 1.6 }}>
                             We also welcome gifts in kind — hardware, tools, software licenses, or other
                             materials that directly support our work. If your company has resources that
-                            could benefit our team, we'd love to hear from you.
+                            could benefit our team, we would love to hear from you.
                         </Typography>
                         <Typography variant="body1" sx={{ color: 'rgba(255,255,255,0.8)', lineHeight: 1.6 }}>
                             Receipts for gifts in kind can be provided for tax purposes. Please note that high
