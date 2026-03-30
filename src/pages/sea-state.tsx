@@ -9,6 +9,82 @@ import { GreenPrimaryButton } from "../components/misc/buttons";
 
 const seaStateReports = [
     {
+        semester: "Spring 2026",
+        weeks: [
+            {
+                week: "Week 1 — 01/25/2026",
+                summary: "Spring semester kickoff, RoboBoat vision progress, RoboSub water test and RoboBoat lake test incoming",
+                content: [
+                    "Ahoy Mateys!",
+                    "I hope you are staying warm on this chilly weekend. Let's recap the past week.",
+                    "Last Week:",
+                    "Last week kicked off the semester with the return to our regular competition and working group meetings. Thank you to everyone who was able to make it out and start picking up tasks for the semester. I am excited about the goals we have set for the next few months and the progress we hope to achieve.",
+                    "Additionally, RoboBoat software made advancements with position keeping and vision-based mapping, valuable steps toward competition readiness in February. The interior redesign continues to advance for RoboSub, with the successful integration of the thruster power system and harnessing for the E-Stop circuit.",
+                    "Shoutout:",
+                    "I would like to shout out Marcus Agun for being the first junior member to make a code push this semester! He contributed a navigate to world position functionality for RobotX/RoboBoat. Thank you! I would also like to commend Paul and Ariana for making recent pull requests for their work.",
+                    "Next Week:",
+                    "If we can make a powerful push to get everything over the finish line, we are scheduled for a RoboSub water test this Friday 1/30 from 10-2 pm. If you would like to attend, please be at the lab at 9 am to bring over equipment and set up the course. We still have some electrical and firmware development to finalize to make this deadline, so please make extra effort to come to the build nights this week and help us reach this milestone!",
+                    "Weather permitting, a RoboBoat lake test is also scheduled for Saturday 1/31, leaving early from the lab. More information will be released once the test is confirmed. Please reach out to Nick Lai with any questions.",
+                    "Looking forward to a great semester!",
+                ]
+            },
+            {
+                week: "Week 2 — 02/03/2026",
+                summary: "MicroTransAt second wingsail CNC'd, RoboBoat final competition sprint, RoboSub dry test Friday",
+                content: [
+                    "Ahoy Mateys!",
+                    "Sorry for the delayed email this week!",
+                    "Last Week:",
+                    "Last week, MicroTransAt made some exciting mechanical progress by manufacturing a second physical edition of the wingsail on the CNC and sanding it. Additionally, RoboBoat is making strides in perception, developed a power harness for the E-Stop circuit, and is making progress toward status monitoring with the light tower. There is one more RoboBoat sprint until competition! Let's make it count!",
+                    "Shoutout:",
+                    "I would like to shout out Mantra and Jenna for braving the cold to help sand the wingsail. Way to go!",
+                    "This Week:",
+                    "This week, there will be a comprehensive dry test for RoboSub to determine system readiness for the water test next week. This will occur during business hours on Friday, 2/6, in Weber 112. Please see Discord for an announcement about the specific time.",
+                    "Additionally, RoboBoat will have a water test this Sunday. Relevant team members (or anyone interested in learning more!), please contact Nick for details.",
+                    "Let's make it a great week!",
+                ]
+            },
+            {
+                week: "Week 3 — 02/09/2026",
+                summary: "New member meeting, Stinger Tug training starts, RoboBoat NanoSAM perception upgrade, BlueROV assembled",
+                content: [
+                    "Ahoy Mateys!",
+                    "Happy Monday! I hope you all have a great week.",
+                    "New Member Meeting + Start of Training:",
+                    "Last Thursday night, we had our new member meeting. If you were unable to make it, a recording is available at this link. Please reach out to me or another board member if you have questions about what we shared. Please excuse some minor technical difficulties with the presentation.",
+                    "Additionally, the Stinger Tug training project starts tomorrow night at 6:30 pm in Weber Rm COVE. Please make it to this meeting as best as possible so that you can get off to a strong start with your group. Please reach out to Aaron Wu (aewu@gatech.edu) if you are unable to make this time and need to be placed in a group directly.",
+                    "Last Week:",
+                    "MicroTransAt has made progress on the software front by making improvements to the vehicle URDF and simulation environment. These updates have included the addition of collision meshes and lift and drag simulation.",
+                    "RoboBoat is in the home stretch for competition and has finalized the hardware for the platform. Additionally, RoboBoat software has been improved with the addition of NanoSAM, a Segment Anything (SAM) model variant. This improves perception by allowing the Jetson to detect and \"cut out\" objects in the space, even if it has not been trained for that specific item. We anticipate implementing this feature for buoy detection.",
+                    "Shoutout:",
+                    "I would like to shout out Shrey, Nick, Niharika, Em, and Marcus for assembling our new BlueROV. Thank you for putting in the extra hours to get her built! I am excited for the new multi-domain capabilities we can test on our Blue Robotics vehicles.",
+                    "This Week:",
+                    "To reiterate, new member training starts this Tuesday! Please make an effort to be there if you can.",
+                    "Additionally, we are scheduled for a RoboSub water test at 10 am in the CRC competition pool this Friday!",
+                    "Let's make it a great week!",
+                ]
+            },
+            {
+                week: "Week 4 — 02/13/2026",
+                summary: "RoboSub back in water, RoboBoat all systems tested and competition-ready, heading to Sarasota",
+                content: [
+                    "Ahoy mateys!",
+                    "Let's recap another week in Marine Robotics Group.",
+                    "This Week:",
+                    "Today is an exciting day for RoboSub! We have officially re-entered the water for our first test of the semester. The internal redesign has improved electrical system modularity and organization, and we are actively testing the controller and autonomy development refined in simulation from last semester. From this point forward, testing will occur more regularly, and we will be closing the sim-to-real gap. Thank you to all of you who have worked hard to make the electrical and software revisions necessary to reach this milestone. I look forward to more to come.",
+                    "Similarly, RoboBoat has been testing aggressively in the home stretch to competition next week. The mechanical, software, and electrical systems have been working effectively in two field tests this week. Radio communications, hardware E-stopping, E-stop sensing, state monitoring, stationkeeping, movement to global coordinates, and movement to local coordinates have been tested and are working well. Keep up the great work everyone!",
+                    "Shoutout:",
+                    "I would like to shoutout Em Paul for taking strong initiative on Stinger Tug improvements as a mentor and for spending many hours working on assembling and debugging the E-Stop for RoboSub. Thanks for being so dependable and hard working!",
+                    "Next Week:",
+                    "Next week, the RoboBoat competition team will be hitting the road on Wednesday morning to make it to competition in Sarasota, Florida. Lots of hard work has gone into preparing the platform, so I am excited to put our vehicle to the test. Please reach out to Nick Lai for information about how to help with final packing requirements.",
+                    "Stinger Tug will be continuing with the first software technical lecture on Tuesday at 6:30, presented by software lead Mitchell Turton.",
+                    "Additionally, Microtransat will be having mechanical working sessions on Tuesday at 4:00 and next Friday at 1:30. There is a lot of manufacturing work still to do to make this concept a reality, so please support your teammates and the project by investing this time.",
+                    "Let's make it a great week,",
+                ]
+            },
+        ]
+    },
+    {
         semester: "Fall 2025",
         weeks: [
             {
@@ -220,82 +296,6 @@ const seaStateReports = [
                 ]
             },
         ]
-    },
-    {
-        semester: "Spring 2026",
-        weeks: [
-            {
-                week: "Week 1 — 01/25/2026",
-                summary: "Spring semester kickoff, RoboBoat vision progress, RoboSub water test and RoboBoat lake test incoming",
-                content: [
-                    "Ahoy Mateys!",
-                    "I hope you are staying warm on this chilly weekend. Let's recap the past week.",
-                    "Last Week:",
-                    "Last week kicked off the semester with the return to our regular competition and working group meetings. Thank you to everyone who was able to make it out and start picking up tasks for the semester. I am excited about the goals we have set for the next few months and the progress we hope to achieve.",
-                    "Additionally, RoboBoat software made advancements with position keeping and vision-based mapping, valuable steps toward competition readiness in February. The interior redesign continues to advance for RoboSub, with the successful integration of the thruster power system and harnessing for the E-Stop circuit.",
-                    "Shoutout:",
-                    "I would like to shout out Marcus Agun for being the first junior member to make a code push this semester! He contributed a navigate to world position functionality for RobotX/RoboBoat. Thank you! I would also like to commend Paul and Ariana for making recent pull requests for their work.",
-                    "Next Week:",
-                    "If we can make a powerful push to get everything over the finish line, we are scheduled for a RoboSub water test this Friday 1/30 from 10-2 pm. If you would like to attend, please be at the lab at 9 am to bring over equipment and set up the course. We still have some electrical and firmware development to finalize to make this deadline, so please make extra effort to come to the build nights this week and help us reach this milestone!",
-                    "Weather permitting, a RoboBoat lake test is also scheduled for Saturday 1/31, leaving early from the lab. More information will be released once the test is confirmed. Please reach out to Nick Lai with any questions.",
-                    "Looking forward to a great semester!",
-                ]
-            },
-            {
-                week: "Week 2 — 02/03/2026",
-                summary: "MicroTransAt second wingsail CNC'd, RoboBoat final competition sprint, RoboSub dry test Friday",
-                content: [
-                    "Ahoy Mateys!",
-                    "Sorry for the delayed email this week!",
-                    "Last Week:",
-                    "Last week, MicroTransAt made some exciting mechanical progress by manufacturing a second physical edition of the wingsail on the CNC and sanding it. Additionally, RoboBoat is making strides in perception, developed a power harness for the E-Stop circuit, and is making progress toward status monitoring with the light tower. There is one more RoboBoat sprint until competition! Let's make it count!",
-                    "Shoutout:",
-                    "I would like to shout out Mantra and Jenna for braving the cold to help sand the wingsail. Way to go!",
-                    "This Week:",
-                    "This week, there will be a comprehensive dry test for RoboSub to determine system readiness for the water test next week. This will occur during business hours on Friday, 2/6, in Weber 112. Please see Discord for an announcement about the specific time.",
-                    "Additionally, RoboBoat will have a water test this Sunday. Relevant team members (or anyone interested in learning more!), please contact Nick for details.",
-                    "Let's make it a great week!",
-                ]
-            },
-            {
-                week: "Week 3 — 02/09/2026",
-                summary: "New member meeting, Stinger Tug training starts, RoboBoat NanoSAM perception upgrade, BlueROV assembled",
-                content: [
-                    "Ahoy Mateys!",
-                    "Happy Monday! I hope you all have a great week.",
-                    "New Member Meeting + Start of Training:",
-                    "Last Thursday night, we had our new member meeting. If you were unable to make it, a recording is available at this link. Please reach out to me or another board member if you have questions about what we shared. Please excuse some minor technical difficulties with the presentation.",
-                    "Additionally, the Stinger Tug training project starts tomorrow night at 6:30 pm in Weber Rm COVE. Please make it to this meeting as best as possible so that you can get off to a strong start with your group. Please reach out to Aaron Wu (aewu@gatech.edu) if you are unable to make this time and need to be placed in a group directly.",
-                    "Last Week:",
-                    "MicroTransAt has made progress on the software front by making improvements to the vehicle URDF and simulation environment. These updates have included the addition of collision meshes and lift and drag simulation.",
-                    "RoboBoat is in the home stretch for competition and has finalized the hardware for the platform. Additionally, RoboBoat software has been improved with the addition of NanoSAM, a Segment Anything (SAM) model variant. This improves perception by allowing the Jetson to detect and \"cut out\" objects in the space, even if it has not been trained for that specific item. We anticipate implementing this feature for buoy detection.",
-                    "Shoutout:",
-                    "I would like to shout out Shrey, Nick, Niharika, Em, and Marcus for assembling our new BlueROV. Thank you for putting in the extra hours to get her built! I am excited for the new multi-domain capabilities we can test on our Blue Robotics vehicles.",
-                    "This Week:",
-                    "To reiterate, new member training starts this Tuesday! Please make an effort to be there if you can.",
-                    "Additionally, we are scheduled for a RoboSub water test at 10 am in the CRC competition pool this Friday!",
-                    "Let's make it a great week!",
-                ]
-            },
-            {
-                week: "Week 4 — 02/13/2026",
-                summary: "RoboSub back in water, RoboBoat all systems tested and competition-ready, heading to Sarasota",
-                content: [
-                    "Ahoy mateys!",
-                    "Let's recap another week in Marine Robotics Group.",
-                    "This Week:",
-                    "Today is an exciting day for RoboSub! We have officially re-entered the water for our first test of the semester. The internal redesign has improved electrical system modularity and organization, and we are actively testing the controller and autonomy development refined in simulation from last semester. From this point forward, testing will occur more regularly, and we will be closing the sim-to-real gap. Thank you to all of you who have worked hard to make the electrical and software revisions necessary to reach this milestone. I look forward to more to come.",
-                    "Similarly, RoboBoat has been testing aggressively in the home stretch to competition next week. The mechanical, software, and electrical systems have been working effectively in two field tests this week. Radio communications, hardware E-stopping, E-stop sensing, state monitoring, stationkeeping, movement to global coordinates, and movement to local coordinates have been tested and are working well. Keep up the great work everyone!",
-                    "Shoutout:",
-                    "I would like to shoutout Em Paul for taking strong initiative on Stinger Tug improvements as a mentor and for spending many hours working on assembling and debugging the E-Stop for RoboSub. Thanks for being so dependable and hard working!",
-                    "Next Week:",
-                    "Next week, the RoboBoat competition team will be hitting the road on Wednesday morning to make it to competition in Sarasota, Florida. Lots of hard work has gone into preparing the platform, so I am excited to put our vehicle to the test. Please reach out to Nick Lai for information about how to help with final packing requirements.",
-                    "Stinger Tug will be continuing with the first software technical lecture on Tuesday at 6:30, presented by software lead Mitchell Turton.",
-                    "Additionally, Microtransat will be having mechanical working sessions on Tuesday at 4:00 and next Friday at 1:30. There is a lot of manufacturing work still to do to make this concept a reality, so please support your teammates and the project by investing this time.",
-                    "Let's make it a great week,",
-                ]
-            },
-        ]
     }
 ]
 
@@ -340,7 +340,7 @@ export default function SeaState() {
                     <StandardLine width={200} height={5} centered borderRadius={3} />
                 </Box>
             </Box>
-            
+
             <Box sx={{ backgroundColor: '#001848', position: 'relative' }}>
                 <Box position="absolute" top="calc(100% - 100px)" left={0} width="100%" height={100}>
                     <svg
