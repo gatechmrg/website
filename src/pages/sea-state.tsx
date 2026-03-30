@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Accordion, AccordionSummary, AccordionDetails } from "@mui/material";
+import { Box, Container, Typography, Accordion, AccordionSummary, AccordionDetails, Chip } from "@mui/material";
 import { StandardLine } from "../components/misc/line";
 import Header from "../components/nav/Header";
 import Footer from "../components/nav/Footer";
@@ -216,6 +216,13 @@ export default function SeaState() {
     const handleWeekToggle = (key: string) => {
         setOpenWeeks(prev => ({ ...prev, [key]: !prev[key] }))
     }
+
+    const [openSemesters, setOpenSemesters] = useState<{ [key: number]: boolean }>({ 0: true })
+
+    const handleSemesterToggle = (sIndex: number) => {
+        setOpenSemesters(prev => ({ ...prev, [sIndex]: !prev[sIndex] }))
+    }
+
     return (
         <Box>
             <Header />
@@ -237,7 +244,7 @@ export default function SeaState() {
 
             
             <Box sx={{ backgroundColor: '#001848', position: 'relative' }}>
-                <Box position="absolute" top="calc(100% - 200px)" left={0} width="100%" height={200}>
+                <Box position="absolute" top="calc(100% - 100px)" left={0} width="100%" height={100}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 24 150 28"
@@ -245,27 +252,29 @@ export default function SeaState() {
                         style={{ width: '100%', height: '100%', display: 'block' }}
                     >
                         <defs>
+                            <style>{`
+                                @keyframes wave-move {
+                                    from { transform: translateX(0); }
+                                    to { transform: translateX(-352px); }
+                                }
+                                .wave-group {
+                                    animation: wave-move 25s linear infinite;
+                                }
+                            `}</style>
                             <path
                                 id="sea-state-wave"
                                 d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
                             />
                         </defs>
-                       <rect x="-200" y="44" width="2000" height="100" fill="#003566" />
-                        <g>
+                        <rect x="-200" y="44" width="2000" height="100" fill="#003566" />
+                        <g className="wave-group">
                             <use xlinkHref="#sea-state-wave" x="0" y="0" fill="#003566" />
                             <use xlinkHref="#sea-state-wave" x="352" y="0" fill="#003566" />
-                            <animateTransform
-                                attributeName="transform"
-                                type="translate"
-                                from="0,0"
-                                to="-352,0"
-                                dur="25s"
-                                repeatCount="indefinite"
-                            />
+                            <use xlinkHref="#sea-state-wave" x="704" y="0" fill="#003566" />
                         </g>
                     </svg>
                 </Box>
-                <Box height={200} />
+                <Box height={100} />
             </Box>
 
             <Box mt={8}>
@@ -276,11 +285,23 @@ export default function SeaState() {
                     <Box mb={8}>
                         <StandardLine width={200} height={5} centered borderRadius={3} />
                     </Box>
+                    
 
                     {seaStateReports.map((semesterData, sIndex) => (
-                        <Accordion key={sIndex} sx={{ mb: 2, backgroundColor: '#001848' }}>
-                            <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: 'white' }}/>}>
-                                <Typography variant="h5">{semesterData.semester}</Typography>
+                        
+                        <Accordion key={sIndex} expanded={!!openSemesters[sIndex]}
+                            onChange={() => handleSemesterToggle(sIndex)}
+                            sx={{ mb: 2, backgroundColor: '#001848' }}>
+                            <AccordionSummary expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}>
+                                <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                                    <Typography variant="h5" color="white">
+                                        {semesterData.semester}
+                                    </Typography>
+                                    {sIndex === 0 && (
+                                        <Chip label="Latest" size="small"
+                                            sx={{ backgroundColor: '#B5A96A', color: 'white', fontWeight: 'bold' }} />
+                                    )}
+                                </Box>
                             </AccordionSummary>
                             <AccordionDetails>
                                 <Box sx={{ display: 'flex', gap: 2, mb: 2 }}>
