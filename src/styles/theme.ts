@@ -5,16 +5,17 @@ export const theme = createTheme({
       // main: 'hsl(166, 100%, 35%)'
       main: '#C2AC6D' // Gold (lines, hyperlinks, hover)
     },
-    // secondary: {
-    //   main: '#1a0dab' // Dark navy blue
-    // },
+    secondary: {
+      main: '#003366', // dark navy blue (logo)
+    },
     background: {
-      // default: '#001848', // dark navy blue 
+      // default: '#001848', // dark navy blue (logo)
       default: '#003566', // Midnight blue
       paper: '#C2AC6D'    // Gold modal
     },
     text: {
-      primary: '#ffffff' // White
+      primary: '#ffffff', // White
+      secondary: '#000000', // Black
     }
   },
   typography: {
@@ -23,7 +24,7 @@ export const theme = createTheme({
     fontWeightLight: 400, // h1
     h2: {
       fontWeight: 400
-    }
+    },
   }
 })
 
