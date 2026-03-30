@@ -10,6 +10,7 @@ const pages = [
     {name: 'About', link: '/about'},
     {name: 'Wiki', link: '/wiki'},
     {name: 'Projects', link: '/projects'},
+    {name: 'Sea State', link: '/sea-state'},
     {name: 'Sponsors', link: '/sponsors'},
     {name: 'Join Us', link: '/join-us'}
 ]
