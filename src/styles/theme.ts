@@ -3,7 +3,7 @@ export const theme = createTheme({
   palette: {
     primary: {
       // main: 'hsl(166, 100%, 35%)'
-      main: '#C2AC6D' // Gold (lines, hyperlinks, hover)
+      main: '#B3A369' // Gold (lines, hyperlinks, hover)
     },
     secondary: {
       main: '#003366', // dark navy blue (logo)
@@ -11,7 +11,7 @@ export const theme = createTheme({
     background: {
       // default: '#001848', // dark navy blue (logo)
       default: '#003566', // Midnight blue
-      paper: '#C2AC6D'    // Gold modal
+      paper: '#B3A369'    // Gold modal
     },
     text: {
       primary: '#ffffff', // White
