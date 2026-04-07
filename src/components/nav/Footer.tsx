@@ -1,4 +1,4 @@
-import { Box, Grid, Typography, IconButton, Tooltip } from "@mui/material";
+import { Box, Grid, Typography, IconButton, Tooltip, Button } from "@mui/material";
 import { PrimaryLink } from "../misc/links";
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -79,6 +79,25 @@ export default function Footer() {
                 sx={{ clipPath: 'url(#footer-clip-path)' }}>
 
                 <Box display="flex" justifyContent="center" gap={1} mb={4} flexWrap="wrap">
+                    <Box width="100%" display="flex" justifyContent="center" mb={2}>
+                        <Button
+                            component="a"
+                            href="/support-us"
+                            variant="outlined"
+                            sx={{
+                                bgcolor: '#B3A369',
+                                color: '#FFFFFF',
+                                borderRadius: '5px',
+                                px: 4,
+                                py: 1,
+                                fontSize: '1rem',
+                                '&:hover': {
+                                    bgcolor: '#857437'
+                                }
+                            }}>
+                            Support or Sponsor Us!
+                        </Button>
+                    </Box>
                     {socialLinks.map(({ label, href, icon }) => (
                         <Tooltip title={label} key={label}>
                             <IconButton
