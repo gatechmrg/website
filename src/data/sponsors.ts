@@ -19,7 +19,7 @@ export const sponsorTiers: SponsorTier[] = [
         color: '#000000',
         sponsors: [
             { name: 'Tocaro Blue', logo: '/sponsors/logos/logo_tocaroblue.png', website: 'https://tocaroblue.com', description: 'Tocaro Blue ...' },
-            { name: 'Globex',    logo: '/sponsors/globex.svg', website: 'https://globex.com', description: 'Global excellence.' },
+            { name: 'Blue Trail Engineering', logo: '/sponsors/logos/logo_bluetrail.png' },,
         ],
     },
     {
@@ -34,14 +34,14 @@ export const sponsorTiers: SponsorTier[] = [
         label: 'Silver',
         color: '#676767',
         sponsors: [
-            { name: 'Hooli', logo: '/sponsors/hooli.svg' },
+            { name: 'TDK Lambda', logo: '/sponsors/logos/logo_tdk.svg', website: 'https://tdk.com' },
         ],
     },
     {
         label: 'Bronze',
         color: '#CD7F32',
         sponsors: [
-            { name: 'Pied Piper', logo: '/sponsors/piedpiper.svg' },
+            { name: 'Blue Trail Engineering', logo: '/sponsors/logos/logo_bluetrail.png' },
         ],
     },
 ];

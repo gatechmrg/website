@@ -1,6 +1,46 @@
 import { Box, Container, Typography } from "@mui/material";
 import { StandardLine } from "../misc/line";
 import { sponsorTiers } from '../../data/sponsors';
+import { useState } from "react";
+import Image from 'next/image';
+
+
+const TARGET_AREA = 9600;
+const MAX_W = 240;
+const MAX_H = 120;
+
+function NormalizedLogo({ src, alt, sx }: { src: string; alt: string; sx?: object }) {
+    const [size, setSize] = useState({ width: MAX_W, height: MAX_H });
+
+    function handleLoad(e: React.SyntheticEvent<HTMLImageElement>) {
+        const { naturalWidth: w, naturalHeight: h } = e.currentTarget;
+
+        const resolvedW = w || e.currentTarget.getBoundingClientRect().width;
+        const resolvedH = h || e.currentTarget.getBoundingClientRect().height;
+        if (!resolvedW || !resolvedH) return;
+
+        const scale = Math.sqrt(TARGET_AREA / (resolvedW * resolvedH));
+        let finalW = resolvedW * scale;
+        let finalH = resolvedH * scale;
+
+        if (finalW > MAX_W) { finalW = MAX_W; finalH = (resolvedH / resolvedW) * MAX_W; }
+        if (finalH > MAX_H) { finalH = MAX_H; finalW = (resolvedW / resolvedH) * MAX_H; }
+
+        setSize({ width: finalW, height: finalH });
+    }
+
+    return (
+        <Box sx={{ position: 'relative', width: size.width, height: size.height, ...sx }}>
+            <Image
+                src={src}
+                alt={alt}
+                fill
+                onLoad={handleLoad}
+                style={{ objectFit: 'contain', opacity: 0.85 }}
+            />
+        </Box>
+    );
+}
 
 export default function Current() {
     return (
@@ -42,35 +82,25 @@ export default function Current() {
                                         display: 'flex',
                                         flexDirection: 'column',
                                         alignItems: 'center',
+                                        justifyContent: 'space-between',
                                         gap: 2,
                                         width: 280,
                                     }}>
-                                        <Box
-                                            component="img"
+                                        <NormalizedLogo
                                             src={sponsor.logo}
                                             alt={sponsor.name}
-                                            sx={{ maxHeight: 80, maxWidth: 200, width: 'auto', height: 'auto', objectFit: 'contain', opacity: 0.85 }}
+                                            sx={{ filter: 'brightness(1.1)', transition: 'opacity 0.2s', '&:hover': { opacity: 1 } }}
                                         />
                                         <Typography variant="body2" sx={{ color: 'rgba(0,0,0,0.5)', textAlign: 'center' }}>
                                             {sponsor.description}
                                         </Typography>
                                     </Box>
                                 ) : (
-                                    <Box
+                                    <NormalizedLogo
                                         key={sponsor.name}
-                                        component="img"
                                         src={sponsor.logo}
                                         alt={sponsor.name}
-                                        sx={{
-                                            height: tier.label === 'Gold'   ? 60
-                                                  : tier.label === 'Silver' ? 50
-                                                  : 40,
-                                            width: 'auto',
-                                            opacity: 0.85,
-                                            filter: 'brightness(1.1)',
-                                            transition: 'opacity 0.2s',
-                                            '&:hover': { opacity: 1 },
-                                        }}
+                                        sx={{ filter: 'brightness(1.1)', transition: 'opacity 0.2s', '&:hover': { opacity: 1 } }}
                                     />
                                 )
                             ))}
