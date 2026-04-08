@@ -47,11 +47,13 @@ export default function Current() {
         <Box mt={0} sx={{
             background: 'linear-gradient(to bottom, white 80%, #003566 98%)',
             bgcolor: 'white',
-            mx: -3,
+            width: '100vw',
+            position: 'relative',
+            left: '50%',
+            transform: 'translateX(-50%)',
             px: 3,
             pt: 4,
             pb: 8,
-            overflow: 'hidden',
         }}>
             <Container maxWidth="lg">
                 <Box textAlign="center">
