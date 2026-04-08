@@ -1,12 +1,6 @@
 import { Box, Container, Typography } from "@mui/material";
 import { StandardLine } from "../misc/line";
-
-const tiers = [
-    { label: 'Platinum', color: '#000000' },
-    { label: 'Gold',     color: '#8a7a3a' },
-    { label: 'Silver',   color: '#676767' },
-    { label: 'Bronze',   color: '#CD7F32' },
-]
+import { sponsorTiers } from '../../data/sponsors';
 
 export default function Current() {
     return (
@@ -26,7 +20,7 @@ export default function Current() {
                     <StandardLine width={200} height={5} centered borderRadius={3} />
                 </Box>
 
-                {tiers.map((tier) => (
+                {sponsorTiers.map((tier) => (
                     <Box key={tier.label} mb={6}>
                         <Box display="flex" alignItems="center" gap={2} mb={3}>
                             <Box sx={{ flex: 1, height: '1px', bgcolor: tier.color, opacity: 0.4 }} />
@@ -36,10 +30,10 @@ export default function Current() {
                             <Box sx={{ flex: 1, height: '1px', bgcolor: tier.color, opacity: 0.4 }} />
                         </Box>
 
-                        <Box display="flex" flexWrap="wrap" justifyContent="center" alignItems="center" gap={4}>
-                            {[1, 2, 3].map((n) => (
+                        <Box display="flex" flexWrap="wrap" justifyContent="center" alignItems="stretch" gap={4}>
+                            {tier.sponsors.map((sponsor) => (
                                 tier.label === 'Platinum' ? (
-                                    <Box key={n} sx={{
+                                    <Box key={sponsor.name} sx={{
                                         p: 3,
                                         bgcolor: 'rgba(0,0,0,0.03)',
                                         border: '1px solid rgba(0,0,0,0.1)',
@@ -53,20 +47,20 @@ export default function Current() {
                                     }}>
                                         <Box
                                             component="img"
-                                            src="/sponsors/sponsors_vectorized.svg"
-                                            alt={`Platinum Sponsor ${n}`}
-                                            sx={{ height: 80, width: 'auto', opacity: 0.85 }}
+                                            src={sponsor.logo}
+                                            alt={sponsor.name}
+                                            sx={{ maxHeight: 80, maxWidth: 200, width: 'auto', height: 'auto', objectFit: 'contain', opacity: 0.85 }}
                                         />
                                         <Typography variant="body2" sx={{ color: 'rgba(0,0,0,0.5)', textAlign: 'center' }}>
-                                            Placeholder sponsor description or tagline goes here.
+                                            {sponsor.description}
                                         </Typography>
                                     </Box>
                                 ) : (
                                     <Box
-                                        key={n}
+                                        key={sponsor.name}
                                         component="img"
-                                        src="/sponsors/sponsors_vectorized.svg"
-                                        alt={`${tier.label} Sponsor ${n}`}
+                                        src={sponsor.logo}
+                                        alt={sponsor.name}
                                         sx={{
                                             height: tier.label === 'Gold'   ? 60
                                                   : tier.label === 'Silver' ? 50
