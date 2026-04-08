@@ -51,6 +51,7 @@ export default function Current() {
             px: 3,
             pt: 4,
             pb: 8,
+            overflow: 'hidden',
         }}>
             <Container maxWidth="lg">
                 <Box textAlign="center">
