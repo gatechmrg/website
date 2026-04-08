@@ -19,7 +19,7 @@ export const sponsorTiers: SponsorTier[] = [
         color: '#000000',
         sponsors: [
             { name: 'Tocaro Blue', logo: '/sponsors/logos/logo_tocaroblue.png', website: 'https://tocaroblue.com', description: 'Tocaro Blue ...' },
-            { name: 'Blue Trail Engineering', logo: '/sponsors/logos/logo_bluetrail.png' },,
+            { name: 'Blue Trail Engineering', logo: '/sponsors/logos/logo_bluetrail.png' },
         ],
     },
     {
