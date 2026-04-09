@@ -338,7 +338,7 @@ export default function SeaState() {
                     Media
                 </Typography>
                 <Box mt={2}>
-                    <StandardLine width={200} height={5} centered borderRadius={3} />
+                    <StandardLine width={600} height={5} centered borderRadius={3} />
                 </Box>
             </Box>
 
@@ -388,22 +388,22 @@ export default function SeaState() {
                     <Grid container spacing={4} mb={10}>
                         {[
                             {
-                                title: "Your Title 1",
-                                image: "/mrg_logo3.svg",
-                                link: "/news/page-1"
+                                title: "MRG Partners with Tocaro Blue on Marine Radar AI",
+                                image: "/media/tocaro_blue_boat.webp",
+                                link: "/news/tocaro_blue"
                             },
                             {
-                                title: "Your Title 2",
+                                title: "Coming soon!",
                                 image: "/mrg_logo3.svg",
                                 link: "/news/page-2"
                             },
                             {
-                                title: "Your Title 3",
+                                title: "Coming soon!",
                                 image: "/mrg_logo3.svg",
                                 link: "/news/page-3"
                             }
                         ].map((tile, i) => (
-                            <Grid item xs={12} md={4} key={i}>
+                            <Grid item xs={12} md={4} key={i} sx={{ display: 'flex' }}>
                                 <Box
                                     onClick={() => router.push(tile.link)}
                                     sx={{
@@ -412,6 +412,9 @@ export default function SeaState() {
                                         overflow: "hidden",
                                         boxShadow: 3,
                                         transition: "0.3s",
+                                        display: 'flex',         
+                                        flexDirection: 'column', 
+                                        flex: 1,                            
                                         '&:hover': {
                                             transform: 'translateY(-6px)',
                                             boxShadow: 6
