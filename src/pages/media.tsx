@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Accordion, AccordionSummary, AccordionDetails, Chip } from "@mui/material";
+import { Box, Container, Grid, Typography, Accordion, AccordionSummary, AccordionDetails, Chip } from "@mui/material";
 import { StandardLine } from "../components/misc/line";
 import Header from "../components/nav/Header";
 import Footer from "../components/nav/Footer";
@@ -6,6 +6,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from "react";
 import {useRouter } from "next/router";
 import { GreenPrimaryButton } from "../components/misc/buttons";
+import Image from "next/image";
 
 const seaStateReports = [
     {
@@ -334,7 +335,7 @@ export default function SeaState() {
                 justifyContent: 'center'
             }}>
                 <Typography variant="h2" color="white">
-                    The Sea State Newsletter
+                    Media
                 </Typography>
                 <Box mt={2}>
                     <StandardLine width={200} height={5} centered borderRadius={3} />
@@ -378,7 +379,66 @@ export default function SeaState() {
             <Box mt={8}>
                 <Container maxWidth="lg">
                     <Box textAlign="center" mb={4}>
-                        <Typography variant="h3">Weekly Team Reports</Typography>
+                        <Typography variant="h3">News and Partnerships</Typography>
+                    </Box>
+                    <Box mb={8}>
+                        <StandardLine width={200} height={5} centered borderRadius={3} />
+                    </Box>
+
+                    <Grid container spacing={4} mb={10}>
+                        {[
+                            {
+                                title: "Your Title 1",
+                                image: "/mrg_logo3.svg",
+                                link: "/news/page-1"
+                            },
+                            {
+                                title: "Your Title 2",
+                                image: "/mrg_logo3.svg",
+                                link: "/news/page-2"
+                            },
+                            {
+                                title: "Your Title 3",
+                                image: "/mrg_logo3.svg",
+                                link: "/news/page-3"
+                            }
+                        ].map((tile, i) => (
+                            <Grid item xs={12} md={4} key={i}>
+                                <Box
+                                    onClick={() => router.push(tile.link)}
+                                    sx={{
+                                        cursor: "pointer",
+                                        borderRadius: 3,
+                                        overflow: "hidden",
+                                        boxShadow: 3,
+                                        transition: "0.3s",
+                                        '&:hover': {
+                                            transform: 'translateY(-6px)',
+                                            boxShadow: 6
+                                        }
+                                    }}
+                                >
+                                    <Box sx={{ position: 'relative', width: '100%', height: 220 }}>
+                                        <Image
+                                            src={tile.image}
+                                            alt={tile.title}
+                                            fill
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </Box>
+
+                                    <Box p={2}>
+                                        <Typography variant="h6" textAlign="center">
+                                            {tile.title}
+                                        </Typography>
+                                    </Box>
+                                </Box>
+                            </Grid>
+                        ))}
+                    </Grid>
+
+                    <Box textAlign="center" mb={4}>
+                        <Typography variant="h3">The MRG Sea State: Weekly Team Reports</Typography>
                     </Box>
                     <Box mb={8}>
                         <StandardLine width={200} height={5} centered borderRadius={3} />
