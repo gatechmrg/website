@@ -385,23 +385,25 @@ export default function SeaState() {
                         <StandardLine width={200} height={5} centered borderRadius={3} />
                     </Box>
 
-                    <Grid container spacing={4} mb={10}>
+                    <Grid container spacing={4} mb={10} justifyContent="center">
                         {[
                             {
                                 title: "MRG Partners with Tocaro Blue on Marine Radar AI",
                                 image: "/media/tocaro_blue_boat.webp",
                                 link: "/news/tocaro_blue"
-                            },
-                            {
-                                title: "Coming soon!",
-                                image: "/mrg_logo3.svg",
-                                link: "/news/page-2"
-                            },
-                            {
-                                title: "Coming soon!",
-                                image: "/mrg_logo3.svg",
-                                link: "/news/page-3"
                             }
+                            /* ##### Uncomment to add articles as they are written. EB 4/9/26 #######
+                            {
+                                title: "Coming soon!",
+                                image: "/mrg_logo3.svg",
+                                link: "#"
+                            },
+                            {
+                                title: "Coming soon!",
+                                image: "/mrg_logo3.svg",
+                                link: "#"
+                            }
+                            */
                         ].map((tile, i) => (
                             <Grid item xs={12} md={4} key={i} sx={{ display: 'flex' }}>
                                 <Box
