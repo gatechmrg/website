@@ -45,7 +45,6 @@ function NormalizedLogo({ src, alt, sx }: { src: string; alt: string; sx?: objec
 export default function Current() {
     return (
         <Box mt={0} sx={{
-            background: 'linear-gradient(to bottom, white 80%, #003566 98%)',
             bgcolor: 'white',
             width: '100vw',
             position: 'relative',
