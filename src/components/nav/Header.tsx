@@ -9,7 +9,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 const pages = [
     {name: 'About', link: '/about'},
     {name: 'Projects', link: '/projects'},
-    {name: 'Newsletter', link: '/newsletter'},
+    {name: 'Media', link: '/media'},
     {name: 'Sponsors', link: '/sponsors'},
     {name: 'Join the Team', link: '/join-us'}
 ]
