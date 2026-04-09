@@ -1,4 +1,4 @@
-import { Box, Container, Typography, Accordion, AccordionSummary, AccordionDetails, Chip } from "@mui/material";
+import { Box, Container, Grid, Typography, Accordion, AccordionSummary, AccordionDetails, Chip } from "@mui/material";
 import { StandardLine } from "../components/misc/line";
 import Header from "../components/nav/Header";
 import Footer from "../components/nav/Footer";
@@ -6,6 +6,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { useState } from "react";
 import {useRouter } from "next/router";
 import { GreenPrimaryButton } from "../components/misc/buttons";
+import Image from "next/image";
 
 const seaStateReports = [
     {
@@ -334,10 +335,10 @@ export default function SeaState() {
                 justifyContent: 'center'
             }}>
                 <Typography variant="h2" color="white">
-                    The Sea State Newsletter
+                    Media
                 </Typography>
                 <Box mt={2}>
-                    <StandardLine width={200} height={5} centered borderRadius={3} />
+                    <StandardLine width={600} height={5} centered borderRadius={3} />
                 </Box>
             </Box>
 
@@ -378,7 +379,71 @@ export default function SeaState() {
             <Box mt={8}>
                 <Container maxWidth="lg">
                     <Box textAlign="center" mb={4}>
-                        <Typography variant="h3">Weekly Team Reports</Typography>
+                        <Typography variant="h3">News and Partnerships</Typography>
+                    </Box>
+                    <Box mb={8}>
+                        <StandardLine width={200} height={5} centered borderRadius={3} />
+                    </Box>
+
+                    <Grid container spacing={4} mb={10} justifyContent="center">
+                        {[
+                            {
+                                title: "MRG Partners with Tocaro Blue to Research Marine Radar Performance",
+                                image: "/media/tocaro_blue_boat.webp",
+                                link: "/news/tocaro_blue"
+                            }
+                            /* ##### Uncomment to add articles as they are written. EB 4/9/26 #######
+                            {
+                                title: "Coming soon!",
+                                image: "/mrg_logo3.svg",
+                                link: "#"
+                            },
+                            {
+                                title: "Coming soon!",
+                                image: "/mrg_logo3.svg",
+                                link: "#"
+                            }
+                            */
+                        ].map((tile, i) => (
+                            <Grid item xs={12} md={4} key={i} sx={{ display: 'flex' }}>
+                                <Box
+                                    onClick={() => router.push(tile.link)}
+                                    sx={{
+                                        cursor: "pointer",
+                                        borderRadius: 3,
+                                        overflow: "hidden",
+                                        boxShadow: 3,
+                                        transition: "0.3s",
+                                        display: 'flex',         
+                                        flexDirection: 'column', 
+                                        flex: 1,                            
+                                        '&:hover': {
+                                            transform: 'translateY(-6px)',
+                                            boxShadow: 6
+                                        }
+                                    }}
+                                >
+                                    <Box sx={{ position: 'relative', width: '100%', height: 220 }}>
+                                        <Image
+                                            src={tile.image}
+                                            alt={tile.title}
+                                            fill
+                                            style={{ objectFit: 'cover' }}
+                                        />
+                                    </Box>
+
+                                    <Box p={2}>
+                                        <Typography variant="h6" textAlign="center">
+                                            {tile.title}
+                                        </Typography>
+                                    </Box>
+                                </Box>
+                            </Grid>
+                        ))}
+                    </Grid>
+
+                    <Box textAlign="center" mb={4}>
+                        <Typography variant="h3">The MRG Sea State: Weekly Team Reports</Typography>
                     </Box>
                     <Box mb={8}>
                         <StandardLine width={200} height={5} centered borderRadius={3} />
