@@ -388,7 +388,7 @@ export default function SeaState() {
                     <Grid container spacing={4} mb={10} justifyContent="center">
                         {[
                             {
-                                title: "MRG Partners with Tocaro Blue on Marine Radar AI",
+                                title: "MRG Partners with Tocaro Blue on Marine Radar AI Research",
                                 image: "/media/tocaro_blue_boat.webp",
                                 link: "/news/tocaro_blue"
                             }
