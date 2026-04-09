@@ -50,24 +50,24 @@ export default function About() {
                         </Box>
                     </Box>
                     <Box height={350}/>
-                    <Box maxWidth="100%" color="white" pb={5} mx={small ? 3 : 5}>
-                        <Paper elevation={3}>
+                    <Box maxWidth="100%" pb={5} mx={small ? 3 : 5} sx={{color: 'white'}}>
+                        <Paper elevation={3} sx={{bgcolor: '#EAE4D3'}} >
                             <Box p={3}   mx = "auto" maxWidth={1800} alignSelf= "center" display="flex" flexDirection="column" alignItems="center">
                                 {/* <Box mb={3}>
                                     <StandardLine width={200} height={5} borderRadius={5} />
                                 </Box> */}
                                 <Box>
-                                    <Typography variant="body1" fontSize="1.25rem" color="black">
+                                    <Typography variant="body1" fontSize="1.25rem" color="#001848">
                                         The Marine Robotics Group at Georgia Tech is a student-led team pushing the boundaries of autonomous maritime technology. Established in 2005, MRG has two decades of experience developing vehicle autonomy in challenging domains, including air, sea-surface, and subsea. The team primarily focuses on behavior and platform development for competition with parallel research interests in multi-agent autonomy and sensor fusion. 
                                     </Typography>
                                 </Box>
                                 <Box mt={3}>
-                                    <Typography variant="body1" fontSize="1.25rem" color="black">
+                                    <Typography variant="body1" fontSize="1.25rem" color="#001848">
                                         MRG operates with the generous support of the Aerospace System Design Lab (ASDL) and is partially partnered with Georgia Tech’s “AquaBots: Maritime Robotics” Vertically Integrated Project program. Student academic backgrounds include Mechanical Engineering, Computer Engineering, Electrical Engineering, Computer Science, Aerospace Engineering, Physics, Chemical Engineering, and Industrial Engineering. Backgrounds are encouraged to collaborate to address the multidisciplinary challenges of robotics development. 
                                     </Typography>
                                 </Box>
                                 <Box mt={3}>
-                                    <Typography variant="body1" fontSize="1.25rem" color="black">
+                                    <Typography variant="body1" fontSize="1.25rem" color="#001848">
                                         MRG actively competes in RobotX, RoboBoat, RoboSub, and the Microtransat Challenge. The team shares infrastructure and development resources across projects to advance an interoperable development framework.
                                     </Typography>
                                 </Box>
