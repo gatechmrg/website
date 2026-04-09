@@ -30,11 +30,11 @@ export default function FirstBanner() {
                 </defs>
             </svg>
             <Box sx={{
-                backgroundImage: lg ? 'url(/about/people.webp)' : 'none',
+                backgroundImage: lg ? 'url(/about/thumbs_up_background.webp)' : 'none',
                 height: sm ? 200 : 600,
-                backgroundPosition: 'right',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'cover',
+                backgroundPosition: 'top right',
+                backgroundRepeat: 'repeat-x',
+                backgroundSize: '1400px auto',
                 position: 'relative'
             }}>
                 <Box position="absolute" top={0} left={0} width="calc(50vw - 600px + 60px)" height={600} 
@@ -62,6 +62,7 @@ export default function FirstBanner() {
                     </Box>
                 </Box>
             </Box>
+            
         </>
     )
 }
