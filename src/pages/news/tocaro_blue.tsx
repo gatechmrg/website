@@ -112,27 +112,36 @@ export default function TocaroPartnership() {
 
             {/* Logos at the bottom */}
             <Box
-            mt={6}
-            mb={4}
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            gap={6} // spacing between logos
-            >
-            {/* Logo 1 */}
-            <Box component="img"
-                src="/media/tocaro_blue.webp" 
-                alt="Logo 1"
-                sx={{ maxHeight: 200, maxWidth: 300, objectFit: "contain" }}
-            />
+              mt={6}
+              mb={4}
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              flexWrap="wrap"
+              gap={{ xs: 3, md: 6 }}
+          >
+              {/* Logo 1 */}
+              <Box component="img"
+                  src="/media/tocaro_blue.webp"
+                  alt="Logo 1"
+                  sx={{
+                      maxHeight: { xs: 80, md: 200 },
+                      maxWidth: { xs: 150, md: 300 },
+                      objectFit: "contain"
+                  }}
+              />
 
-            {/* Logo 2 */}
-            <Box component="img"
-                src="/media/mrg_logo_transparent_on_light.webp" 
-                alt="Logo 2"
-                sx={{ maxHeight: 200, maxWidth: 200, objectFit: "contain" }}
-            />
-            </Box>
+              {/* Logo 2 */}
+              <Box component="img"
+                  src="/media/mrg_logo_transparent_on_light.webp"
+                  alt="Logo 2"
+                  sx={{
+                      maxHeight: { xs: 80, md: 200 },
+                      maxWidth: { xs: 150, md: 200 },
+                      objectFit: "contain"
+                  }}
+              />
+          </Box>
 
         </Box>
 
