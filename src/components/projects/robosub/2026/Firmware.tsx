@@ -80,10 +80,10 @@ export default function Firmware() {
                                 }}
                             >
                                 {[
-                                    "Electrically isolated Computation and Thruster Power Systems",
-                                    "In-house developed motor control board and circuit protection boards",
-                                    "Extendable interior drawer to facilitate access and maintenance",
-                                    "External battery housing for improved test-flow and modularity"
+                                    "Modular and Reconfigurable Firmware Codebase supporting multiple projects",
+                                    "Robust Testing Framework with Python Testing Scripts to drive Protobuf inputs and Pico Probe",
+                                    "Custom Hardware Abstraction Layer level control and interface with ProtoBuf for communication with computer",
+                                    "Object Oriented Programming concepts for inheritance of different swappable modules"
                                 ].map((text, idx) => (
                                     <ListItem
                                         key={idx}
