@@ -337,9 +337,7 @@ export default function SeaState() {
                 <Typography variant="h2" color="white">
                     Media
                 </Typography>
-                <Box mt={2}>
-                    <StandardLine width={600} height={5} centered borderRadius={3} />
-                </Box>
+                <Box mt={2} sx={{ width: { xs: '80%', md: 600 }, height: 5, bgcolor: '#B5A96A', borderRadius: 3, mx: 'auto' }} />
             </Box>
 
             <Box sx={{ backgroundColor: '#001848', position: 'relative' }}>
