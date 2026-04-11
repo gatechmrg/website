@@ -63,7 +63,11 @@ export default function About() {
                                 </Box>
                                 <Box mt={3}>
                                     <Typography variant="body1" fontSize="1.25rem" color="#001848">
+<<<<<<< HEAD
                                         MRG operates with the generous support of the Aerospace System Design Lab (ASDL) and is partially partnered with Georgia Tech’s “AquaBots: Maritime Robotics” Vertically Integrated Project program. Student academic backgrounds include Mechanical Engineering, Computer Engineering, Electrical Engineering, Computer Science, Aerospace Engineering, Physics, Chemical Engineering, and Industrial Engineering. Backgrounds are encouraged to collaborate to address the multidisciplinary challenges of robotics development. 
+=======
+                                        MRG operates with the generous support of the Aerospace System Design Laboratory (ASDL) and is also partnered with Georgia Tech’s “AquaBots: Maritime Robotics” Vertically Integrated Project program. Student academic backgrounds include Mechanical Engineering, Computer Engineering, Electrical Engineering, Computer Science, Aerospace Engineering, Physics, Chemical Engineering, and Industrial Engineering. Backgrounds are encouraged to collaborate to address the multidisciplinary challenges of robotics development. 
+>>>>>>> 227f2c241ad47a7b623ea3627d33c6e3f58120e9
                                     </Typography>
                                 </Box>
                                 <Box mt={3}>
@@ -183,4 +187,8 @@ export default function About() {
             </Box>
         </Box>
     )
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 227f2c241ad47a7b623ea3627d33c6e3f58120e9
