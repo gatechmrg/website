@@ -55,10 +55,10 @@ export default function Software() {
                                     }}
                                 >
                                     {[
-                                        "Code written in Python and C++ under the ROS 2 framework",
+                                        "Code written in Python and C++ within the ROS 2 framework",
                                         "Gazebo simulation environment used for rapid software development in parallel with physical development",
-                                        "IMU and WaterLinked DVL A50 used for localization",
-                                        "Stereo Camera and Sonar used for perception"
+                                        "Microstrain IMU and WaterLinked DVL A50 used for robotic localization",
+                                        "Stereo camera and Sonoptix multibeam sonar used for perception and mapping with yolo detections and pointcloud processing"
                                     ].map((text, idx) => (
                                         <ListItem
                                             key={idx}
