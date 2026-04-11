@@ -119,7 +119,7 @@ export default function Electrical() {
                             sx={{
                                 width: '100%',
                                 height: { xs: 260, md: 460 },
-                                backgroundImage: 'url(/projects/robosub/electrical_cover.jpg)',
+                                backgroundImage: 'url(/projects/robosub/soldering.webp)',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover',

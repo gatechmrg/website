@@ -42,7 +42,7 @@ export default function Firmware() {
                             sx={{
                                 width: '100%',
                                 height: { xs: 260, md: 460 },
-                                backgroundImage: 'url(/projects/robosub/electrical_cover.jpg)',
+                                backgroundImage: 'url(/projects/robosub/firmware.webp)',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover',
