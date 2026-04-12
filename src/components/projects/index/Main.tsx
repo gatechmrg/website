@@ -3,6 +3,8 @@ import { styled, useTheme } from '@mui/material/styles'
 import Link from "next/link";
 import { useEffect, useMemo, useState, MouseEvent, useRef } from "react";
 import { StandardLine } from "../../misc/line";
+import Timeline from "./Timeline";
+
 
 const ProjectGrid = styled('div')(({theme}) => ({
     display: 'grid',
@@ -161,6 +163,7 @@ export default function Main() {
                     </Box>
                 </ProjectGrid>
             </Box>
+            <Timeline/>
         </Container>
     )
 }
