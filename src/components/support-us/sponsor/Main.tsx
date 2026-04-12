@@ -83,11 +83,11 @@ const perkLabels = [
 export default function Main() {
     return (
         <Container maxWidth="md" sx={{ py: 6 }}>
-            <Box mb={6}>
-                <Typography variant="h3" sx={{ fontWeight: 700, mb: 2, color: 'white' }}>
-                    Sponsor Us
+            <Box mb={8} textAlign="center">
+                <Typography variant="h2" sx={{ fontWeight: 800, mb: 3, color: 'white', letterSpacing: '-0.02em' }}>
+                    Sponsor Our Team
                 </Typography>
-                <Typography variant="body1" sx={{ fontSize: '1.1rem', color: 'rgba(255,255,255,0.8)', lineHeight: 1.6 }}>
+                <Typography variant="body1" sx={{ fontSize: '1.2rem', color: 'rgba(255,255,255,0.7)', lineHeight: 1.7, maxWidth: '700px', mx: 'auto' }}>
                     Corporate sponsorships help us compete at the highest level. We recognize contributions at four different tier levels.
                     We also offer three ways for companies to support the Marine Robotics Group.
                 </Typography>

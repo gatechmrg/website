@@ -6,7 +6,7 @@ import Footer from "../../../../components/nav/Footer";
 import { Container, Box, Typography, Grid, Paper, List, ListItem, ListItemButton, ListItemText, Tooltip, Button } from "@mui/material";
 import Link from "next/link";
 
-const ModelViewer = dynamic(() => import('../../../../components/projects/roboboat/2026/ModelViewer'), { ssr: false });
+const ModelViewer = dynamic(() => import('../../../../components/projects/roboboat2026/ModelViewer'), { ssr: false });
 
 export default function RoboBoat2026Vehicle() {
   const modelViewerRef = useRef<any>(null);
@@ -196,7 +196,7 @@ export default function RoboBoat2026Vehicle() {
                 >
                   <ModelViewer
                     ref={modelViewerRef}
-                    src="/models/roboboat.glb"
+                    src="/projects/roboboat2026/blueboat.glb"
                     alt="RoboBoat 2026 Vehicle"
                     camera-controls
                     camera-orbit={cameraOrbit}

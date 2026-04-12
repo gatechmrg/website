@@ -3,6 +3,7 @@ import { PrimaryLink } from "../misc/links";
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import PlaceIcon from '@mui/icons-material/Place';
 import EmailIcon from '@mui/icons-material/Email';
@@ -20,6 +21,11 @@ const socialLinks = [
         label: "Instagram",
         href: "https://www.instagram.com/gatechmrg/",
         icon: <InstagramIcon fontSize="large" />,
+    },
+    {
+        label: "LinkedIn",
+        href: "https://www.linkedin.com/company/gatechmrg",
+        icon: <LinkedInIcon fontSize="large" />,
     },
     {
         label: "GitHub",

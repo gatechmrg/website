@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../../../components/nav/Header";
 import Footer from "../../../components/nav/Footer";
-import Main from "../../../components/projects/roboboat/Main";
+import Main from "../../../components/projects/roboboat2024/Main";
 
 export default function RoboBoat2024() {
     return (
