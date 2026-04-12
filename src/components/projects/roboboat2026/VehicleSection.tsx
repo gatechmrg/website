@@ -60,7 +60,7 @@ export default function VehicleSection() {
       >
         <Box sx={{ width: '100%', height: { xs: 240, md: 400 } }}>
           <ModelViewer
-            src="/models/roboboat.glb"
+            src="/projects/roboboat2026/blueboat.glb"
             alt="RoboBoat 2026 Vehicle"
             camera-controls
             autoRotate={true}

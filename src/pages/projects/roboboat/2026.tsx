@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Header from "../../../components/nav/Header";
 import Footer from "../../../components/nav/Footer";
-import Main from "../../../components/projects/roboboat/2026/Main";
+import Main from "../../../components/projects/roboboat2026/Main";
 
 import { Container } from "@mui/material";
 

@@ -16,7 +16,9 @@ const ModelViewer = forwardRef<HTMLElement, ModelViewerProps>(function ModelView
 ) {
   useEffect(() => {
     // Dynamically import model-viewer (client only)
-    import('@google/model-viewer');
+    if (!customElements.get('model-viewer')) {
+      import('@google/model-viewer');
+    }
   }, []);
 
   // Remove auto-rotate from props if false
