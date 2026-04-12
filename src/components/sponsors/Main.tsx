@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import Current from "./Current";
+import Previous from "./Previous";
 
 export default function Main() {
     
@@ -34,6 +35,8 @@ export default function Main() {
                     </g>
                 </svg>
             </Box>
+            <Previous />
+            
         </Box>
     )
 }
