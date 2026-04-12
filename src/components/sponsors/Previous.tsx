@@ -14,36 +14,16 @@ export default function Current() {
           <StandardLine width={200} height={5} centered borderRadius={3} />
         </Box>
 
-        <Box
-          display="grid"
-          gridTemplateColumns={{ xs: "1fr", md: "repeat(3, minmax(0, 1fr))" }}
-          gap={2}
-          my={1}
-        >
-          <Box px={2} py={1} textAlign="center">
-            <Box component="ul" sx={{ pl: 0, m: 0, listStyle: "none" }}>
-              <Typography component="li" variant="body1">
-                Greenzie
-              </Typography>
-            </Box>
-          </Box>
 
-          <Box px={2} py={1} textAlign="center">
-            <Box component="ul" sx={{ pl: 0, m: 0, listStyle: "none" }}>
-              <Typography component="li" variant="body1">
-                Pattent
-              </Typography>
-            </Box>
-          </Box>
 
-          <Box px={2} py={1} textAlign="center">
-            <Box component="ul" sx={{ pl: 0, m: 0, listStyle: "none" }}>
-              <Typography component="li" variant="body1">
-                Someone else
-              </Typography>
-            </Box>
+        <Box px={2} py={1} textAlign="center">
+          <Box component="ul" sx={{ pl: 0, m: 0, listStyle: "none" }}>
+            <Typography component="li" variant="body1">
+              Greenzie | Pattent | Altium | Dassault Systemes
+            </Typography>
           </Box>
         </Box>
+
 
 
         {/* Contact */}

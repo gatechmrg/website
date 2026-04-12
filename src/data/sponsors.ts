@@ -10,7 +10,7 @@ export interface Sponsor {
 export interface SponsorTier {
     label: Tier;
     color: string;
-    description: string; 
+    description?: string; 
     sponsors: Sponsor[];
 }
 
@@ -18,15 +18,13 @@ export const sponsorTiers: SponsorTier[] = [
     {
         label: 'Platinum Sponsors',
         color: '#000000',
-        description: 'Our Platinum sponsors are the cornerstone of our organization.',
         sponsors: [
-            { name: 'Tocaro Blue', logo: '/sponsors/logos/logo_tocaroblue.webp', website: 'https://tocaroblue.com', description: 'Tocaro Blue ...' },
+            { name: 'Tocaro Blue', logo: '/sponsors/logos/logo_tocaroblue.webp', website: 'https://tocaroblue.com', description: 'Tocaro Blue is a software company based in Pensacola, Florida that aims to expand the utilization of radar for maritime perception. Their mission is to “modernize legacy marine sensors with smart software,” and they believe that applying intelligent software to legacy marine sensors can unlock new capabilities in maritime perception and situational awareness.' },
             ],
     },
     {
         label: 'Gold Sponsors',
         color: '#8a7a3a',
-        description: 'Our Gold sponsors play a crucial role in supporting us.',
         sponsors: [
             { name: 'VectorNav', logo: '/sponsors/logos/logo_vectornav.svg', website: 'https://vectornav.com' },
             { name: 'Waterlinked', logo: '/sponsors/logos/logo_waterlinked.svg', website: 'https://waterlinked.com' },
@@ -35,7 +33,6 @@ export const sponsorTiers: SponsorTier[] = [
     {
         label: 'Silver Sponsors',
         color: '#676767',
-        description: 'Our Silver sponsors are an integral part of our organization.',
         sponsors: [
             { name: 'TDK Lambda', logo: '/sponsors/logos/logo_tdk.svg', website: 'https://tdk.com' },
         ],
@@ -43,23 +40,26 @@ export const sponsorTiers: SponsorTier[] = [
     {
         label: 'Bronze Sponsors',
         color: '#CD7F32',
-        description: 'Our Bronze sponsors are an important part of our organization.',
         sponsors: [
-            { name: 'Blue Trail Engineering', logo: '/sponsors/logos/logo_bluetrail.png' },
+            { name: 'Theia Technologies', logo: '/sponsors/logos/logo_theia.svg', website: 'https://theiatech.com' },
         ],
     },
     {
         label: 'Supporting Institutions and Affiliates',
         color: '#444444',
-        description: 'The support of institutions and affiliates at Georgia Tech are cruicial to our mission.',
+        description: 'Our activities are also made possible by the support of insitutions both at Georgia Tech and beyond.',
         sponsors: [
             { name: 'Aerospace Systems Design Laboratory', 
               logo: '/sponsors/logos/logo_asdl.svg',
-              description: 'The Aerospace Systems Design Laboratory (ASDL) at Georgia Tech is the home of our research and development efforts in MRG.',
+              description: 'The Aerospace Systems Design Laboratory (ASDL) at Georgia Tech is the home of our organization, and supports us with resources, mentorship, and facilities to design and build our vehicles.',
             },
             { name: 'Student Government Association of Georgia Tech', 
               logo: '/sponsors/logos/logo_sga.webp',
-              description: 'The Student Government Association of Georgia Tech allocates funding for student initiatives and projects.',
+              description: 'The Student Government Association of Georgia Tech allocates funding for student initiatives and projects, enabling student-led development of our vehicles and travel to competitions.',
+            },
+            { name: 'RoboNation', 
+              logo: '/sponsors/logos/logo_robonation.svg',
+              description: 'RoboNation, the host of many competitions we attend, has provided a granted platform for us to develop and compete in the RobotX competition.',
             },
         ],
     },
