@@ -56,7 +56,7 @@ export default function Current() {
         }}>
             <Container maxWidth="lg">
                 <Box textAlign="center">
-                    <Typography variant="h2" sx={{ color: '#003566' }}>Current Sponsors</Typography>
+                    <Typography variant="h2" sx={{ color: '#003566' }}>Our Supporters</Typography>
                 </Box>
                 <Box mt={1} mb={4}>
                     <StandardLine width={200} height={5} centered borderRadius={3} />
@@ -71,10 +71,15 @@ export default function Current() {
                             </Typography>
                             <Box sx={{ flex: 1, height: '1px', bgcolor: tier.color, opacity: 0.4 }} />
                         </Box>
+                        <Box display="flex" justifyContent="center" mb={2}>
+                            <Typography variant="body1" sx={{ color: 'rgba(0,0,0,0.7)', maxWidth: 800, textAlign: 'center' }}>
+                                {tier.description}
+                            </Typography>
+                        </Box>
 
                         <Box display="flex" flexWrap="wrap" justifyContent="center" alignItems="stretch" gap={4}>
                             {tier.sponsors.map((sponsor) => (
-                                tier.label === 'Platinum' ? (
+                                tier.label === 'Platinum Sponsors' || tier.label === 'Supporting Institutions and Affiliates' ? (
                                     <Box key={sponsor.name} sx={{
                                         p: 3,
                                         bgcolor: 'rgba(0,0,0,0.03)',
@@ -86,7 +91,7 @@ export default function Current() {
                                         alignItems: 'center',
                                         justifyContent: 'space-between',
                                         gap: 2,
-                                        width: 280,
+                                        width: 420,
                                     }}>
                                         <NormalizedLogo
                                             src={sponsor.logo}

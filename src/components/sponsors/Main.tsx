@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import Current from "./Current";
+import Current from "./Sponsors";
 import Previous from "./Previous";
 
 export default function Main() {
