@@ -1,0 +1,68 @@
+/**
+ * aquafund.css
+ *
+ * Drop this stylesheet alongside aquafund.ts.
+ * The widget mounts its own DOM inside your container element.
+ * You only need to set a width on the container — everything else is handled.
+ *
+ * Example:
+ *   <div id="tank-container" style="width:100%; max-width:900px;"></div>
+ */
+
+/* ── Container ───────────────────────────────────────────────── */
+.aquafund-container {
+  position: relative;
+  width: 100%;
+}
+
+/* ── Glass border ────────────────────────────────────────────── */
+.aquafund-border {
+  position: relative;
+  border: 3px solid rgba(126, 207, 239, 0.25);
+  border-radius: 6px 6px 4px 4px;
+  overflow: hidden;
+  box-shadow:
+    inset 0 0 60px rgba(10, 22, 40, 0.6),
+    0 0 0 1px rgba(200, 238, 255, 0.08),
+    0 8px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* ── Canvas ──────────────────────────────────────────────────── */
+.aquafund-canvas {
+  display: block;
+  width: 100%;
+}
+
+/* ── Shimmer overlay (CSS-animated horizontal scanlines) ─────── */
+.aquafund-shimmer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    180deg,
+    transparent           0px,
+    transparent           18px,
+    rgba(200,238,255,0.025) 18px,
+    rgba(200,238,255,0.025) 19px
+  );
+  animation: aquafund-shimmer-scroll 8s linear infinite;
+}
+
+@keyframes aquafund-shimmer-scroll {
+  from { background-position: 0 0; }
+  to   { background-position: 0 200px; }
+}
+
+/* ── Glass reflection ────────────────────────────────────────── */
+.aquafund-reflect {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 50%;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(200, 238, 255, 0.06) 0%,
+    transparent 100%
+  );
+  border-radius: 4px 4px 0 0;
+}

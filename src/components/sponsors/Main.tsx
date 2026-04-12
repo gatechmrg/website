@@ -1,10 +1,30 @@
 import { Box } from "@mui/material";
+import { useEffect, useRef } from "react";
 import Current from "./Sponsors";
 import Previous from "./Previous";
+import { AquaFund } from "./aquafund";
 
 export default function Main() {
-    
-    return (
+  const tankContainerRef = useRef<HTMLDivElement | null>(null);
+  const aquaFundRef = useRef<AquaFund | null>(null);
+
+  useEffect(() => {
+    if (!tankContainerRef.current) return;
+
+    aquaFundRef.current = new AquaFund({
+      container: tankContainerRef.current,
+      goal: 10000,
+      raised: 4500,
+      numFish: 18,
+    });
+
+    return () => {
+      aquaFundRef.current?.destroy();
+      aquaFundRef.current = null;
+    };
+  }, []);
+
+  return (
         <Box>
             <Current />
             {/* Multi-layer wave */}
@@ -36,7 +56,10 @@ export default function Main() {
                 </svg>
             </Box>
             <Previous />
-            
+            <Box
+              ref={tankContainerRef}
+              sx={{ width: '100%', maxWidth: 900, mx: 'auto', mt: 4, mb: 4 }}
+            />
         </Box>
     )
 }
