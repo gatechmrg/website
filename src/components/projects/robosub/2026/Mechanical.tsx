@@ -77,7 +77,7 @@ export default function Mechanical() {
                             sx={{
                                 width: '100%',
                                 height: { xs: 260, md: 420 },
-                                backgroundImage: 'url(/projects/robosub/mechanical_cover.png)',
+                                backgroundImage: 'url(/projects/robosub/mechanical_cover.webp)',
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover',
