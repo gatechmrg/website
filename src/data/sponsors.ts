@@ -77,7 +77,7 @@ export const sponsorTiers: SponsorTier[] = [
         description: 'We recognize Friends of MRG who support our organization outside of formal partnerships, such as through discounts on products and services and matched donation contributions from individual donors.',
         sponsors: [
             { name: 'Blue Trail Engineering', logo: '/sponsors/logos/logo_bluetrail.webp', website: 'https://bluetrailengineering.com' },
-            { name: 'Nvidia', logo: '/sponsors/logos/logo_nvidia.webp', website: 'https://nvidia.com' },
+            // { name: 'Nvidia', logo: '/sponsors/logos/logo_nvidia.webp', website: 'https://nvidia.com' },
         ],
     },
 ];
