@@ -78,7 +78,7 @@ export const sponsorTiers: SponsorTier[] = [
         sponsors: [
             { name: 'Blue Trail Engineering', logo: '/sponsors/logos/logo_bluetrail.webp', website: 'https://bluetrailengineering.com' },
             { name: 'Southern FiberWorx', logo: '/sponsors/logos/logo_southernfiberworx.webp', website: 'https://join.southernfiberworx.com/' },
-            // { name: 'Nvidia', logo: '/sponsors/logos/logo_nvidia.webp', website: 'https://nvidia.com' },
+            { name: 'Nvidia', logo: '/sponsors/logos/logo_nvidia.webp', website: 'https://nvidia.com' },
         ],
     },
 ];
