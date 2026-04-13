@@ -27,7 +27,7 @@ export const sponsorTiers: SponsorTier[] = [
         color: '#8a7a3a',
         sponsors: [
             { name: 'VectorNav', logo: '/sponsors/logos/logo_vectornav.svg', website: 'https://vectornav.com' },
-            { name: 'Waterlinked', logo: '/sponsors/logos/logo_waterlinked.svg', website: 'https://waterlinked.com' },
+            { name: 'Theia Technologies', logo: '/sponsors/logos/logo_theia.svg', website: 'https://theiatech.com' },
         ],
     },
     {
@@ -35,13 +35,13 @@ export const sponsorTiers: SponsorTier[] = [
         color: '#676767',
         sponsors: [
             { name: 'TDK Lambda', logo: '/sponsors/logos/logo_tdk.svg', website: 'https://tdk.com' },
+            { name: 'Waterlinked', logo: '/sponsors/logos/logo_waterlinked.svg', website: 'https://waterlinked.com' },
         ],
     },
     {
         label: 'Bronze Sponsors',
         color: '#CD7F32',
         sponsors: [
-            { name: 'Theia Technologies', logo: '/sponsors/logos/logo_theia.svg', website: 'https://theiatech.com' },
         ],
     },
     {
