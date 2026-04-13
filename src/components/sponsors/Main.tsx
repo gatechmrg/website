@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import Current from "./Sponsors";
-import Previous from "./Previous";
+import Acknowledgements from "./Acknowledgements";
 
 export default function Main() {
     
@@ -35,7 +35,7 @@ export default function Main() {
                     </g>
                 </svg>
             </Box>
-            <Previous />
+            <Acknowledgements />
             
         </Box>
     )

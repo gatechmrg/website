@@ -56,7 +56,7 @@ export default function Current() {
         }}>
             <Container maxWidth="lg">
                 <Box textAlign="center">
-                    <Typography variant="h2" sx={{ color: '#003566' }}>Our Supporters</Typography>
+                    <Typography variant="h2" sx={{ color: '#003566' }}>Our Sponsors and Supporters</Typography>
                 </Box>
                 <Box mt={1} mb={4}>
                     <StandardLine width={200} height={5} centered borderRadius={3} />
