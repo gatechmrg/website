@@ -56,16 +56,19 @@ export default function Current() {
         }}>
             <Container maxWidth="lg">
                 <Box textAlign="center">
-                    <Typography
-                        sx={{
-                        color: '#003566',
-                        fontWeight: 600,
-                        whiteSpace: 'nowrap',
-                        fontSize: 'clamp(1.5rem, 4vw, 3.75rem)',
-                        }}
-                    >
-                        Our Sponsors <wbr />and Supporters
-                    </Typography>
+                <Typography
+                    sx={{
+                    color: '#003566',
+                    fontWeight: 600,
+                    fontSize: 'clamp(1.5rem, 4vw, 3.75rem)',
+                    whiteSpace: 'normal',        // allow wrapping
+                    display: 'inline-block',     // shrink to content for true centering
+                    textAlign: 'center',
+                    lineHeight: 1.1,
+                    }}
+                >
+                    Our Sponsors <wbr />and Supporters
+                </Typography>
                 </Box>
                 <Box mt={1} mb={4}>
                     <StandardLine width={200} height={5} centered borderRadius={3} />
