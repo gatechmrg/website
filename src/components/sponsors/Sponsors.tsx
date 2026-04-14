@@ -79,7 +79,7 @@ export default function Current() {
 
                         <Box display="flex" flexWrap="wrap" justifyContent="center" alignItems="stretch" gap={4}>
                             {tier.sponsors.map((sponsor) => (
-                                tier.label === 'Platinum Sponsors' || tier.label === 'Supporting Institutions and Affiliates' ? (
+                                tier.label === 'Platinum Sponsors' || tier.label === 'Supporters' ? (
                                     <Box key={sponsor.name} sx={{
                                         p: 3,
                                         bgcolor: 'rgba(0,0,0,0.03)',
