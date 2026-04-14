@@ -7,7 +7,16 @@ export default function Acknowledgements() {
       <Container maxWidth="lg">
         {/* Title */}
         <Box textAlign="center">
-          <Typography variant="h2">Acknowledgements</Typography>
+          <Typography
+              sx={{
+              color: '#FFFFFF',
+              fontWeight: 600,
+              whiteSpace: 'nowrap',
+              fontSize: 'clamp(1.5rem, 4vw, 3.75rem)', // responsive scaling
+              }}
+          >
+            Acknowledgements
+          </Typography>
         </Box>
 
         <Box mt={1} mb={1}>

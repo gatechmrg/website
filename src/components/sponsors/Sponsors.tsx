@@ -56,7 +56,16 @@ export default function Current() {
         }}>
             <Container maxWidth="lg">
                 <Box textAlign="center">
-                    <Typography variant="h2" sx={{ color: '#003566' }}>Our Sponsors and Supporters</Typography>
+                <Typography
+                    sx={{
+                    color: '#003566',
+                    fontWeight: 600,
+                    whiteSpace: 'nowrap',
+                    fontSize: 'clamp(1.5rem, 4vw, 3.75rem)', // responsive scaling
+                    }}
+                >
+                    Our Sponsors and Supporters
+                </Typography>
                 </Box>
                 <Box mt={1} mb={4}>
                     <StandardLine width={200} height={5} centered borderRadius={3} />
