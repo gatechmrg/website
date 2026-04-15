@@ -20,11 +20,11 @@ export default function Exploration() {
             <Container maxWidth="md">
                 <Box textAlign="center" mt={3} mb={12}>
                     <Typography variant="h6" fontWeight={400}>
-                        At the Marine Robotics Group at Georgia Tech, 
-                        students design, build, and test autonomous underwater 
-                        vehicles to reliably operate in complex underwater 
-                        environments. We build students and robots that will
-                        be the future of maritime exploration.
+                        At the Marine Robotics Group at Georgia Tech, students 
+                        design, build, and test autonomous underwater vehicles 
+                        to reliably operate in complex underwater environments. 
+                        We build students and robots that will be the future of 
+                        maritime exploration.
                     </Typography>
                 </Box>
             </Container>
@@ -40,10 +40,9 @@ export default function Exploration() {
                             <StandardLine width={80} height={5} borderRadius={3} centered />
                             <Typography variant="body1" fontWeight={300} mt={2}>
                                 MRG creates the opportunity to work with industry-standard
-                                tools used in robotics, regardless of incoming skill level. We run 
-                                a training program dedicated to new students in the beginning of each 
-                                semester for students to become familiar with these skills before 
-                                jumping in to project teams.
+                                tools used in robotics, regardless of incoming skill level. 
+                                We run a training program each semester for students 
+                                to become familiar with these skills.
                             </Typography>
                         </Box>
                     </Grid>
@@ -57,9 +56,11 @@ export default function Exploration() {
                         </Typography>
                         <StandardLine width={80} height={5} borderRadius={3} centered />
                         <Typography variant="body1" fontWeight={300} mt={2}>
-                        MRG has the goal of iterating on and creating new  
-                        Autonomous Underwater Vehicles (AUVs)
-                        and Autonomous Surfaces Vehicle (ASVs).
+                        MRG creates new and iterates on Uncrewed Surface Vehicles (USVs), 
+                        Uncrewed Underwater Vehicles (UUVs), and Uncrewed Aerial Vehicles 
+                        (UAVs). We are able to fabricate parts with an in-house laser cutter,
+                        3D printers, and mill, as well as through accessig Georgia Tech's 
+                        facilities.
                         </Typography>
                     </Box>
                     </Grid>
@@ -74,8 +75,10 @@ export default function Exploration() {
                         <StandardLine width={80} height={5} borderRadius={3} centered />
                         <Typography variant="body1" fontWeight={300} mt={2}>
                         MRG frequently tests robots at lakes near Georgia Tech 
-                        and in the Campus Recreational Center on campus
+                        and at the Campus Recreational Center on campus
                         in preparation for various competitions and challenges.
+                        This is an opportunity to bridge the gap between simulation
+                        and reality.
                         </Typography>
                     </Box>
                     </Grid>

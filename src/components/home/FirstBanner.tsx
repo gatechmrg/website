@@ -38,7 +38,7 @@ export default function FirstBanner() {
 
                 
 
-                <Grid container wrap="nowrap" height="100%" justifyContent="center" alignItems="center" sx={{ position: "relative", zIndex: 1, paddingTop: "40px" }}>
+                <Grid container wrap="nowrap" height="100%" justifyContent="center" alignItems="flex-start" sx={{ position: "relative", zIndex: 1, paddingTop: "40px" }}>
                     <Grid item>
                         <Box textAlign="center">
                             <Typography
