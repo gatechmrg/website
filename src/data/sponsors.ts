@@ -1,4 +1,4 @@
-export type Tier = 'Platinum Sponsors' | 'Gold Sponsors' | 'Silver Sponsors' | 'Bronze Sponsors' | 'Supporting Institutions and Affiliates' | 'Friends of MRG';
+export type Tier = 'Platinum Sponsors' | 'Gold Sponsors' | 'Silver Sponsors' | 'Bronze Sponsors' | 'Supporters' | 'Friends of MRG';
 
 export interface Sponsor {
     name: string;
@@ -45,7 +45,7 @@ export const sponsorTiers: SponsorTier[] = [
         ],
     },
     {
-        label: 'Supporting Institutions and Affiliates',
+        label: 'Supporters',
         color: '#444444',
         description: 'Our activities are also made possible by the support of insitutions both at Georgia Tech and beyond.',
         sponsors: [

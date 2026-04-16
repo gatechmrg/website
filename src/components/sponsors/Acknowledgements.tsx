@@ -7,7 +7,16 @@ export default function Acknowledgements() {
       <Container maxWidth="lg">
         {/* Title */}
         <Box textAlign="center">
-          <Typography variant="h2">Acknowledgements</Typography>
+          <Typography
+              sx={{
+              color: '#FFFFFF',
+              fontWeight: 600,
+              whiteSpace: 'nowrap',
+              fontSize: 'clamp(1.5rem, 4vw, 3.75rem)', // responsive scaling
+              }}
+          >
+            Acknowledgements
+          </Typography>
         </Box>
 
         <Box mt={1} mb={1}>
@@ -20,8 +29,13 @@ export default function Acknowledgements() {
           <Box component="ul" sx={{ pl: 0, m: 0, listStyle: "none" }}>
             <Box display="flex" alignItems="center" gap={2} mb={3}>
               <Box sx={{ flex: 1, height: '1px', bgcolor: '#ffffff', opacity: 0.4 }} />
-              <Typography variant="h5" sx={{ color: '#ffffff', fontWeight: 600, whiteSpace: 'nowrap' }}>
-                  Past Sponsors and Supporters
+              <Typography variant="h5" 
+                sx={{ 
+                  color: '#ffffff', 
+                  fontSize: 'clamp(1.2rem, 3vw, 3.5rem)',
+                  fontWeight: 600, 
+                  whiteSpace: 'nowrap' }}>
+                Past Sponsors and Supporters
               </Typography>
               <Box sx={{ flex: 1, height: '1px', bgcolor: '#ffffff', opacity: 0.4 }} />
             </Box>

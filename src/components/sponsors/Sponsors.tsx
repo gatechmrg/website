@@ -56,7 +56,19 @@ export default function Current() {
         }}>
             <Container maxWidth="lg">
                 <Box textAlign="center">
-                    <Typography variant="h2" sx={{ color: '#003566' }}>Our Sponsors and Supporters</Typography>
+                <Typography
+                    sx={{
+                    color: '#003566',
+                    fontWeight: 600,
+                    fontSize: 'clamp(1.5rem, 4vw, 3.75rem)',
+                    whiteSpace: 'normal',        // allow wrapping
+                    display: 'inline-block',     // shrink to content for true centering
+                    textAlign: 'center',
+                    lineHeight: 1.1,
+                    }}
+                >
+                    Our Sponsors <wbr />and Supporters
+                </Typography>
                 </Box>
                 <Box mt={1} mb={4}>
                     <StandardLine width={200} height={5} centered borderRadius={3} />
@@ -66,20 +78,29 @@ export default function Current() {
                     <Box key={tier.label} mb={6}>
                         <Box display="flex" alignItems="center" gap={2} mb={3}>
                             <Box sx={{ flex: 1, height: '1px', bgcolor: tier.color, opacity: 0.4 }} />
-                            <Typography variant="h5" sx={{ color: tier.color, fontWeight: 600, whiteSpace: 'nowrap' }}>
+                            <Typography variant="h5" 
+                                sx={{ 
+                                    color: tier.color, 
+                                    fontSize: 'clamp(1.2rem, 3vw, 3.5rem)',
+                                    fontWeight: 600, 
+                                    whiteSpace: 'nowrap' }}>
                                 {tier.label}
                             </Typography>
                             <Box sx={{ flex: 1, height: '1px', bgcolor: tier.color, opacity: 0.4 }} />
                         </Box>
                         <Box display="flex" justifyContent="center" mb={2}>
-                            <Typography variant="body1" sx={{ color: 'rgba(0,0,0,0.7)', maxWidth: 800, textAlign: 'center' }}>
+                            <Typography variant="body1" 
+                                sx={{ 
+                                    color: 'rgba(0,0,0,0.7)', 
+                                    maxWidth: 800, 
+                                    textAlign: 'center' }}>
                                 {tier.description}
                             </Typography>
                         </Box>
 
                         <Box display="flex" flexWrap="wrap" justifyContent="center" alignItems="stretch" gap={4}>
                             {tier.sponsors.map((sponsor) => (
-                                tier.label === 'Platinum Sponsors' || tier.label === 'Supporting Institutions and Affiliates' ? (
+                                tier.label === 'Platinum Sponsors' || tier.label === 'Supporters' ? (
                                     <Box key={sponsor.name} sx={{
                                         p: 3,
                                         bgcolor: 'rgba(0,0,0,0.03)',
