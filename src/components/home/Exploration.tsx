@@ -10,7 +10,7 @@ export default function Exploration() {
     return (
         <Box mt={0} sx={{backgroundColor: 'background', padding: '2rem', color: "text.primary" }}> 
             <Box textAlign="center">
-                <Typography variant="h2">
+                <Typography variant="h2" mt={8}>
                     Student-led Exploration
                 </Typography>
             </Box>
@@ -20,10 +20,11 @@ export default function Exploration() {
             <Container maxWidth="md">
                 <Box textAlign="center" mt={3} mb={12}>
                     <Typography variant="h6" fontWeight={400}>
-                        The furthest reaches of human exploration are pioneered by robots. 
-                        At the Marine Robotics Group at Georgia Tech, 
-                        students likewise partake in the development of 
-                        autonomous maritime robots.
+                        At the Marine Robotics Group at Georgia Tech, students 
+                        design, build, and test autonomous underwater vehicles 
+                        to reliably operate in complex underwater environments. 
+                        We build students and robots that will be the future of 
+                        maritime exploration.
                     </Typography>
                 </Box>
             </Container>
@@ -32,15 +33,16 @@ export default function Exploration() {
                     {/* Learning */}
                     <Grid item xs={12} md={4}>
                         <Box textAlign="center">
-                            <img src="/home/training.webp" width="100%"  style={{ borderRadius: 16 }} alt="MRG training in the lab" />
+                            <img src="/home/stinger_test.webp" width="100%"  style={{borderRadius: 16, height: 220, objectFit: "cover" }} alt="MRG training in the lab" />
                             <Typography variant="h4" fontWeight={400} mt={2}>
                             Learning
                             </Typography>
                             <StandardLine width={80} height={5} borderRadius={3} centered />
                             <Typography variant="body1" fontWeight={300} mt={2}>
-                            MRG provides an opportunity to learn new skills and work with tools 
-                            for robotics, regardless of incoming skill level. We run a training
-                            program during the beginning of each semester.
+                                MRG creates the opportunity to work with industry-standard
+                                tools used in robotics, regardless of incoming skill level. 
+                                We run a training program each semester for students 
+                                to become familiar with these skills.
                             </Typography>
                         </Box>
                     </Grid>
@@ -48,15 +50,17 @@ export default function Exploration() {
                     {/* Building */}
                     <Grid item xs={12} md={4}>
                     <Box textAlign="center">
-                        <img src="/home/building.webp" width="100%" style={{ borderRadius: 16 }} alt="Members fiberglassing pontoons" />
+                        <img src="/home/building.webp" width="100%" style={{borderRadius: 16, height: 220, objectFit: "cover" }} alt="Members fiberglassing pontoons" />
                         <Typography variant="h4" fontWeight={400} mt={2}>
                         Building
                         </Typography>
                         <StandardLine width={80} height={5} borderRadius={3} centered />
                         <Typography variant="body1" fontWeight={300} mt={2}>
-                        MRG has the goal of iterating on and creating new  
-                        Autonomous Underwater Vehicles (AUVs)
-                        and Autonomous Surfaces Vehicle (ASVs).
+                        MRG creates new and iterates on Uncrewed Surface Vehicles (USVs), 
+                        Uncrewed Underwater Vehicles (UUVs), and Uncrewed Aerial Vehicles 
+                        (UAVs). We are able to fabricate parts with an in-house laser cutter,
+                        3D printers, and mill, as well as through accessig Georgia Tech's 
+                        facilities.
                         </Typography>
                     </Box>
                     </Grid>
@@ -64,15 +68,17 @@ export default function Exploration() {
                     {/* Testing */}
                     <Grid item xs={12} md={4}>
                     <Box textAlign="center">
-                        <img src="/home/testing.webp" width="100%" style={{ borderRadius: 16 }} alt="Members testing a robot at a local lake" />
+                        <img src="/home/testing.webp" width="100%" style={{borderRadius: 16, height: 220, objectFit: "cover" }} alt="Members testing a robot at a local lake" />
                         <Typography variant="h4" fontWeight={400} mt={2}>
                         Testing
                         </Typography>
                         <StandardLine width={80} height={5} borderRadius={3} centered />
                         <Typography variant="body1" fontWeight={300} mt={2}>
                         MRG frequently tests robots at lakes near Georgia Tech 
-                        and in the Campus Recreational Center on campus
+                        and at the Campus Recreational Center on campus
                         in preparation for various competitions and challenges.
+                        This is an opportunity to bridge the gap between simulation
+                        and reality.
                         </Typography>
                     </Box>
                     </Grid>

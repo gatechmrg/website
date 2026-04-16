@@ -36,16 +36,7 @@ export default function FirstBanner() {
                     />
                 )}
 
-                {/* Golden hue overlay */}
-                <Box
-                    sx={{
-                        position: "absolute",
-                        width: "100%",
-                        height: "100%",
-                        backgroundColor: "rgba(0, 48, 87, 0.3)",
-                        zIndex: 0,
-                    }}
-                />
+                
 
                 <Grid container wrap="nowrap" height="100%" justifyContent="center" alignItems="flex-start" sx={{ position: "relative", zIndex: 1, paddingTop: "40px" }}>
                     <Grid item>
