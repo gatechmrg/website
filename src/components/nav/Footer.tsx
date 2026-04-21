@@ -140,7 +140,6 @@ export default function Footer() {
                         </Grid>
                     </Grid>
                 </Box>
-                <SwimmingFish />
             </Box>
 
             {/* SwimmingFish moved outside the px={13} padded Box so it fills full viewport width */}
