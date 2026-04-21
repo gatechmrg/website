@@ -7,6 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import PlaceIcon from '@mui/icons-material/Place';
 import EmailIcon from '@mui/icons-material/Email';
+import SwimmingFish from "../misc/fish2.jsx";
 
 const user = "marinerobotics"
 const domain = "groups.gatech.edu"
@@ -135,6 +136,7 @@ export default function Footer() {
                         </Grid>
                     </Grid>
                 </Box>
+                <SwimmingFish />
             </Box>
         </Box>
     )
