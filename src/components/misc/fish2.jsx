@@ -8,9 +8,24 @@ export default function SwimmingFish() {
         const ctx = canvas.getContext("2d");
 
         const FISH_HEIGHT = 160;
+
+        // Change 4: scaleFactor as a let so resize() and animate() share it
+        let scaleFactor = 1;
+
         const resize = () => {
+            // Use full viewport width so fish swim edge-to-edge
             canvas.width = window.innerWidth;
             canvas.height = FISH_HEIGHT;
+
+            // Change 2: compute scaleFactor based on viewport width
+            const w = window.innerWidth;
+            if (w <= 600) {
+                scaleFactor = 0.6;
+            } else if (w <= 960) {
+                scaleFactor = 0.8;
+            } else {
+                scaleFactor = 1;
+            }
         };
         resize();
         window.addEventListener("resize", resize);
@@ -139,7 +154,8 @@ export default function SwimmingFish() {
                 f.x += f.speed;
                 if (f.x > canvas.width + 80) f.x = -80;
                 const y = f.y + Math.sin(f.x * f.waveFreq + f.phase) * f.waveAmp;
-                drawFish(f.x, y, f.size, t, f.tailPhase);
+                // Change 3: apply scaleFactor to fish size at draw time
+                drawFish(f.x, y, f.size * scaleFactor, t, f.tailPhase);
             });
             animId = requestAnimationFrame(animate);
         }
@@ -155,9 +171,9 @@ export default function SwimmingFish() {
         <canvas
             ref={canvasRef}
             style={{
+                display: "block",
                 width: "100%",
                 height: 160,
-                display: "block",
                 pointerEvents: "none",
             }}
         />
