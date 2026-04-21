@@ -93,6 +93,9 @@ export default function Footer() {
                                 px: 4,
                                 py: 1,
                                 fontSize: '1rem',
+                                textAlign: 'center',
+                                whiteSpace: 'normal',
+                                lineHeight: 1.4,
                                 '&:hover': {
                                     bgcolor: '#857437'
                                 }
