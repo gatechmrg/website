@@ -122,15 +122,6 @@ export default function Footer() {
                     </Tooltip>
                 </Box>
 
-                <Box overflow="hidden" zIndex={10} bgcolor="#001848" pt={5} pb={2} px={13}>
-
-      {/* ← add this */}
-
-    <Box display="flex" justifyContent="center" gap={1} mb={4} flexWrap="wrap">
-        {/* ...social links... */}
-    </Box>
-</Box>
-
                 <Box mb={3}>
                     <Grid container justifyContent="center" gap={1}>
                         <Grid item>
