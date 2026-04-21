@@ -59,7 +59,7 @@ export default function Exploration() {
                         MRG creates new and iterates on Uncrewed Surface Vehicles (USVs),
                         Uncrewed Underwater Vehicles (UUVs), and Uncrewed Aerial Vehicles 
                         (UAVs). We are able to fabricate parts with an in-house laser cutter,
-                        3D printers, and mill, as well as through accessing Georgia Tech&aposs 
+                        3D printers, and mill, as well as through accessing Georgia Tech&apos;s 
                         facilities.
                         </Typography>
                     </Box>
