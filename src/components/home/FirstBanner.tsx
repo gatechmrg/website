@@ -84,12 +84,12 @@ export default function FirstBanner() {
                         />
                     </defs>
                     <g>
-                        <use xlinkHref="#gentle-wave" x="0" y="0" fill="rgba(0, 53, 102, 0.7)" />
-                        <use xlinkHref="#gentle-wave" x="352" y="0" fill="rgba(0, 53, 102, 0.7)" />
-                        <use xlinkHref="#gentle-wave" x="50" y="3" fill="rgba(0, 53, 102, 0.5)" />
-                        <use xlinkHref="#gentle-wave" x="402" y="3" fill="rgba(0, 53, 102, 0.5)" />
-                        <use xlinkHref="#gentle-wave" x="100" y="6" fill="rgba(0, 53, 102, 0.3)" />
-                        <use xlinkHref="#gentle-wave" x="452" y="6" fill="rgba(0, 53, 102, 0.3)" />
+                        <use xlinkHref="#gentle-wave" x="0" y="0" fill="rgba(0, 53, 102, 0.79)" />
+                        <use xlinkHref="#gentle-wave" x="352" y="0" fill="rgba(0, 53, 102, 0.79)" />
+                        <use xlinkHref="#gentle-wave" x="50" y="3" fill="rgba(0, 53, 102, 0.79)" />
+                        <use xlinkHref="#gentle-wave" x="402" y="3" fill="rgba(0, 53, 102, 0.79)" />
+                        <use xlinkHref="#gentle-wave" x="100" y="6" fill="rgba(0, 53, 102, 0.79)" />
+                        <use xlinkHref="#gentle-wave" x="452" y="6" fill="rgba(0, 53, 102, 0.79)" />
                         <animateTransform
                             attributeName="transform"
                             type="translate"
