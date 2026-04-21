@@ -1,5 +1,4 @@
 import { useEffect, useRef } from "react";
-import { Box } from "@mui/material";
 
 export default function SwimmingFish() {
     const canvasRef = useRef(null);
@@ -8,16 +7,17 @@ export default function SwimmingFish() {
         const canvas = canvasRef.current;
         const ctx = canvas.getContext("2d");
 
+        const FISH_HEIGHT = 160;
         const resize = () => {
-            canvas.width = canvas.offsetWidth;
-            canvas.height = canvas.offsetHeight;
+            canvas.width = window.innerWidth;
+            canvas.height = FISH_HEIGHT;
         };
         resize();
         window.addEventListener("resize", resize);
 
-        const fish = Array.from({ length: 4 }, (_, i) => ({
-            x: (canvas.width / 4) * i + Math.random() * 80,
-            y: 35 + Math.random() * 90,
+        const fish = Array.from({ length: 12 }, (_, i) => ({
+            x: Math.random() * window.innerWidth,
+            y: 40 + Math.random() * (FISH_HEIGHT - 80),
             speed: 0.35 + Math.random() * 0.4,
             size: 16 + Math.random() * 14,
             phase: Math.random() * Math.PI * 2,
@@ -35,7 +35,7 @@ export default function SwimmingFish() {
             const rootWag = Math.sin(t * wagFreq + tailPhase - 1.0) * size * 0.28;
             const tipWag  = Math.sin(t * wagFreq + tailPhase - 1.6) * size * 0.52;
 
-            // Body — tapered teardrop
+            // Body
             ctx.beginPath();
             ctx.moveTo(size, 0);
             ctx.bezierCurveTo( size * 0.6, -size * 0.38, -size * 0.2, -size * 0.38 + bodyWag, -size * 0.62, rootWag);
@@ -87,7 +87,7 @@ export default function SwimmingFish() {
             ctx.fillStyle = "rgba(55,138,221,0.6)";
             ctx.fill();
 
-            // Scale shimmer lines
+            // Scale shimmer
             ctx.strokeStyle = "rgba(133,183,235,0.35)";
             ctx.lineWidth = 0.6;
             for (let i = 0; i < 3; i++) {
@@ -102,22 +102,19 @@ export default function SwimmingFish() {
                 ctx.stroke();
             }
 
-            // Eye — outer
+            // Eye
             ctx.fillStyle = "#042C53";
             ctx.beginPath();
             ctx.arc(size * 0.68, -size * 0.09, size * 0.11, 0, Math.PI * 2);
             ctx.fill();
-            // iris
             ctx.fillStyle = "#185FA5";
             ctx.beginPath();
             ctx.arc(size * 0.68, -size * 0.09, size * 0.07, 0, Math.PI * 2);
             ctx.fill();
-            // pupil
             ctx.fillStyle = "#000";
             ctx.beginPath();
             ctx.arc(size * 0.68, -size * 0.09, size * 0.04, 0, Math.PI * 2);
             ctx.fill();
-            // catchlight
             ctx.fillStyle = "#fff";
             ctx.beginPath();
             ctx.arc(size * 0.70, -size * 0.11, size * 0.02, 0, Math.PI * 2);
@@ -155,8 +152,14 @@ export default function SwimmingFish() {
     }, []);
 
     return (
-        <Box sx={{ width: "100%", height: 160, overflow: "hidden", bgcolor: "transparent" }}>
-            <canvas ref={canvasRef} style={{ width: "100%", height: "100%" }} />
-        </Box>
+        <canvas
+            ref={canvasRef}
+            style={{
+                width: "100%",
+                height: 160,
+                display: "block",
+                pointerEvents: "none",
+            }}
+        />
     );
 }

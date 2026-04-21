@@ -56,10 +56,10 @@ export default function Exploration() {
                         </Typography>
                         <StandardLine width={80} height={5} borderRadius={3} centered />
                         <Typography variant="body1" fontWeight={300} mt={2}>
-                        MRG creates new and iterates on Uncrewed Surface Vehicles (USVs), 
+                        MRG creates new and iterates on Uncrewed Surface Vehicles (USVs),
                         Uncrewed Underwater Vehicles (UUVs), and Uncrewed Aerial Vehicles 
                         (UAVs). We are able to fabricate parts with an in-house laser cutter,
-                        3D printers, and mill, as well as through accessig Georgia Tech's 
+                        3D printers, and mill, as well as through accessing Georgia Tech&aposs 
                         facilities.
                         </Typography>
                     </Box>

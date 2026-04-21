@@ -1,11 +1,15 @@
-#!/bin/bash
-
-limit=5242880  # 5MB in bytes
+#!/bin/sh
+limit=5242880
+failed=0
 
 while IFS= read -r -d '' file; do
     size=$(git cat-file -s ":$file" 2>/dev/null)
     if [ "$size" -gt "$limit" ]; then
         echo "ERROR: $file is $(( size / 1048576 ))MB, exceeds 5MB limit"
-        exit 1
+        failed=1
     fi
-done < <(git diff --cached --name-only -z)
+done < <(git diff --cached --name-only -z)  # keep if using bash wrapper
+# or pipe version:
+# done <<(git diff --cached --name-only -z | ...)
+
+exit "$failed"
