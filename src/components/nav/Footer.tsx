@@ -76,6 +76,7 @@ export default function Footer() {
                 </svg>
             </Box>
 
+            {/* Padded content box — SwimmingFish is intentionally outside this */}
             <Box overflow="hidden" zIndex={10} bgcolor="#001848" pt={5} pb={2} px={13}
                 sx={{ clipPath: 'url(#footer-clip-path)' }}>
 
@@ -136,6 +137,10 @@ export default function Footer() {
                         </Grid>
                     </Grid>
                 </Box>
+            </Box>
+
+            {/* SwimmingFish moved outside the px={13} padded Box so it fills full viewport width */}
+            <Box bgcolor="#001848" overflow="hidden">
                 <SwimmingFish />
             </Box>
         </Box>
