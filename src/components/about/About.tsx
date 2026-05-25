@@ -51,7 +51,7 @@ export default function About() {
                     </Box>
                     <Box height={350}/>
                     <Box maxWidth="100%" pb={5} mx={small ? 3 : 5} sx={{color: 'white'}}>
-                        <Paper elevation={3} sx={{bgcolor: '#F0EEE6'}} >
+                        <Paper elevation={3} sx={{bgcolor: '#f0eee6'}} >
                             <Box p={3}   mx = "auto" maxWidth={1800} alignSelf= "center" display="flex" flexDirection="column" alignItems="center">
                                 {/* <Box mb={3}>
                                     <StandardLine width={200} height={5} borderRadius={5} />
