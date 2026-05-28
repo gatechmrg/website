@@ -470,7 +470,7 @@ export default function ElectricalInfo() {
                 variant="h3"
                 sx={{ fontSize: { xs: "1.6rem", md: "2.2rem" }, fontWeight: 400, color: COLOR.navy, mb: 1 }}
               >
-                "PRESTO" Motor Interface Board
+                &quot;PRESTO&quot; Motor Interface Board
               </Typography>
               <UnderlineLine />
               <Typography sx={{ fontSize: "1.05rem", lineHeight: 1.8, color: "#2a3a5c", mb: 3 }}>
@@ -566,7 +566,7 @@ export default function ElectricalInfo() {
               <UnderlineLine />
               <Typography sx={{ fontSize: "1.05rem", lineHeight: 1.8, color: "#2a3a5c", mb: 3 }}>
                 Our system is powered by four 4s LiPo batteries, two to each power system. The batteries are housed in externally mounted battery tubes. We chose this design to 
-                maintain a high center of bouyancy for stability, allow "hot-swapping" batteries for efficient field testing, and maintain an orderly interior drawer.
+                maintain a high center of bouyancy for stability, allow &quot;hot-swapping&quot; batteries for efficient field testing, and maintain an orderly interior drawer.
               </Typography>
             </Grid>
 

@@ -1,6 +1,6 @@
 import { Box, Container, Grid, List, ListItem, Paper, Typography } from "@mui/material";
-import { StandardLine } from "../../misc/line";
-import { PrimaryLink } from "../../misc/links";
+import { StandardLine } from "../../../misc/line";
+import { PrimaryLink } from "../../../misc/links";
 
 export default function Electrical() {
 

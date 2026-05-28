@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { StandardLine } from "../../misc/line";
+import { StandardLine } from "../../../misc/line";
 
 export default function Competition() {
 

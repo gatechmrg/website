@@ -7,7 +7,7 @@ import Electrical from "./Electrical";
 import Software from "./Software";
 import Firmware from "./Firmware";
 import TeamRoster from "./TeamRoster";
-import Testing from "./Testing.tsx";
+import Testing from "./Testing";
 
 
 export default function Main() {
