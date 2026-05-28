@@ -1,7 +1,7 @@
 import Head from "next/head";
-import Header from "../../components/nav/Header";
-import Main from "../../components/projects/robosub/Main";
-import Footer from "../../components/nav/Footer";
+import Header from "../../../components/nav/Header";
+import Main from "../../../components/projects/robosub/2026/Main";
+import Footer from "../../../components/nav/Footer";
 
 export default function RoboSub() {
 

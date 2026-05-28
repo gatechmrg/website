@@ -197,8 +197,7 @@ export default function Projects() {
                                                         For this competition, we develop the autonomy and 
                                                         propulsion for a 16-foot pontoon boat. We also create
                                                         an autonomous drone which the surface vehicle collaborates
-                                                        with to complete tasks. The competition is biannual and was
-                                                        last held in Sydney, Australia.
+                                                        with to complete tasks. 
                                                     </Typography>
                                                 </Box>
                                                 <Box mt={3}>
@@ -238,9 +237,8 @@ export default function Projects() {
                                     <Box mt={2}>
                                     <Typography variant="body1" fontSize="1.2rem" lineHeight={1.7}>
                                         For this competition, we build and program an underwater vehicle
-                                        to complete a series of tasks autonomously. The competition takes
-                                        place annually, and we are eager to return to competition after a
-                                        five year hiatus this Summer 2025.
+                                        to complete a series of tasks autonomously. The lack of GPS and RF communication
+                                        underwater add an extra challenge.
                                     </Typography>
                                     </Box>
                                     <Box mt={3}>
