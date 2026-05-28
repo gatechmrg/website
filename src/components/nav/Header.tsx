@@ -17,7 +17,7 @@ const pages = [
 const projectLinks = [
     { name: 'Microtransat', link: '/projects/microtransat' },
     { name: 'RoboBoat', link: '/projects/roboboat' },
-    { name: 'RoboSub', link: '/projects/robosub' },
+    { name: 'RoboSub', link: '/projects/robosub/robosub' },
     { name: 'RobotX', link: '/projects/robotx' },
 ]
 

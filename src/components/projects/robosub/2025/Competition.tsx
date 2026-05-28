@@ -1,5 +1,5 @@
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { StandardLine } from "../../misc/line";
+import { StandardLine } from "../../../misc/line";
 
 export default function Competition() {
 
@@ -16,7 +16,7 @@ export default function Competition() {
                 </Box>
                 <Grid container justifyContent="center">
                     <Grid item xs={12} sm={8} md={6}>
-                        <img width="100%" src="/projects/robosub/pool_test.webp"
+                        <img width="100%" src="/projects/robosub/pool_test.jpg"
                         style={{borderRadius: 16}} alt="Field testing in the Georgia Tech pool" />
                     </Grid>
                     <Grid item xs={12} md={6}>
