@@ -14,6 +14,19 @@ export interface SponsorTier {
     sponsors: Sponsor[];
 }
 
+export interface PastSponsor {
+    name: string;
+    logo: string;
+}
+
+export const pastSponsors: PastSponsor[] = [
+    { name: 'Altium', logo: '/sponsors/logos/previous/logo_altium.svg' },
+    { name: 'Dassault Systèmes', logo: '/sponsors/logos/previous/logo_dassault.svg' },
+    { name: 'Firefly Robotics', logo: '/sponsors/logos/previous/logo_fireflyrobotics.svg' },
+    { name: 'Greenzie', logo: '/sponsors/logos/previous/logo_greenzie.svg' },
+    { name: 'Pattent', logo: '/sponsors/logos/previous/logo_pattent.svg' },
+];
+
 export const sponsorTiers: SponsorTier[] = [
     {
         label: 'Platinum Sponsors',
