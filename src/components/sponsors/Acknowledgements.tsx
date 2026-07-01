@@ -22,7 +22,7 @@ export default function Acknowledgements() {
     <Box mt={4}>
       <style>{`
         @keyframes marquee-scroll {
-          0%   { transform: translateX(-50%); }
+          0%   { transform: translateX(-25%); }
           100% { transform: translateX(0); }
         }
       `}</style>
@@ -97,7 +97,7 @@ export default function Acknowledgements() {
             animation: 'marquee-scroll 18s linear infinite',
           }}
         >
-          {[0, 1].map((copyIndex) => (
+          {[0, 1, 2, 3].map((copyIndex) => (
             <Box
               key={copyIndex}
               sx={{
@@ -106,7 +106,7 @@ export default function Acknowledgements() {
                 gap: { xs: '2.5rem', sm: '3.5rem', md: '5rem' },
                 px: { xs: '1.25rem', sm: '1.75rem', md: '2.5rem' },
               }}
-              aria-hidden={copyIndex === 1 ? true : undefined}
+              aria-hidden={copyIndex > 0 ? true : undefined}
             >
               {logoSet.map((sponsor) => (
                 <Box
