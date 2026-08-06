@@ -36,6 +36,7 @@ export const sponsorTiers: SponsorTier[] = [
         sponsors: [
             { name: 'TDK Lambda', logo: '/sponsors/logos/logo_tdk.svg', website: 'https://tdk.com' },
             { name: 'Waterlinked', logo: '/sponsors/logos/logo_waterlinked.svg', website: 'https://waterlinked.com' },
+            { name: 'Ainstein', logo: '/sponsors/logos/logo_ainstein.svg', website: 'https://ainstein.ai' },
         ],
     },
     {
