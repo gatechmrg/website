@@ -95,10 +95,16 @@ export default function SeaState() {
                     <Grid container spacing={4} mb={10} justifyContent="center">
                         {[
                             {
+                                title: "MRG at RoboSub 2026",
+                                image: "/media/tocaro_blue_boat.webp",
+                                link: "/news/robosub_2026"
+                            },
+                            {
                                 title: "MRG Partners with Tocaro Blue to Research Marine Radar Performance",
                                 image: "/media/tocaro_blue_boat.webp",
                                 link: "/news/tocaro_blue"
-                            }
+                            },
+
                             /* ##### Uncomment to add articles as they are written. EB 4/9/26 #######
                             {
                                 title: "Coming soon!",
