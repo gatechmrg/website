@@ -16,7 +16,7 @@ export default function AerialVehicle() {
 
       <Typography component="h2" variant="h5">Electrical Power Architecture and Hot-Swap Distribution</Typography>
       <Typography>
-        The electrical system is energized by dual 6S 22.2&nbsp;V LiPo battery packs connected in parallel through an isolated diode power distribution board. This parallel configuration increases total flight endurance while allowing single battery replacements between sorties without cutting power to the companion computer or flight controller, preventing reboot cycles and expediting field testing iterations.
+        The electrical system is energized by four 6S 22.2&nbsp;V LiPo battery packs connected in parallel through an isolated diode power distribution board. This parallel configuration increases total flight endurance while allowing single battery replacements between sorties without cutting power to the companion computer or flight controller, preventing reboot cycles and expediting field testing iterations.
       </Typography>
 
       <Typography component="h2" variant="h5">Avionics, Flight Control, and Radar Altimetry</Typography>

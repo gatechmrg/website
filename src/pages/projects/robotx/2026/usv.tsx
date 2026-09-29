@@ -5,7 +5,7 @@ export default function SurfaceVehicle() {
   return (
     <DetailPage
       title="Surface Vehicle (USV)"
-      description="BlueBoat-derived autonomous catamaran featuring frontseat-backseat compute, ILOS current-rejection guidance, and 2-DOF water shooting."
+      description="BlueBoat-derived autonomous catamaran featuring frontseat-backseat compute, obstacle-aware navigation, and 2-DOF water shooting."
       image="/projects/robotx2026/usv-water.webp"
       imageAlt="RobotX surface vehicle equipped with sensors during on-water testing"
     >
@@ -19,14 +19,14 @@ export default function SurfaceVehicle() {
         The electrical system is divided into isolated propulsion and compute power buses to protect sensitive avionics from motor back-EMF and current spikes:
       </Typography>
       <ul>
-        <li><strong>Power Regulation & Cutoff:</strong> High-capacity LiFePO4 batteries feed isolated DC-DC buck regulators providing dedicated 12&nbsp;V and 5&nbsp;V rails. Propulsion current passes through the PRESto electromechanical cutoff relay for physical emergency shutoff.</li>
+        <li><strong>Power Regulation & Cutoff:</strong> High-capacity Lithium-ion (Li-ion) batteries feed isolated DC-DC buck regulators providing dedicated 12&nbsp;V and 5&nbsp;V rails. Propulsion current passes through the PRESto electromechanical cutoff relay for physical emergency shutoff.</li>
         <li><strong>Frontseat Low-Level Controller (Raspberry Pi + Navigator Hat):</strong> Runs ArduRover firmware dedicated to PWM thruster signaling, GPS/IMU sensor reading, manual RF control decoding, and hardware safety monitoring.</li>
         <li><strong>Backseat High-Compute Node (Nvidia Jetson Orin Nano):</strong> Executes high-bandwidth ROS 2 workloads, including YOLOv11 neural inference, JIPDA multi-sensor fusion, dual-map occupancy grid generation, and BehaviorTree.CPP autonomy.</li>
       </ul>
 
-      <Typography component="h2" variant="h5">ILOS Guidance and Environmental Current Rejection</Typography>
+      <Typography component="h2" variant="h5">Navigation and Obstacle-Avoidant Path Planning</Typography>
       <Typography>
-        Because small underactuated catamarans are highly vulnerable to drift from wind and cross-currents, standard waypoint navigation is augmented with a custom <strong>carrot-chasing (Line-of-Sight)</strong> velocity controller. Incorporating an integral term on cross-track error—known as <strong>Integral Line-of-Sight (ILOS)</strong> guidance—allows the boat to automatically compensate for steady-state environmental disturbances and track nominal transit paths accurately.
+        The USV navigation system operates in layers above the ArduRover autopilot. A visibility graph planner using an A* search algorithm computes collision-free transit paths around mapped obstacles and prohibited task boundaries. The vehicle follows waypoints using direct target setpoints or velocity control with line-of-sight carrot-chasing to manage path tracking under wind and surface currents.
       </Typography>
 
       <Typography component="h2" variant="h5">Two-DOF Water Shooter Subsystem</Typography>
