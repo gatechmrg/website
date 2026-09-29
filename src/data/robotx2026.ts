@@ -286,7 +286,7 @@ export const robotx2026Page: LandingPage = {
                     },
                     {
                         title: 'Electrical',
-                        body: 'Dual isolated power distribution buses with PRESto electromechanical cutoff relays, frontseat Raspberry Pi with Navigator hat for low-level motor actuation, and backseat Nvidia Jetson Orin Nano for high-compute workloads.',
+                        body: 'High-capacity Lithium-ion battery system powering isolated compute and propulsion buses, PRESto electromechanical cutoff relays, frontseat Raspberry Pi with Navigator hat, and backseat Nvidia Jetson Orin Nano.',
                         image: '/projects/robotx2026/gimbal-deck.webp',
                         alt: 'Boat deck electronics beside the gimbal',
                         link: 'Boat electrical design',
@@ -316,7 +316,7 @@ export const robotx2026Page: LandingPage = {
                     },
                     {
                         title: 'Electrical',
-                        body: 'Dual 6S 22.2V LiPo battery bank with hot-swap power distribution, powering a Pixhawk flight controller, nadir-mounted Ainstein US-D1 radar altimeter, and an Nvidia Jetson Orin Nano for onboard vision inference.',
+                        body: 'Four 6S 22.2V LiPo battery bank with hot-swap power distribution, powering a Pixhawk flight controller, nadir-mounted Ainstein US-D1 radar altimeter, and an Nvidia Jetson Orin Nano for onboard vision inference.',
                         image: '/projects/robotx2026/uav-electronics.webp',
                         alt: 'Overhead view of the drone electronics bay',
                         link: 'Drone electrical design',
@@ -533,11 +533,11 @@ export const robotx2026Timeline: TimelinePage = {
             },
             {
                 date: 'Summer 2026',
-                title: 'Core Systems & Navigation Bringup',
+                title: 'Core Systems & Multi-Vehicle Bringup',
                 highlights: [
-                    'Resolved underactuated boat turning and arcing issues by implementing ArduPilot Integral Line-of-Sight (ILOS) cross-track error compensation.',
-                    'Overcame over-water laser dispersion by integrating Ainstein US-D1 radar altimeter on the UAV belly plate.',
-                    'Tuned YOLOv11 neural network models for edge inference on Jetson Orin Nano companion computers.',
+                    'Diagnosed and resolved BlueBoat ArduPilot motor reversing and turning issues through cross-parameter validation across hulls.',
+                    'Integrated Ainstein US-D1 radar altimeter on UAV airframe to overcome over-water optical altimetry scattering.',
+                    'Verified multi-vehicle TF coordinate transforms and brought up ground station (gt-ocs) telemetry and semantic map sharing.',
                 ],
             },
         ],
