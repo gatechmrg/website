@@ -10,6 +10,8 @@ interface LinkButtonProps {
   href: string;
   children: ReactNode;
   variant?: LinkButtonVariant;
+  target?: string;
+  rel?: string;
   sx?: SxProps<Theme>;
 }
 
@@ -67,11 +69,13 @@ const variantStyles: Record<LinkButtonVariant, VariantStyle> = {
 
 const lift = { transform: 'translateY(-1px)' };
 
-export default function LinkButton({ href, children, variant = 'outlined', sx }: LinkButtonProps) {
+export default function LinkButton({ href, children, variant = 'outlined', target, rel, sx }: LinkButtonProps) {
   return (
     <Box
       component={Link}
       href={href}
+      target={target}
+      rel={rel}
       sx={[
         {
           alignSelf: 'flex-start',

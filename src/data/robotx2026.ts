@@ -97,7 +97,7 @@ export interface TestingTeaser {
 
 export interface TeamMember {
     name: string;
-    role: string;
+    role?: string;
 }
 
 export interface Team {
@@ -180,6 +180,17 @@ export interface TimelinePage {
             results: string;
         };
         items: TestRecord[];
+    };
+    notes: {
+        heading: string;
+        intro: string;
+        notionUrl: string;
+        notionLabel: string;
+        items: {
+            date: string;
+            title: string;
+            highlights: string[];
+        }[];
     };
 }
 
@@ -267,7 +278,7 @@ export const robotx2026Page: LandingPage = {
                 rows: [
                     {
                         title: 'Mechanical',
-                        body: 'BlueBoat-derived catamaran hull carrying our custom three-axis sensor gimbal, which points the Livox Avia LiDAR and OAK-1 camera independently of the hull, plus mounts for task hardware such as the water shooter.',
+                        body: 'Hydrodynamically optimized BlueBoat catamaran hull fitted with custom structural crossbars, equipment bays, motor brackets, and mounting interfaces for the 2-DOF water shooter and sensor payloads.',
                         image: '/projects/robotx2026/usv-hull.webp',
                         alt: "The surface vehicle's catamaran hull on the lake",
                         link: 'Boat mechanical design',
@@ -275,7 +286,7 @@ export const robotx2026Page: LandingPage = {
                     },
                     {
                         title: 'Electrical',
-                        body: 'Custom gimbal control boards, a hardware propulsion cutoff, and independent manual control. [Power and compute summary]',
+                        body: 'Dual isolated power distribution buses with PRESto electromechanical cutoff relays, frontseat Raspberry Pi with Navigator hat for low-level motor actuation, and backseat Nvidia Jetson Orin Nano for high-compute workloads.',
                         image: '/projects/robotx2026/gimbal-deck.webp',
                         alt: 'Boat deck electronics beside the gimbal',
                         link: 'Boat electrical design',
@@ -283,7 +294,7 @@ export const robotx2026Page: LandingPage = {
                     },
                     {
                         title: 'Software',
-                        body: 'Camera and LiDAR detections become persistent object tracks. A behavior tree runs each task, pauses for incidents, and resumes.',
+                        body: 'Camera and LiDAR detections become persistent object tracks via JIPDA. A BehaviorTree.CPP architecture runs each task, reacts to competition incidents, and resumes execution seamlessly.',
                         image: '/projects/robotx2026/ground-station.webp',
                         alt: 'Team members at the field ground station',
                         link: 'Boat software',
@@ -297,7 +308,7 @@ export const robotx2026Page: LandingPage = {
                 rows: [
                     {
                         title: 'Mechanical',
-                        body: 'Holybro X650 airframe, modified for aerial payload release. [Modification details]',
+                        body: 'Modified Holybro X650 carbon-fiber airframe featuring extended landing skids, motor vibration dampeners, and a 3D-printed cruciform payload cradle holding two delivery tins with permanent magnet retention.',
                         image: '/projects/robotx2026/uav.webp',
                         alt: 'The drone on grass',
                         link: 'Drone mechanical design',
@@ -305,7 +316,7 @@ export const robotx2026Page: LandingPage = {
                     },
                     {
                         title: 'Electrical',
-                        body: 'Flight electronics packed into the central enclosure. [Flight controller and companion computer]',
+                        body: 'Dual 6S 22.2V LiPo battery bank with hot-swap power distribution, powering a Pixhawk flight controller, nadir-mounted Ainstein US-D1 radar altimeter, and an Nvidia Jetson Orin Nano for onboard vision inference.',
                         image: '/projects/robotx2026/uav-electronics.webp',
                         alt: 'Overhead view of the drone electronics bay',
                         link: 'Drone electrical design',
@@ -348,10 +359,15 @@ export const robotx2026Page: LandingPage = {
             alt: 'The Marine Robotics Group team with their vehicles in front of Tech Tower',
         },
         roster: [
-            { name: '[Name]', role: '[Role]' },
-            { name: '[Name]', role: '[Role]' },
-            { name: '[Name]', role: '[Role]' },
-            { name: '[Name]', role: '[Role]' },
+            { name: 'Thomas Devlin' },
+            { name: 'Paul Dubrulle' },
+            { name: 'Sean T. Fish' },
+            { name: 'Soham Goel' },
+            { name: 'Samuel I. Ibidapo' },
+            { name: 'Jorge L. Ortiz Solano' },
+            { name: 'Shrey D. Patel' },
+            { name: 'Aaron E. Wu' },
+            { name: 'Nathan Xie' },
         ],
         contactPrefix: 'Contact us at',
         email: 'marinerobotics@groups.gatech.edu',
@@ -457,18 +473,72 @@ export const robotx2026Timeline: TimelinePage = {
                 vehicle: 'UAV',
                 video: '/projects/robotx2026/flight-test.mp4',
                 poster: '/projects/robotx2026/flight-test.webp',
-                objectives: 'Summary coming soon',
-                fieldTime: 'Summary coming soon',
-                results: 'Summary coming soon',
+                objectives: 'Validate autonomous waypoint following, geofence boundary enforcement, and Ainstein US-D1 radar altimeter altitude holding over open fields.',
+                fieldTime: '45 minutes flight time across multiple battery sorties',
+                results: 'Confirmed stable altitude hold, verified parallel battery hot-swap procedure without avionics reboot, and demonstrated geofence failsafe containment.',
             },
             {
                 title: 'Buoyancy test',
                 vehicle: 'UAV',
                 video: '/projects/robotx2026/buoyancy-test.mp4',
                 poster: '/projects/robotx2026/buoyancy-test.webp',
-                objectives: 'Summary coming soon',
-                fieldTime: 'Summary coming soon',
-                results: 'Summary coming soon',
+                objectives: 'Confirm positive buoyancy and evaluate component waterproofing integrity during controlled water immersion.',
+                fieldTime: '1.5 hours in-pool evaluation',
+                results: 'Chassis demonstrated stable positive waterplane buoyancy with zero water ingress into sealed avionics and battery enclosures.',
+            },
+        ],
+    },
+
+    notes: {
+        heading: 'Abridged Sprint & Meeting Notes',
+        intro: 'Abridged highlights from team sprint meetings, lake test debriefs, and system integration milestones. Full archives and detailed minutes are maintained in the GT MRG Notion Wiki.',
+        notionUrl: 'https://gt-mrg.notion.site/Meeting-Notes-26c4d4efb4c780c5b4e9efb9b638228c?pvs=73',
+        notionLabel: 'View Full Meeting Notes on Notion',
+        items: [
+            {
+                date: '2026-09-25',
+                title: 'Singapore Roster Announcement & Final Lake Test Prep',
+                highlights: [
+                    'Officially confirmed the 9-member travel roster for the 2026 Maritime RobotX Challenge in Singapore.',
+                    'Finalized GB Stables lake test objectives: dual-vehicle data collection, UTM coordinate frame integration, and USV autonomy bringup for Task 1.',
+                    'Coordinated countdown for competition deliverables due Sept 28: Technical Design Report, team video, demographics, and air/sea vehicle freight packaging.',
+                    'Technical progress: MAVROS locked at v2.14.0, gimbal transform tree verified, and light tower fabrication completed.',
+                ],
+            },
+            {
+                date: '2026-09-18',
+                title: 'Sept 12 Lake Test Debrief & Testing Policy',
+                highlights: [
+                    'Debriefed Sept 12 lake test: successfully validated active sensor gimbal stabilization on water and gathered UAV aerial perception datasets.',
+                    'Instituted mandatory bench dry-testing protocol on the night prior to every lake test to protect operational time on the water.',
+                    'Progress updates: UAV mapping autonomy testing in progress, underwater servo pressure validation complete, and Robobuoy flashing light electronics tested.',
+                ],
+            },
+            {
+                date: '2026-09-11',
+                title: 'Vehicle Prioritization & GB Stables Logistics',
+                highlights: [
+                    'Reaffirmed primary competition vehicle pair: Orangeboat (USV) and Holybro X650 Quadcopter (UAV); BlueROV development placed on hold to consolidate team resources.',
+                    'Finalized GB Stables operational call times, rain contingency procedures, and dock access logistics.',
+                ],
+            },
+            {
+                date: '2026-09-04',
+                title: 'Proof of Readiness Completion & Task Allocation',
+                highlights: [
+                    'Successfully submitted official USV, UAV, and Communications Proof of Readiness milestone packages.',
+                    'Software bringup: UTM/MGRS coordinate frame TF publisher integrated into ROS 2 launch files; light buoy classification dataset collected.',
+                    'Mechanical sign-offs: PRESto emergency stop mounting plates, custom hull cable fairings, and water shooter servo/pump bracket fabrication.',
+                ],
+            },
+            {
+                date: 'Summer 2026',
+                title: 'Core Systems & Navigation Bringup',
+                highlights: [
+                    'Resolved underactuated boat turning and arcing issues by implementing ArduPilot Integral Line-of-Sight (ILOS) cross-track error compensation.',
+                    'Overcame over-water laser dispersion by integrating Ainstein US-D1 radar altimeter on the UAV belly plate.',
+                    'Tuned YOLOv11 neural network models for edge inference on Jetson Orin Nano companion computers.',
+                ],
             },
         ],
     },

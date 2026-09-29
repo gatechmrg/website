@@ -60,7 +60,9 @@ export default function TeamResources() {
             {roster.map((member, index) => (
               <Box component="li" key={index} sx={{ display: 'flex', flexDirection: 'column', gap: '2px' }}>
                 <Box component="span" sx={{ fontSize: { xs: 15, md: 16 } }}>{member.name}</Box>
-                <Box component="span" sx={{ fontSize: { xs: 13, md: 14 }, color: robotxColors.bodySecondary }}>{member.role}</Box>
+                {member.role && (
+                  <Box component="span" sx={{ fontSize: { xs: 13, md: 14 }, color: robotxColors.bodySecondary }}>{member.role}</Box>
+                )}
               </Box>
             ))}
           </Box>

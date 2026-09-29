@@ -2,9 +2,11 @@ import { ReactNode } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Box, Container, Link as MuiLink, Typography } from '@mui/material';
+import { Box, Container, Typography } from '@mui/material';
 import Header from '../../nav/Header';
 import Footer from '../../nav/Footer';
+
+import LinkButton from './LinkButton';
 
 type DetailPageProps = {
   title: string;
@@ -24,9 +26,9 @@ export default function DetailPage({ title, description, image, imageAlt, childr
       <div className="root-header-footer">
         <Header />
         <Container component="main" maxWidth="md" sx={{ py: { xs: 5, md: 8 } }}>
-          <MuiLink component={Link} href="/projects/robotx/2026" underline="hover" sx={{ display: 'inline-block', mb: 3 }}>
+          <LinkButton href="/projects/robotx/2026" sx={{ mb: { xs: 3, md: 4 } }}>
             Back to RobotX 2026
-          </MuiLink>
+          </LinkButton>
           <Typography component="h1" variant="h3" sx={{ color: 'primary.light', fontWeight: 400, mb: 4, fontSize: { xs: '2rem', md: '3rem' } }}>
             {title}
           </Typography>
