@@ -77,7 +77,7 @@ export default function Footer() {
             </Box>
 
             {/* Padded content box — SwimmingFish is intentionally outside this */}
-            <Box overflow="hidden" zIndex={10} bgcolor="#001848" pt={5} pb={2} px={13}
+            <Box overflow="hidden" zIndex={10} bgcolor="#001848" pt={5} pb={2} px={{ xs: 3, sm: 6, md: 13 }}
                 sx={{ clipPath: 'url(#footer-clip-path)' }}>
 
                 <Box display="flex" justifyContent="center" gap={1} mb={4} flexWrap="wrap">
