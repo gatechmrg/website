@@ -161,8 +161,8 @@ export default function About() {
                             </Grid>
                             <Grid item xs={12} lg={4}>
                                 <Box m={3}>
-                                    <Profile width={330} imgWidth={250} imgSrc="/about/em_paul.jpg"  // I could have found a better image of nick but I found this funny :) - Mitchell
-                                        name="Em Paul" title="Electrical" />
+                                    <Profile width={330} imgWidth={250} imgSrc="/about/MainiM.webp"
+                                        name="Mahika Maini" title="Electrical" />
                                 </Box>
                             </Grid>
                             <Grid item xs={12} lg={4}>
