@@ -20,6 +20,7 @@ export const sponsorTiers: SponsorTier[] = [
         color: '#000000',
         sponsors: [
             { name: 'Tocaro Blue', logo: '/sponsors/logos/logo_tocaroblue.webp', website: 'https://tocaroblue.com', description: 'Tocaro Blue is a software company based in Pensacola, Florida that aims to expand the utilization of radar for maritime perception. Their mission is to “modernize legacy marine sensors with smart software,” and they believe that applying intelligent software to legacy marine sensors can unlock new capabilities in maritime perception and situational awareness.' },
+            { name: 'ASTM International', logo: '/sponsors/logos/logo_astm.webp', website: 'https://www.astm.org', description: 'The Following Seas is a STEM-focused podcast produced by ASTM International with support from the Office of Naval Research (ONR). Through conversations with students, researchers and industry professionals, the podcast showcases exciting technologies, diverse career pathways and the people shaping the future of engineering. Its sponsorship of Georgia Tech\'s Marine Robotics Group supports the team\'s RobotX journey while inspiring the next generation of STEM professionals.' },
             ],
     },
     {
